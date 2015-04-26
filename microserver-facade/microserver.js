@@ -30,8 +30,12 @@ function convertXmlToJson(xml, callback){
 			return meas.$.name;
 		});			
 		cleaned = _.mapValues(cleaned, function(value){
+			var val = value._;
+			if(val.match(/^-?\d+(\.\d+)?$/)){
+				val = parseFloat(value._);
+			}
 			return {
-				value: value._,
+				value: val,
 				units: value.$.unit
 			}
 		});
