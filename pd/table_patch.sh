@@ -11,7 +11,7 @@
 
 list=""
 for f in $@ ; do
-	f=`basename $f .wav | tr '[:upper:]' '[:lower:]'`
+	f=`basename $f .wav`
 	list="$f $list"
 done
 
@@ -25,8 +25,7 @@ echo '#X connect 1 0 2 0;'
 
 y=22
 for f in $@ ; do
-	f=`basename $f .wav | tr '[:upper:]' '[:lower:]'`
-	#echo Here is $f
+	f=`basename $f .wav`
 	echo "#X obj 26 $y table $f;"
 	y=$((y+20))
 done
