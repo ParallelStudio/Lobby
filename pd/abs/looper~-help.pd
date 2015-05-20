@@ -1,4 +1,4 @@
-#N canvas 688 498 592 411 10;
+#N canvas 215 672 592 411 10;
 #X obj 45 41 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
 -1;
 #X obj 151 41 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
@@ -28,10 +28,49 @@
 #X obj 389 69 looper~ shortnote_1;
 #X obj 392 125 looper~ shortnote_2;
 #X obj 388 180 looper~ shortnote_3;
-#X obj 468 280 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+#N canvas 823 672 726 436 tables 0;
+#X obj 91 15 loadbang;
+#X obj 480 27 table drip1;
+#X obj 480 46 table drip2;
+#X obj 484 86 table shortnote_1;
+#X obj 482 67 table drip3;
+#X obj 484 106 table shortnote_2;
+#X obj 484 128 table shortnote_3;
+#X obj 484 149 table cloudrone;
+#X obj 101 386 soundfiler;
+#X obj 124 45 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X msg 28 177 read -resize -maxsize 4e+07 Rain_Drip_1.wav drip1;
+#X msg 102 197 read -resize -maxsize 4e+07 Rain_Drip_2.wav drip2;
+#X msg 148 218 read -resize -maxsize 4e+07 Rain_Drip_3.wav drip3;
+#X msg 174 239 read -resize -maxsize 4e+07 Rain_Shortnote_1.wav shortnote_1
+;
+#X obj 88 133 t b b b b b b b;
+#X msg 200 263 read -resize -maxsize 4e+07 Rain_Shortnote_2.wav shortnote_2
+;
+#X msg 221 284 read -resize -maxsize 4e+07 Rain_Shortnote_3.wav shortnote_3
+;
+#X msg 237 307 read -resize -maxsize 4e+07 Rain_Cloudrone.wav cloudrone
+;
+#X connect 0 0 14 0;
+#X connect 9 0 14 0;
+#X connect 10 0 8 0;
+#X connect 11 0 8 0;
+#X connect 12 0 8 0;
+#X connect 13 0 8 0;
+#X connect 14 0 10 0;
+#X connect 14 1 11 0;
+#X connect 14 2 12 0;
+#X connect 14 3 13 0;
+#X connect 14 4 15 0;
+#X connect 14 5 16 0;
+#X connect 14 6 17 0;
+#X connect 15 0 8 0;
+#X connect 16 0 8 0;
+#X connect 17 0 8 0;
+#X restore 291 353 pd tables;
+#X obj 520 207 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
 -1 -1;
-#X obj 481 209 nbx 9 14 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 10
--262144 -1 -1 553830 256;
 #X connect 0 0 15 0;
 #X connect 1 0 17 0;
 #X connect 3 0 18 0;
@@ -50,7 +89,6 @@
 #X connect 15 0 2 1;
 #X connect 16 0 2 0;
 #X connect 16 0 2 1;
-#X connect 16 2 22 0;
 #X connect 17 0 2 0;
 #X connect 17 0 2 1;
 #X connect 18 0 2 0;
@@ -61,4 +99,4 @@
 #X connect 20 0 2 1;
 #X connect 21 0 2 0;
 #X connect 21 0 2 1;
-#X connect 21 3 23 0;
+#X connect 21 1 23 0;
