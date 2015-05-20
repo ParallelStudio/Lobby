@@ -1,4 +1,4 @@
-#N canvas 828 368 473 521 10;
+#N canvas 827 367 473 521 10;
 #X obj 28 467 outlet~;
 #X obj 27 396 tabplay~;
 #X obj 27 302 loadbang;
@@ -25,7 +25,6 @@
 #X obj 239 465 outlet;
 #X obj 21 104 s \$0_play;
 #X obj 239 437 r \$0_play;
-#X text 235 401 3rd outlet;
 #X text 235 414 bangs on playback;
 #X text 108 21 no enveloping;
 #X text 107 7 looping mono wav sample player;
@@ -35,13 +34,14 @@
 #X msg 27 345 set \$1;
 #X obj 22 77 route bang start stop size, f 44;
 #X obj 250 172 nbx 12 14 -1e+37 1e+37 0 0 empty empty empty 0 -8 0
-10 -262144 -1 -1 105280 256;
+10 -262144 -1 -1 0 256;
 #X text 247 188 samplect;
+#X text 235 401 2nd outlet;
 #X connect 1 0 0 0;
 #X connect 1 1 8 0;
 #X connect 1 1 5 0;
-#X connect 2 0 31 0;
-#X connect 3 0 33 0;
+#X connect 2 0 30 0;
+#X connect 3 0 32 0;
 #X connect 4 0 6 1;
 #X connect 6 0 15 0;
 #X connect 7 0 6 0;
@@ -57,11 +57,11 @@
 #X connect 19 0 17 0;
 #X connect 21 0 20 0;
 #X connect 24 0 22 0;
-#X connect 31 0 32 0;
-#X connect 32 0 1 0;
-#X connect 33 0 23 0;
-#X connect 33 1 23 0;
-#X connect 33 2 19 0;
-#X connect 33 2 21 0;
-#X connect 33 3 4 1;
-#X connect 33 3 34 0;
+#X connect 30 0 31 0;
+#X connect 31 0 1 0;
+#X connect 32 0 23 0;
+#X connect 32 1 23 0;
+#X connect 32 2 19 0;
+#X connect 32 2 21 0;
+#X connect 32 3 4 1;
+#X connect 32 3 33 0;

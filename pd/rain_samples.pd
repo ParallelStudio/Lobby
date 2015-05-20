@@ -1,4 +1,4 @@
-#N canvas 554 179 731 494 10;
+#N canvas 809 172 731 494 10;
 #X msg 568 74 bang;
 #X obj 185 220 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
 -1 -1;
@@ -8,7 +8,7 @@
 #X obj 44 469 dac~;
 #X msg 131 139 size \$1;
 #X obj 131 111 r Rain_Note_2_size;
-#N canvas 1208 361 418 420 load 0;
+#N canvas 1206 359 418 420 load 0;
 #X obj 65 33 inlet;
 #X obj 66 86 rain_tables;
 #X obj 66 111 list split 1;
@@ -40,12 +40,33 @@
 #X connect 12 0 9 1;
 #X connect 13 0 12 0;
 #X restore 568 102 pd load;
+#X obj 263 222 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X msg 285 221 stop;
+#X msg 329 222 size \$1;
+#X obj 329 194 r Rain_Note_4_size;
 #X obj 58 185 looper~ Rain_Note_5;
+#X obj 404 224 nbx 9 14 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 10
+-262144 -1 -1 114752 256;
+#X obj 328 343 print buggery;
+#X obj 269 289 elooper~ Rain_Note_4 635 800;
+#X floatatom 362 254 5 0 0 0 - - -, f 5;
+#X floatatom 451 249 5 0 0 0 - - -, f 5;
 #X connect 0 0 7 0;
-#X connect 2 0 8 0;
-#X connect 3 0 8 0;
-#X connect 5 0 8 0;
+#X connect 2 0 12 0;
+#X connect 3 0 12 0;
+#X connect 5 0 12 0;
 #X connect 6 0 5 0;
-#X connect 8 0 4 0;
-#X connect 8 0 4 1;
-#X connect 8 1 1 0;
+#X connect 8 0 15 0;
+#X connect 9 0 15 0;
+#X connect 10 0 14 0;
+#X connect 10 0 15 0;
+#X connect 11 0 10 0;
+#X connect 11 0 13 0;
+#X connect 12 0 4 0;
+#X connect 12 0 4 1;
+#X connect 12 1 1 0;
+#X connect 15 0 4 0;
+#X connect 15 0 4 1;
+#X connect 16 0 15 1;
+#X connect 17 0 15 2;
