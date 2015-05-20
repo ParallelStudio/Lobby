@@ -1,6 +1,6 @@
 #N canvas 637 404 776 670 10;
 #X text 26 2 generated file \, do not edit!;
-#X obj 279 20 loadbang;
+#X obj 279 20 inlet;
 #X msg 279 52 list Rain_Snips_4 Rain_Snips_3 Rain_Snips_2 Rain_Snips_1 Rain_Shortnote_5 Rain_Shortnote_4 Rain_Shortnote_3 Rain_Shortnote_2 Rain_Shortnote_1 Rain_Note_6 Rain_Note_5 Rain_Note_4 Rain_Note_3 Rain_Note_2 Rain_Note_1 Rain_HiNote_2 Rain_HiNote_1 Rain_Gtr_3 Rain_Gtr_2 Rain_Gtr_1 Rain_Drip_6 Rain_Drip_5 Rain_Drip_4 Rain_Drip_3 Rain_Drip_2 Rain_Drip_1 Rain_Crunch_4 Rain_Crunch_3 Rain_Crunch_1 Rain_Cloudrone Rain_Click_3 Rain_Click_2 Rain_Click_1 ;
 #X obj 279 300 outlet;
 #X connect 2 0 3 0;

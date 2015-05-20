@@ -17,7 +17,7 @@ done
 
 echo '#N canvas 637 404 776 670 10;'
 echo '#X text 26 2 generated file \, do not edit!;'
-echo '#X obj 279 20 loadbang;'
+echo '#X obj 279 20 inlet;'
 echo "#X msg 279 52 list $list;"
 echo '#X obj 279 300 outlet;'
 echo '#X connect 2 0 3 0;'
