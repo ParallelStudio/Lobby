@@ -102,6 +102,18 @@
 #X obj 189 449 r Rain_Drip_4_size;
 #X obj 129 544 elooper~ Rain_Drip_4 5 800;
 #X obj 98 581 *~ 1;
+#X obj 835 497 hsl 128 15 250 8000 0 0 empty empty empty -2 -8 0 10
+-262144 -1 -1 0 1;
+#X obj 760 389 hsl 128 15 250 8000 0 0 empty empty empty -2 -8 0 10
+-262144 -1 -1 0 1;
+#X obj 472 390 hsl 128 15 250 8000 0 0 empty empty empty -2 -8 0 10
+-262144 -1 -1 0 1;
+#X obj 220 397 hsl 128 15 250 8000 0 0 empty empty empty -2 -8 0 10
+-262144 -1 -1 0 1;
+#X obj 259 523 hsl 128 15 250 8000 0 0 empty empty empty -2 -8 0 10
+-262144 -1 -1 0 1;
+#X obj 506 519 hsl 128 15 250 8000 0 0 empty empty empty -2 -8 0 10
+-262144 -1 -1 0 1;
 #X connect 0 0 6 0;
 #X connect 2 0 10 0;
 #X connect 3 0 10 0;
@@ -160,3 +172,9 @@
 #X connect 56 0 57 0;
 #X connect 57 0 4 0;
 #X connect 57 0 4 1;
+#X connect 58 0 52 2;
+#X connect 59 0 32 2;
+#X connect 60 0 30 2;
+#X connect 61 0 29 2;
+#X connect 62 0 56 2;
+#X connect 63 0 54 2;
