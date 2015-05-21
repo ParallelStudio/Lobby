@@ -59,7 +59,9 @@
 #X obj 199 -163 sig~;
 #X floatatom 197 -183 5 0 0 0 - - -;
 #X obj 202 42 ambi-6ch-2d-decoder~;
-#X obj 195 -133 b-format-encoder~;
+#X obj 195 -124 b-format-encoder~;
+#X obj 339 -188 hsl 128 15 0 180 0 0 empty empty empty -2 -8 0 10 -262144
+-1 -1 12700 1;
 #X connect 6 0 7 0;
 #X connect 6 1 8 0;
 #X connect 6 2 9 0;
@@ -77,3 +79,4 @@
 #X connect 16 0 15 0;
 #X connect 16 1 15 1;
 #X connect 16 2 15 2;
+#X connect 17 0 16 1;
