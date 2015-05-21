@@ -1,14 +1,13 @@
-#N canvas 809 172 731 494 10;
-#X msg 568 74 bang;
-#X obj 185 220 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+#N canvas 172 127 1172 657 10;
+#X msg 939 116 bang;
+#X obj 166 139 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
 -1 -1;
-#X obj 65 139 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+#X obj 46 58 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
 -1;
-#X msg 87 138 stop;
-#X obj 44 469 dac~;
-#X msg 131 139 size \$1;
-#X obj 131 111 r Rain_Note_2_size;
-#N canvas 1206 359 418 420 load 0;
+#X msg 68 57 stop;
+#X obj 19 618 dac~;
+#X msg 112 58 size \$1;
+#N canvas 1019 357 418 420 load 0;
 #X obj 65 33 inlet;
 #X obj 66 86 rain_tables;
 #X obj 66 111 list split 1;
@@ -39,34 +38,125 @@
 #X connect 11 1 9 0;
 #X connect 12 0 9 1;
 #X connect 13 0 12 0;
-#X restore 568 102 pd load;
-#X obj 263 222 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+#X restore 939 144 pd load;
+#X obj 76 352 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X msg 98 351 stop;
+#X msg 142 352 size \$1;
+#X obj 39 104 looper~ Rain_Note_5;
+#X obj 217 354 nbx 9 14 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 10
+-262144 -1 -1 6352 256;
+#X floatatom 175 384 5 0 0 0 - - -, f 5;
+#X floatatom 264 379 5 0 0 0 - - -, f 5;
+#X obj 112 30 r Rain_Note_5_size;
+#X obj 142 324 r Rain_Drip_1_size;
+#X obj 318 348 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
 -1 -1;
-#X msg 285 221 stop;
-#X msg 329 222 size \$1;
-#X obj 329 194 r Rain_Note_4_size;
-#X obj 58 185 looper~ Rain_Note_5;
-#X obj 404 224 nbx 9 14 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 10
--262144 -1 -1 114752 256;
-#X obj 328 343 print buggery;
-#X obj 269 289 elooper~ Rain_Note_4 635 800;
-#X floatatom 362 254 5 0 0 0 - - -, f 5;
-#X floatatom 451 249 5 0 0 0 - - -, f 5;
-#X connect 0 0 7 0;
-#X connect 2 0 12 0;
-#X connect 3 0 12 0;
-#X connect 5 0 12 0;
-#X connect 6 0 5 0;
-#X connect 8 0 15 0;
-#X connect 9 0 15 0;
-#X connect 10 0 14 0;
-#X connect 10 0 15 0;
-#X connect 11 0 10 0;
-#X connect 11 0 13 0;
-#X connect 12 0 4 0;
-#X connect 12 0 4 1;
-#X connect 12 1 1 0;
-#X connect 15 0 4 0;
-#X connect 15 0 4 1;
-#X connect 16 0 15 1;
-#X connect 17 0 15 2;
+#X msg 340 347 stop;
+#X msg 384 348 size \$1;
+#X obj 459 350 nbx 9 14 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 10
+-262144 -1 -1 10672 256;
+#X floatatom 417 380 5 0 0 0 - - -, f 5;
+#X floatatom 506 375 5 0 0 0 - - -, f 5;
+#X obj 552 344 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X msg 574 343 stop;
+#X msg 618 344 size \$1;
+#X obj 693 346 nbx 9 14 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 10
+-262144 -1 -1 10794 256;
+#X floatatom 651 376 5 0 0 0 - - -, f 5;
+#X floatatom 740 371 5 0 0 0 - - -, f 5;
+#X obj 384 320 r Rain_Drip_2_size;
+#X obj 82 419 elooper~ Rain_Drip_1 5 800;
+#X obj 328 416 elooper~ Rain_Drip_2 5 800;
+#X obj 618 316 r Rain_Drip_3_size;
+#X obj 558 411 elooper~ Rain_Drip_3 5 800;
+#X obj 123 477 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X msg 145 476 stop;
+#X msg 189 477 size \$1;
+#X obj 264 479 nbx 9 14 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 10
+-262144 -1 -1 11404 256;
+#X floatatom 222 509 5 0 0 0 - - -, f 5;
+#X floatatom 311 504 5 0 0 0 - - -, f 5;
+#X obj 365 473 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X msg 387 472 stop;
+#X msg 431 473 size \$1;
+#X obj 506 475 nbx 9 14 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 10
+-262144 -1 -1 8320 256;
+#X floatatom 464 505 5 0 0 0 - - -, f 5;
+#X floatatom 553 500 5 0 0 0 - - -, f 5;
+#X obj 599 469 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X msg 621 468 stop;
+#X msg 665 469 size \$1;
+#X obj 740 471 nbx 9 14 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 10
+-262144 -1 -1 5557 256;
+#X floatatom 698 501 5 0 0 0 - - -, f 5;
+#X floatatom 787 496 5 0 0 0 - - -, f 5;
+#X obj 662 441 r Rain_Drip_6_size;
+#X obj 605 536 elooper~ Rain_Drip_6 5 800;
+#X obj 433 446 r Rain_Drip_5_size;
+#X obj 375 541 elooper~ Rain_Drip_5 5 800;
+#X obj 189 449 r Rain_Drip_4_size;
+#X obj 129 544 elooper~ Rain_Drip_4 5 800;
+#X obj 98 581 *~ 1;
+#X connect 0 0 6 0;
+#X connect 2 0 10 0;
+#X connect 3 0 10 0;
+#X connect 5 0 10 0;
+#X connect 7 0 29 0;
+#X connect 8 0 29 0;
+#X connect 9 0 29 0;
+#X connect 10 0 4 0;
+#X connect 10 0 4 1;
+#X connect 10 1 1 0;
+#X connect 12 0 29 1;
+#X connect 13 0 29 2;
+#X connect 14 0 5 0;
+#X connect 15 0 9 0;
+#X connect 15 0 11 0;
+#X connect 16 0 30 0;
+#X connect 17 0 30 0;
+#X connect 18 0 30 0;
+#X connect 20 0 30 1;
+#X connect 21 0 30 2;
+#X connect 22 0 32 0;
+#X connect 23 0 32 0;
+#X connect 24 0 32 0;
+#X connect 26 0 32 1;
+#X connect 27 0 32 2;
+#X connect 28 0 18 0;
+#X connect 28 0 19 0;
+#X connect 29 0 57 0;
+#X connect 30 0 57 0;
+#X connect 31 0 24 0;
+#X connect 31 0 25 0;
+#X connect 32 0 57 0;
+#X connect 33 0 56 0;
+#X connect 34 0 56 0;
+#X connect 35 0 56 0;
+#X connect 37 0 56 1;
+#X connect 38 0 56 2;
+#X connect 39 0 54 0;
+#X connect 40 0 54 0;
+#X connect 41 0 54 0;
+#X connect 43 0 54 1;
+#X connect 44 0 54 2;
+#X connect 45 0 52 0;
+#X connect 46 0 52 0;
+#X connect 47 0 52 0;
+#X connect 49 0 52 1;
+#X connect 50 0 52 2;
+#X connect 51 0 47 0;
+#X connect 51 0 48 0;
+#X connect 52 0 57 0;
+#X connect 53 0 41 0;
+#X connect 53 0 42 0;
+#X connect 54 0 57 0;
+#X connect 55 0 35 0;
+#X connect 55 0 36 0;
+#X connect 56 0 57 0;
+#X connect 57 0 4 0;
+#X connect 57 0 4 1;
