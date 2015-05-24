@@ -1,4 +1,4 @@
-#N canvas 45 519 545 597 10;
+#N canvas 41 515 606 597 10;
 #X obj 54 488 outlet~;
 #X text 21 16 enveloping looper;
 #X obj 53 88 inlet;
@@ -15,28 +15,27 @@
 #X obj 249 233 r \$0_2play;
 #X obj 261 147 s \$0_samplect;
 #X obj 250 174 nbx 12 14 -1e+37 1e+37 0 0 empty empty empty 0 -8 0
-10 -262144 -1 -1 458351 256;
+10 -262144 -1 -1 10672 256;
 #X obj 53 297 tabplay~ \$1;
 #X obj 250 295 tabplay~ \$1;
 #X obj 52 139 s \$0_play;
-#N canvas 603 669 439 441 play 0;
+#N canvas 652 516 439 441 play 0;
 #X obj 42 104 r \$0_play;
-#X obj 117 105 r \$0_stop;
-#X msg 116 128 stop;
-#X floatatom 62 191 5 0 0 0 - - -, f 5;
-#X obj 122 165 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+#X obj 154 88 r \$0_stop;
+#X msg 153 111 stop;
+#X floatatom 60 215 5 0 0 0 - - -, f 5;
+#X obj 120 189 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
 -1 -1;
-#X obj 45 166 f;
-#X obj 79 166 + 1;
-#X obj 46 215 % 2;
-#X obj 42 269 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+#X obj 43 190 f;
+#X obj 77 190 + 1;
+#X obj 44 239 % 2;
+#X obj 40 293 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
 -1;
-#X obj 76 269 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+#X obj 74 293 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
 -1;
-#X obj 42 307 s \$0_1play;
-#X obj 134 308 s \$0_2play;
-#X obj 44 241 route 0 1;
-#X obj 43 130 metro \$3;
+#X obj 40 331 s \$0_1play;
+#X obj 132 332 s \$0_2play;
+#X obj 42 265 route 0 1;
 #X obj 32 10 inlet;
 #X obj 245 35 r \$0_samplect;
 #X obj 246 62 t f b;
@@ -69,9 +68,11 @@
 #X floatatom 133 65 9 0 0 0 - - -, f 9;
 #X obj 217 244 s \$0_metrolen;
 #X obj 127 38 r \$0_metrolen;
-#X connect 0 0 13 0;
+#X obj 41 154 rand-metro \$3;
+#X obj 207 10 inlet;
+#X connect 0 0 27 0;
 #X connect 1 0 2 0;
-#X connect 2 0 13 0;
+#X connect 2 0 27 0;
 #X connect 5 0 3 0;
 #X connect 5 0 6 0;
 #X connect 5 0 7 0;
@@ -81,19 +82,20 @@
 #X connect 12 0 10 0;
 #X connect 12 1 9 0;
 #X connect 12 1 11 0;
-#X connect 13 0 4 0;
-#X connect 13 0 5 0;
-#X connect 14 0 23 0;
-#X connect 15 0 16 0;
-#X connect 16 0 20 0;
-#X connect 16 1 17 0;
-#X connect 17 0 20 1;
+#X connect 13 0 22 0;
+#X connect 14 0 15 0;
+#X connect 15 0 19 0;
+#X connect 15 1 16 0;
+#X connect 16 0 19 1;
+#X connect 19 0 20 0;
+#X connect 20 0 18 0;
 #X connect 20 0 21 0;
-#X connect 21 0 19 0;
-#X connect 21 0 22 0;
-#X connect 21 0 26 0;
-#X connect 27 0 13 1;
-#X connect 27 0 25 0;
+#X connect 20 0 25 0;
+#X connect 26 0 24 0;
+#X connect 26 0 27 1;
+#X connect 27 0 4 0;
+#X connect 27 0 5 0;
+#X connect 28 0 27 2;
 #X restore 442 54 pd play;
 #N canvas 1125 549 456 441 mix 0;
 #X obj 62 313 vline~;
@@ -166,6 +168,11 @@
 #X obj 52 111 route bang start stop;
 #X text 22 30 2nd inlet is envelope time in ms (default=0);
 #X text 22 44 3rd inlet is loop extend time in ms (default=0);
+#X obj 502 21 inlet;
+#X text 22 58 4th inlet is percent randomization (default=0);
+#X obj 311 491 outlet;
+#X obj 311 448 r \$0_1play;
+#X obj 389 448 r \$0_2play;
 #X connect 2 0 24 0;
 #X connect 3 0 0 0;
 #X connect 5 0 0 0;
@@ -186,3 +193,6 @@
 #X connect 24 0 16 0;
 #X connect 24 1 16 0;
 #X connect 24 2 4 0;
+#X connect 27 0 17 1;
+#X connect 30 0 29 0;
+#X connect 31 0 29 0;
