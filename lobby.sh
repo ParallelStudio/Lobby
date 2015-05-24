@@ -10,10 +10,14 @@ if [ "" == "${PD}" ] ; then
 fi
 
 MYDIR=`dirname $0`
-ABS=${MYDIR}/pd/abs
+PDDIR=${MYDIR}/pd
+ABS=${PDDIR}/abs
 SOUNDS=${MYDIR}/sounds
 
 # TODO: Customize the commandline here
-${PD} -path ${ABS} \
+${PD} \
+	-path ${PDDIR} \
+	-path ${ABS} \
 	-path ${SOUNDS} \
-	-send "pd dsp 1"
+	-send "pd dsp 1" \
+	$@
