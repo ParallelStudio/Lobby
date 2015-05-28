@@ -2,7 +2,10 @@
 
 var fs = require('fs');
 var _ = require('lodash');
+var request = require('request');
 var xml2js = require('xml2js');
+
+var SERVER_URL = 'http://192.168.0.50/latestsampledata.xml';
 
 module.exports = {
 	getData: getData
@@ -11,7 +14,18 @@ module.exports = {
 // Fetches data from the microserver and returns it in json
 function getData(callback){
 	// Until we have an actual server to work with, we fake it with xml file data...
-	getDataFromFile(callback);
+	//getDataFromFile(callback);
+	getDataFromServer(callback);
+}
+
+function getDataFromServer(callback){
+	request(SERVER_URL, function(err, resp, data){
+		if(err || (resp && resp.statusCode != 200)){
+			console.log("Error fetching xml: " + err + " HTTP " + (resp && resp.statusCode));
+			return callback("Error fetching xml: " + err + " HTTP " + (resp && resp.statusCode));
+		}
+		convertXmlToJson(data, callback);
+	});
 }
 
 function getDataFromFile(callback){
