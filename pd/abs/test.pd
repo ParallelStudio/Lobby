@@ -1,0 +1,25 @@
+#N canvas 438 80 724 637 10;
+#X obj 246 42 hsl 128 15 50 1000 0 0 empty empty empty -2 -8 0 10 -262144
+-1 -1 600 1;
+#X obj 243 -6 loadbang;
+#X msg 243 17 1000;
+#X obj 164 92 random_bangs 25 880;
+#X obj 170 146 random_bangs 25 890;
+#X obj 172 192 random_bangs 25 950;
+#X obj 318 93 random_bangs 25 1450;
+#X obj 326 193 random_bangs 25 1299;
+#X obj 463 95 random_bangs 25 800;
+#X obj 324 147 random_bangs 25 1700;
+#X obj 469 149 random_bangs 25 999;
+#X obj 471 195 random_bangs 25 943;
+#X connect 0 0 3 0;
+#X connect 0 0 4 0;
+#X connect 0 0 5 0;
+#X connect 0 0 6 0;
+#X connect 0 0 7 0;
+#X connect 0 0 8 0;
+#X connect 0 0 9 0;
+#X connect 0 0 10 0;
+#X connect 0 0 11 0;
+#X connect 1 0 2 0;
+#X connect 2 0 0 0;
