@@ -39,6 +39,9 @@ function getDataFromFile(callback){
 
 function convertXmlToJson(xml, callback){
 	xml2js.parseString(xml, function(err, json){
+		if(!json.oriondata){
+			console.log("BAD DATA: " + xml);
+		}
 		// Let's shore up the clumsy json
 		var cleaned = _.indexBy(json.oriondata.meas, function(meas){
 			return meas.$.name;
