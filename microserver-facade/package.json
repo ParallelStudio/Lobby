@@ -1,0 +1,19 @@
+{
+  "name": "microserver-facade",
+  "version": "1.0.0",
+  "description": "proxy/facade for the weather microserver",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "chai": "^2.3.0",
+    "express": "^4.12.3",
+    "lodash": "^3.7.0",
+    "mocha": "^2.2.4",
+    "request": "^2.55.0",
+    "xml2js": "^0.4.8"
+  }
+}
