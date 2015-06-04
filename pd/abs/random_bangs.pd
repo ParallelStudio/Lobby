@@ -1,4 +1,4 @@
-#N canvas 93 122 493 387 10;
+#N canvas 67 208 493 387 10;
 #X obj 192 89 random_walk;
 #X obj 188 7 inlet;
 #X floatatom 191 258 5 0 0 0 - - -;
@@ -19,7 +19,7 @@
 #X obj 290 -16 loadbang;
 #X text 152 -16 timebase;
 #X obj 399 212 osc~ \$2;
-#X obj 399 286 outlet~;
+#X obj 399 332 outlet~;
 #X connect 0 0 11 0;
 #X connect 1 0 11 1;
 #X connect 3 0 4 1;
