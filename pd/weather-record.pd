@@ -1,10 +1,12 @@
-#N canvas 43 98 980 699 10;
-#X obj 25 172 microserver;
-#X obj 25 197 s microserver;
+#N canvas 716 183 1056 751 10;
 #N canvas 0 50 450 250 (subpatch) 0;
 #X array solar 3600 float 3;
-#A 0 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6
-6 6 6 6 6 6 6 6 6 6 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+#A 0 823 823 823 823 823 823 823 823 823 823 823 823 823 823 823 823
+823 823 823 823 823 823 823 823 823 823 823 823 823 823 823 823 823
+823 823 823 823 823 823 823 823 823 823 823 823 823 823 823 823 823
+823 823 823 823 823 823 823 823 823 823 823 823 823 823 823 823 823
+823 823 823 823 823 823 823 823 823 823 823 823 823 823 823 823 823
+823 823 823 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
@@ -31,8 +33,7 @@
 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0;
+0;
 #A 1000 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
@@ -112,16 +113,13 @@
 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0;
 #X coords 0 12 3600 0 800 120 1 0 0;
-#X restore 155 32 graph;
-#X obj 27 150 bng 15 250 50 0 sample empty empty 17 7 0 10 -262144
--1 -1;
-#X obj 28 74 tgl 30 0 onoff empty empty 17 7 0 10 -204786 -1 -1 1 1
-;
+#X restore 181 53 graph;
 #N canvas 0 50 450 250 (subpatch) 0;
 #X array wind 3600 float 3;
-#A 0 0.3 0.1 0.1 0.1 0.2 0.2 0.3 0.2 0.2 0.2 0.2 0.2 0.1 0.1 0.1 0.1
-0.1 0.1 0.1 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.3 0.3 0.2 0.2 0.2 0.2
-0.2 0.3 0.3 0.3 0.3 0.2 0.2 0.2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+#A 0 29 29 29 29 29 29 29 29 29 29 29 29 29 29 29 29 29 29 29 29 29
+29 29 29 29 29 29 29 29 29 29 29 29 29 29 29 29 29 29 29 29 29 29 29
+29 29 29 29 29 29 29 29 29 29 29 29 29 29 29 29 29 29 29 29 29 29 29
+29 29 29 29 29 29 29 29 29 29 29 29 29 29 29 29 29 29 29 29 0 0 0 0
 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
@@ -148,8 +146,7 @@
 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0;
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0;
 #A 1000 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
@@ -229,12 +226,16 @@
 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0;
 #X coords 0 12 3600 0 800 120 1 0 0;
-#X restore 154 175 graph;
+#X restore 180 197 graph;
 #N canvas 0 50 450 250 (subpatch) 0;
 #X array temp 3600 float 3;
-#A 0 70.1 70.1 70.1 70.1 70.1 70.1 70.1 70.1 70.1 70.1 70.1 70.1 70.1
-70.1 70.1 70.1 70.1 70.1 70.1 70.1 70.1 70.1 70.1 70.1 70.1 70.1 70.1
-70.1 70.1 70.1 70.1 70.1 70.1 70.1 70.1 70.1 70.1 70.1 70.1 70.1 70.1
+#A 0 21.4 21.4 21.4 21.4 21.4 21.4 21.4 21.4 21.4 21.4 21.4 21.4 21.4
+21.4 21.4 21.4 21.4 21.4 21.4 21.4 21.4 21.4 21.4 21.4 21.4 21.4 21.4
+21.4 21.4 21.4 21.4 21.4 21.4 21.4 21.4 21.4 21.4 21.4 21.4 21.4 21.4
+21.4 21.4 21.4 21.4 21.4 21.4 21.4 21.4 21.4 21.4 21.4 21.4 21.4 21.4
+21.4 21.4 21.4 21.4 21.4 21.4 21.4 21.4 21.4 21.4 21.4 21.4 21.4 21.4
+21.4 21.4 21.4 21.4 21.4 21.4 21.4 21.4 21.4 21.4 21.4 21.4 21.4 21.4
+21.4 21.4 21.4 21.4 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
@@ -261,9 +262,7 @@
 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-0 0 0 0 0 0 0;
+0 0 0 0 0;
 #A 1000 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
@@ -343,7 +342,7 @@
 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0;
 #X coords 0 99 3600 40 800 120 1 0 0;
-#X restore 154 314 graph;
+#X restore 180 341 graph;
 #N canvas 0 50 450 250 (subpatch) 0;
 #X array rain 3600 float 3;
 #A 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
@@ -455,117 +454,150 @@
 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0;
 #X coords 0 2 3600 0 800 120 1 0 0;
-#X restore 154 458 graph;
-#N canvas 794 81 500 603 loggero 1;
-#X obj 49 22 r onoff;
-#X obj 49 50 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1 1
+#X restore 179 485 graph;
+#X obj 36 31 tgl 35 0 onoff empty empty 17 7 0 10 -262130 -1 -1 1 1
 ;
-#X obj 293 65 r microserver;
-#X obj 293 109 nbx 5 14 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 10
--204800 -1 -1 6 256;
-#X obj 293 86 route mtSolarRadiation;
-#X obj 284 245 r microserver;
-#X obj 284 289 nbx 5 14 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 10
--204800 -1 -1 0.2 256;
-#X obj 267 415 r microserver;
-#X obj 293 463 nbx 5 14 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 10
--204800 -1 -1 70.1 256;
-#X obj 267 436 route mtTemp1;
-#X obj 70 164 f;
-#X obj 114 75 r sample;
-#X obj 46 98 0;
-#X obj 46 75 select 1;
-#X obj 99 164 + 1;
-#X obj 266 143 t b f;
-#X obj 263 170 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+#X obj 36 77 metro 1000;
+#X obj 35 104 bng 15 250 50 0 sample empty empty 17 7 0 10 -262144
 -1 -1;
-#X obj 285 206 tabwrite solar;
-#X obj 380 182 r offset;
-#X obj 70 217 s offset;
-#X floatatom 392 205 5 0 0 0 - - -, f 5;
-#X floatatom 311 172 5 0 0 0 - - -, f 5;
-#X obj 270 315 t b f;
-#X obj 267 342 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+#X obj 35 131 microserver;
+#X obj 35 153 s microserver;
+#X obj 23 488 loadbang;
+#X msg 48 536 \; solar const 0;
+#X msg 50 581 \; wind const 0;
+#X msg 50 616 \; rain const 0;
+#X msg 49 653 \; temp const 0;
+#N canvas 1167 203 514 647 loggero 0;
+#X obj 26 36 r onoff;
+#X obj 28 61 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1 1
+;
+#X obj 28 81 select 1;
+#X obj 28 103 0;
+#X obj 108 84 r sample;
+#X obj 111 105 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
 -1 -1;
-#X obj 384 354 r offset;
-#X floatatom 396 377 5 0 0 0 - - -, f 5;
-#X floatatom 315 344 5 0 0 0 - - -, f 5;
-#X obj 289 378 tabwrite wind;
-#X obj 284 266 route mtWindSpeed;
-#X obj 267 484 t b f;
-#X obj 264 511 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+#X obj 111 125 f;
+#X obj 111 176 s offset;
+#X obj 142 123 + 1;
+#X floatatom 137 154 5 0 0 0 - - -, f 5;
+#X obj 298 19 r microserver;
+#X obj 298 88 t b f;
+#X obj 297 112 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
 -1 -1;
-#X obj 381 523 r offset;
-#X floatatom 393 546 5 0 0 0 - - -, f 5;
-#X floatatom 312 513 5 0 0 0 - - -, f 5;
-#X obj 286 547 tabwrite temp;
-#X obj 117 97 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
--1;
-#X floatatom 82 189 5 0 0 0 - - -, f 5;
-#X obj 44 394 r microserver;
-#X obj 70 442 nbx 5 14 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 10
+#X floatatom 337 113 5 0 0 0 - - -, f 5;
+#X obj 304 137 tabwrite solar;
+#X obj 401 111 r offset;
+#X floatatom 414 135 5 0 0 0 - - -, f 5;
+#X obj 304 173 r microserver;
+#X obj 304 242 t b f;
+#X obj 303 266 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X floatatom 343 267 5 0 0 0 - - -, f 5;
+#X obj 407 265 r offset;
+#X floatatom 420 289 5 0 0 0 - - -, f 5;
+#X obj 310 291 tabwrite wind;
+#X obj 307 327 r microserver;
+#X obj 307 396 t b f;
+#X obj 306 420 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 318 374 nbx 5 14 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 10
+-204800 -1 -1 21.4 256;
+#X floatatom 346 421 5 0 0 0 - - -, f 5;
+#X obj 410 419 r offset;
+#X floatatom 423 443 5 0 0 0 - - -, f 5;
+#X obj 313 445 tabwrite temp;
+#X obj 301 477 r microserver;
+#X obj 301 546 t b f;
+#X obj 300 570 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 312 524 nbx 5 14 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 10
 -204800 -1 -1 0 256;
-#X obj 44 463 t b f;
-#X obj 41 490 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+#X floatatom 340 571 5 0 0 0 - - -, f 5;
+#X obj 404 569 r offset;
+#X floatatom 417 593 5 0 0 0 - - -, f 5;
+#X obj 307 595 tabwrite rain;
+#X obj 298 42 route /mtSolarRadiation;
+#X obj 304 196 route /mtWindSpeed;
+#X obj 307 351 route /mtTemp1;
+#X obj 302 501 route /mtRainRate;
+#X obj 21 221 cnv 15 100 136 empty empty empty 20 12 0 14 -233017 -66577
+0;
+#X obj 62 245 nbx 5 14 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 10
+-204800 -1 -1 823 256;
+#X text 29 244 sun;
+#X obj 62 267 nbx 5 14 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 10
+-204800 -1 -1 29 256;
+#X text 25 267 wind;
+#X obj 62 290 nbx 5 14 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 10
+-204800 -1 -1 21.4 256;
+#X text 25 290 temp;
+#X obj 62 312 nbx 5 14 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 10
+-204800 -1 -1 0 256;
+#X text 25 312 rain;
+#X obj 100 224 bng 15 250 50 0 empty empty empty 17 7 0 10 -1 -261234
 -1;
-#X obj 158 502 r offset;
-#X floatatom 170 525 5 0 0 0 - - -, f 5;
-#X floatatom 89 492 5 0 0 0 - - -, f 5;
-#X obj 44 415 route mtRainRate;
-#X obj 63 526 tabwrite rain;
+#X text 28 336 sec;
+#X floatatom 62 336 5 0 0 0 - - -, f 5;
 #X connect 0 0 1 0;
-#X connect 1 0 13 0;
-#X connect 2 0 4 0;
-#X connect 4 0 3 0;
-#X connect 4 0 15 0;
-#X connect 5 0 28 0;
-#X connect 7 0 9 0;
-#X connect 9 0 8 0;
-#X connect 9 0 29 0;
-#X connect 10 0 14 0;
-#X connect 10 0 19 0;
-#X connect 11 0 35 0;
-#X connect 13 0 12 0;
-#X connect 14 0 10 1;
-#X connect 14 0 36 0;
+#X connect 1 0 2 0;
+#X connect 2 0 3 0;
+#X connect 3 0 6 1;
+#X connect 4 0 5 0;
+#X connect 5 0 6 0;
+#X connect 6 0 7 0;
+#X connect 6 0 8 0;
+#X connect 8 0 9 0;
+#X connect 8 0 6 1;
+#X connect 10 0 40 0;
+#X connect 10 0 53 0;
+#X connect 11 0 12 0;
+#X connect 11 1 13 0;
+#X connect 11 1 14 0;
+#X connect 15 0 14 1;
 #X connect 15 0 16 0;
-#X connect 15 1 17 0;
-#X connect 15 1 21 0;
-#X connect 18 0 17 1;
-#X connect 18 0 20 0;
-#X connect 22 0 23 0;
-#X connect 22 1 26 0;
-#X connect 22 1 27 0;
-#X connect 24 0 25 0;
-#X connect 24 0 27 1;
-#X connect 28 0 6 0;
-#X connect 28 0 22 0;
+#X connect 15 0 55 0;
+#X connect 17 0 41 0;
+#X connect 18 0 19 0;
+#X connect 18 1 20 0;
+#X connect 18 1 23 0;
+#X connect 21 0 22 0;
+#X connect 21 0 23 1;
+#X connect 24 0 42 0;
+#X connect 25 0 26 0;
+#X connect 25 1 28 0;
+#X connect 25 1 31 0;
 #X connect 29 0 30 0;
-#X connect 29 1 33 0;
-#X connect 29 1 34 0;
-#X connect 31 0 32 0;
-#X connect 31 0 34 1;
-#X connect 35 0 10 0;
-#X connect 37 0 44 0;
-#X connect 39 0 40 0;
-#X connect 39 1 43 0;
-#X connect 39 1 45 0;
-#X connect 41 0 42 0;
-#X connect 41 0 45 1;
-#X connect 44 0 38 0;
-#X connect 44 0 39 0;
-#X restore 26 312 pd loggero;
-#X obj 27 113 metro 1000;
-#X msg 26 556 \; rain const 0;
-#X msg 23 584 \; temp const 0;
-#X msg 26 477 \; solar const 0;
-#X msg 23 514 \; wind const 0;
-#X obj 22 425 loadbang;
-#X connect 0 0 1 0;
-#X connect 3 0 0 0;
-#X connect 4 0 9 0;
-#X connect 9 0 3 0;
-#X connect 14 0 12 0;
-#X connect 14 0 13 0;
-#X connect 14 0 10 0;
-#X connect 14 0 11 0;
+#X connect 29 0 31 1;
+#X connect 32 0 43 0;
+#X connect 33 0 34 0;
+#X connect 33 1 36 0;
+#X connect 33 1 39 0;
+#X connect 37 0 38 0;
+#X connect 37 0 39 1;
+#X connect 40 0 11 0;
+#X connect 40 0 45 0;
+#X connect 41 0 18 0;
+#X connect 41 0 47 0;
+#X connect 42 0 25 0;
+#X connect 42 0 27 0;
+#X connect 42 0 49 0;
+#X connect 43 0 33 0;
+#X connect 43 0 35 0;
+#X connect 43 0 51 0;
+#X coords 0 -1 1 1 102 138 1 20 220;
+#X restore 37 247 pd loggero;
+#X text 75 41 start logging;
+#X obj 68 430 r onoff;
+#X obj 68 453 select 0;
+#X obj 31 510 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X connect 4 0 5 0;
+#X connect 5 0 6 0;
+#X connect 7 0 8 0;
+#X connect 9 0 18 0;
+#X connect 16 0 17 0;
+#X connect 17 0 18 0;
+#X connect 18 0 10 0;
+#X connect 18 0 11 0;
+#X connect 18 0 12 0;
+#X connect 18 0 13 0;
