@@ -39,6 +39,11 @@ function getDataFromFile(callback){
 
 function convertXmlToJson(xml, callback){
 	xml2js.parseString(xml, function(err, json){
+		if(err){
+			console.log("Error parsing xml: " + err);
+			console.log("XML -> " + xml);
+			return callback(err, null);
+		}
 		if(!json.oriondata){
 			console.log("BAD DATA: " + xml);
 		}
