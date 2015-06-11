@@ -1,0 +1,66 @@
+#N canvas 785 273 597 495 10;
+#X floatatom 123 228 5 0 0 0 - - -;
+#X obj 133 123 f;
+#X obj 114 208 random 4;
+#X obj 36 207 random 2;
+#X floatatom 45 229 5 0 0 0 - - -;
+#X obj 133 148 t b b f;
+#X obj 36 263 sel 0 1;
+#X obj 169 338 +;
+#X obj 114 262 + 1;
+#X floatatom 252 163 5 0 0 0 - - -;
+#X obj 92 319 *;
+#X msg 36 292 -1;
+#X obj 252 93 moses 0;
+#X obj 326 93 moses 100;
+#X obj 252 117 * -1;
+#X obj 417 96 * -1;
+#X obj 417 121 + 200;
+#X msg 70 292 1;
+#X text 201 5 Random walk generator;
+#X text 308 162 output;
+#X text 32 385 A random walk is a special case of a Markov chain \,
+in which the states are integers and the transitions add or subtract
+a small amount from the previous state to get a new one. Here the "f"
+holds the state. When it gets a bang \, the previous state is added
+to a random number (from 1 to 4) multiplied by a random sign (-1 or
+1). The new value is then coerced into the range from 0 to 100;
+#X text 45 245 sign;
+#X text 123 244 magnitude;
+#X text 213 323 add prev value;
+#X text 210 340 to random increment;
+#X text 266 40 coercion to range 0-100 \; if out of range \, reflect
+;
+#X text 265 70 us back in.;
+#X obj 38 18 inlet;
+#X text 75 18 bang here;
+#X obj 139 20 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 432 277 outlet;
+#X text 346 293 outputs numbers in a range of 0-100;
+#X connect 1 0 5 0;
+#X connect 2 0 0 0;
+#X connect 2 0 8 0;
+#X connect 3 0 4 0;
+#X connect 3 0 6 0;
+#X connect 5 0 3 0;
+#X connect 5 1 2 0;
+#X connect 5 2 7 1;
+#X connect 6 0 11 0;
+#X connect 6 1 17 0;
+#X connect 7 0 12 0;
+#X connect 8 0 10 1;
+#X connect 9 0 1 1;
+#X connect 9 0 30 0;
+#X connect 10 0 7 0;
+#X connect 11 0 10 0;
+#X connect 12 0 14 0;
+#X connect 12 1 13 0;
+#X connect 13 0 9 0;
+#X connect 13 1 15 0;
+#X connect 14 0 9 0;
+#X connect 15 0 16 0;
+#X connect 16 0 9 0;
+#X connect 17 0 10 0;
+#X connect 27 0 1 0;
+#X connect 29 0 1 0;
