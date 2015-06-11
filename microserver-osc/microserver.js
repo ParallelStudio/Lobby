@@ -14,8 +14,8 @@ module.exports = {
 // Fetches data from the microserver and returns it in json
 function getData(callback){
 	// Until we have an actual server to work with, we fake it with xml file data...
-	getDataFromFile(callback);
-	//getDataFromServer(callback);
+	//getDataFromFile(callback);
+	getDataFromServer(callback);
 }
 
 function getDataFromServer(callback){
