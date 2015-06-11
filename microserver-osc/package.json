@@ -1,0 +1,17 @@
+{
+  "name": "microserver-osc",
+  "version": "1.0.0",
+  "description": "microsover osc emitter",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "lodash": "^3.9.3",
+    "node-osc": "^1.1.0",
+    "request": "^2.57.0",
+    "xml2js": "^0.4.9"
+  }
+}
