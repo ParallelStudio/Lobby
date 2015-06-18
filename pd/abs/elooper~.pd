@@ -1,4 +1,4 @@
-#N canvas 74 408 545 597 10;
+#N canvas 1051 186 545 597 10;
 #X obj 54 488 outlet~;
 #X text 39 8 enveloping looper;
 #X obj 57 67 inlet;
@@ -17,15 +17,15 @@
 #X obj 56 90 route bang start stop size;
 #X obj 235 152 s \$0_samplect;
 #X obj 233 175 nbx 12 14 -1e+37 1e+37 0 0 empty empty empty 0 -8 0
-10 -262144 -1 -1 114752 256;
+10 -262144 -1 -1 0 256;
 #X obj 53 297 tabplay~ \$1;
 #X obj 250 295 tabplay~ \$1;
 #X obj 56 118 s \$0_play;
-#N canvas 669 578 318 441 play 0;
-#X obj 49 77 r \$0_play;
+#N canvas 1027 568 318 441 play 1;
+#X obj 50 57 r \$0_play;
 #X obj 124 78 r \$0_stop;
 #X msg 123 101 stop;
-#X floatatom 69 164 5 0 0 0 - - -, f 5;
+#X floatatom 69 164 5 0 0 0 - - -;
 #X obj 129 138 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
 -1 -1;
 #X obj 52 139 f;
@@ -40,7 +40,8 @@
 #X obj 51 214 route 0 1;
 #X obj 50 103 metro \$3;
 #X obj 54 8 inlet;
-#X connect 0 0 13 0;
+#X msg 50 79 1;
+#X connect 0 0 15 0;
 #X connect 1 0 2 0;
 #X connect 2 0 13 0;
 #X connect 5 0 3 0;
@@ -55,6 +56,7 @@
 #X connect 13 0 4 0;
 #X connect 13 0 5 0;
 #X connect 14 0 13 1;
+#X connect 15 0 13 0;
 #X restore 429 56 pd play;
 #N canvas 1016 575 456 441 mix 0;
 #X obj 62 313 vline~;
@@ -84,8 +86,8 @@
 #X obj 97 81 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
 -1;
 #X obj 146 14 inlet;
-#X floatatom 217 125 5 0 0 0 - - -, f 5;
-#X floatatom 80 124 5 0 0 0 - - -, f 5;
+#X floatatom 217 125 5 0 0 0 - - -;
+#X floatatom 80 124 5 0 0 0 - - -;
 #X connect 0 0 9 0;
 #X connect 1 0 0 0;
 #X connect 2 0 1 0;
@@ -115,7 +117,7 @@
 -1;
 #X obj 268 261 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
 -1 -1;
-#X text 39 41 3rd creation arg is loop time in ms;
+#X text 34 39 3rd creation arg is loop time in ms;
 #X obj 359 23 inlet;
 #X obj 428 22 inlet;
 #X connect 2 0 13 0;
