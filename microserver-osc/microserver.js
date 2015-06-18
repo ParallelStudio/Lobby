@@ -5,7 +5,7 @@ var _ = require('lodash');
 var request = require('request');
 var xml2js = require('xml2js');
 
-var SERVER_URL = 'http://192.168.0.50/latestsampledata.xml';
+var SERVER_URL = 'http://10.0.1.50/latestsampledata.xml';
 
 module.exports = {
 	getData: getData
@@ -24,7 +24,13 @@ function getDataFromServer(callback){
 			console.log("Error fetching xml: " + err + " HTTP " + (resp && resp.statusCode));
 			return callback("Error fetching xml: " + err + " HTTP " + (resp && resp.statusCode));
 		}
-		convertXmlToJson(data, callback);
+		try {
+			convertXmlToJson(data, callback);	
+		}
+		catch(e){
+			console.log("Error converting xml to json");
+			console.log(data);
+		}
 	});
 }
 
