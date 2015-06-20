@@ -15,4 +15,15 @@ describe('test suite for microserver', function(){
 			done();
 		});
 	});
+
+	it('workds around microserver bad xml', function(done){
+		//Note: you have to manually switch microserver to file mode and break the xml to test this
+		microserver.getData(function(err, json){
+			console.log(err);
+			//Not comprehensive, just spot check a few data points...
+			expect(json.mtWetAirDensity.value).to.equal(0.0821);
+			expect(json.mtSolarRadiation.value).to.equal(823);
+			done();
+		});
+	});
 });

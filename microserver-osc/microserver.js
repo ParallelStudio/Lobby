@@ -44,6 +44,7 @@ function getDataFromFile(callback){
 }
 
 function convertXmlToJson(xml, callback){
+	xml = fixXml(xml);
 	xml2js.parseString(xml, function(err, json){
 		if(err){
 			console.log("Error parsing xml: " + err);
@@ -69,4 +70,15 @@ function convertXmlToJson(xml, callback){
 		});
 		callback(err, cleaned);
 	});
+}
+
+function fixXml(xml){
+	xml = xml.toString().trim();
+	var broken = "</oriondata";  //sometimes we see this instead of a full closing tag
+	var ending = xml.substring(xml.length - broken.length);
+	if(ending == broken){
+		console.log("Broken XML detected, attempting work-around...");
+		return xml + ">";
+	}
+	return xml;
 }
