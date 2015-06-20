@@ -40,8 +40,8 @@
 #X obj 97 81 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
 -1;
 #X obj 146 14 inlet;
-#X floatatom 217 125 5 0 0 0 - - -, f 5;
-#X floatatom 80 124 5 0 0 0 - - -, f 5;
+#X floatatom 217 125 5 0 0 0 - - -;
+#X floatatom 80 124 5 0 0 0 - - -;
 #X obj 58 104 f;
 #X obj 190 102 f;
 #X connect 0 0 9 0;
@@ -75,11 +75,11 @@
 -1 -1;
 #X obj 359 23 inlet;
 #X obj 428 22 inlet;
-#N canvas 841 153 400 562 table 1;
+#N canvas 1207 238 400 562 table 1;
 #X obj 39 103 r \$0_play;
 #X obj 13 53 r \$0_stop;
 #X msg 12 76 stop;
-#X floatatom 57 275 5 0 0 0 - - -, f 5;
+#X floatatom 57 275 5 0 0 0 - - -;
 #X obj 11 178 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
 -1;
 #X obj 40 250 f;
@@ -103,7 +103,7 @@
 #X obj 186 118 t b f;
 #X obj 137 93 f;
 #X obj 105 59 t b f;
-#X floatatom 155 168 15 0 0 0 - - -, f 15;
+#X floatatom 155 168 15 0 0 0 - - -;
 #X obj 137 124 - 0;
 #X obj 39 156 metro 1000;
 #X connect 0 0 14 0;
