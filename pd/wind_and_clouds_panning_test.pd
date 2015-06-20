@@ -1,8 +1,8 @@
-#N canvas 359 85 993 609 10;
+#N canvas 358 84 993 609 10;
 #X obj 925 -94 clouds --------------------;
 #X obj 240 -35 wind ---------------;
 #X obj 768 210 hsl 128 15 0 1 0 0 empty empty empty -2 -8 0 10 -262144
--1 -1 3798 1;
+-1 -1 9 1;
 #X obj 914 211 hsl 128 15 0 1 0 0 empty empty empty -2 -8 0 10 -262144
 -1 -1 0 1;
 #X obj 712 258 linear_panner_6ch~;
@@ -19,7 +19,7 @@
 #X obj 743 349 throw~ c5;
 #X obj 806 349 throw~ c6;
 #X obj 1136 211 hsl 128 15 0 1 0 0 empty empty empty -2 -8 0 10 -262144
--1 -1 3798 1;
+-1 -1 9 1;
 #X obj 1282 212 hsl 128 15 0 1 0 0 empty empty empty -2 -8 0 10 -262144
 -1 -1 0 1;
 #X obj 1080 259 linear_panner_6ch~;
@@ -141,6 +141,9 @@
 #X obj 552 161 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
 -1 -1;
 #X obj 559 111 random_bangs 25000;
+#X obj 593 -25 audio_tables_loader;
+#X obj 595 -52 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
 #X connect 1 0 118 0;
 #X connect 1 1 101 0;
 #X connect 2 0 4 1;
@@ -253,3 +256,4 @@
 #X connect 113 0 111 0;
 #X connect 118 0 110 0;
 #X connect 120 0 119 0;
+#X connect 122 0 121 0;

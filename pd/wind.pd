@@ -1,4 +1,4 @@
-#N canvas 2 52 1012 563 10;
+#N canvas 173 198 1012 563 10;
 #X obj 177 0 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
 -1;
 #X msg 200 0 stop;
@@ -13,8 +13,8 @@
 #X obj 528 352 outlet~;
 #X obj 192 67 *~ 0.3;
 #X obj 525 68 *~ 0.3;
-#X obj 524 36 player_c~ Wind_60-65_02_L.wav;
-#X obj 193 40 player_c~ Wind_60-65_01.wav 50;
+#X obj 524 35 player_c~ Wind_60-65_02_L;
+#X obj 193 40 player_c~ Wind_60-65_01 50;
 #X connect 0 0 11 0;
 #X connect 1 0 11 0;
 #X connect 2 0 10 0;
