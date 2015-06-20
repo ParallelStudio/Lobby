@@ -1,0 +1,37 @@
+#N canvas 162 150 659 582 10;
+#X obj 199 404 dac~;
+#X msg 400 72 read -resize count10.wav count10;
+#X obj 457 112 soundfiler;
+#X msg 124 138 bang;
+#X msg 118 160 stop;
+#X obj 195 243 elooper~;
+#X msg 308 201 count10;
+#X obj 213 142 hsl 128 15 0 127 0 0 empty empty empty -2 -8 0 10 -262144
+-1 -1 5600 1;
+#X obj 209 163 jrange 0 127 0 3000;
+#X obj 405 33 loadbang;
+#X obj 209 107 loadbang;
+#X obj 336 361 metro;
+#X obj 339 397 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 380 332 hsl 128 15 250 1000 0 0 empty empty empty -2 -8 0 10
+-262144 -1 -1 0 1;
+#X obj 333 323 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 480 266 audio_tables_loader;
+#X obj 476 238 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X msg 316 228 Sun_65-75_05;
+#X connect 1 0 2 0;
+#X connect 3 0 5 0;
+#X connect 4 0 5 0;
+#X connect 5 0 0 0;
+#X connect 6 0 5 2;
+#X connect 7 0 8 0;
+#X connect 8 0 5 1;
+#X connect 9 0 1 0;
+#X connect 11 0 12 0;
+#X connect 13 0 11 1;
+#X connect 14 0 11 0;
+#X connect 16 0 15 0;
+#X connect 17 0 5 2;
