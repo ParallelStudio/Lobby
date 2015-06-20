@@ -1,4 +1,4 @@
-#N canvas 749 84 545 597 10;
+#N canvas 747 82 545 597 10;
 #X obj 54 488 outlet~;
 #X text 39 8 enveloping looper;
 #X obj 56 99 inlet;
@@ -6,9 +6,9 @@
 #X obj 144 147 s \$0_stop;
 #X obj 249 414 *~;
 #X obj 53 232 r \$0_1play;
-#X obj 305 317 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+#X obj 304 348 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
 -1 -1;
-#X obj 96 324 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+#X obj 96 364 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
 -1;
 #X obj 78 393 r~ \$0_mix1;
 #X obj 268 385 r~ \$0_mix2;
@@ -75,7 +75,7 @@
 -1 -1;
 #X obj 359 23 inlet;
 #X obj 428 22 inlet;
-#N canvas 842 154 400 562 table 1;
+#N canvas 842 154 400 562 table 0;
 #X obj 39 103 r \$0_play;
 #X obj 13 53 r \$0_stop;
 #X msg 12 76 stop;
@@ -140,27 +140,31 @@
 #X text 46 41 middle inlet: overlap length (ms);
 #X obj 55 122 route bang start stop mute;
 #X text 48 59 right inlet: table name;
-#X obj 54 296 tabplay~;
-#X obj 250 293 tabplay~;
-#X msg 134 260 set \$1;
+#X obj 54 336 tabplay~;
+#X obj 249 324 tabplay~;
+#X msg 125 281 set \$1;
 #X obj 444 58 s \$0_tname;
-#X obj 133 206 r \$0_tname;
-#X obj 137 233 symbol;
-#X msg 331 257 set \$1;
-#X obj 330 203 r \$0_tname;
-#X obj 334 230 symbol;
+#X obj 148 258 symbol;
 #X obj 327 91 s \$0_overlap;
+#X obj 152 203 r \$0_tname;
+#X obj 151 231 symbol;
+#X msg 330 273 set \$1;
+#X obj 353 250 symbol;
+#X obj 357 195 r \$0_tname;
+#X obj 356 223 symbol;
 #X connect 2 0 21 0;
 #X connect 3 0 0 0;
 #X connect 5 0 0 0;
 #X connect 6 0 14 0;
 #X connect 6 0 23 0;
+#X connect 6 0 27 0;
 #X connect 9 0 3 1;
 #X connect 10 0 5 1;
 #X connect 11 0 15 0;
 #X connect 11 0 24 0;
+#X connect 11 0 32 0;
 #X connect 16 0 13 0;
-#X connect 16 0 32 0;
+#X connect 16 0 28 0;
 #X connect 17 0 26 0;
 #X connect 17 0 18 0;
 #X connect 21 0 12 0;
@@ -171,8 +175,10 @@
 #X connect 24 0 5 0;
 #X connect 24 1 7 0;
 #X connect 25 0 23 0;
-#X connect 27 0 28 0;
-#X connect 28 0 25 0;
-#X connect 29 0 24 0;
-#X connect 30 0 31 0;
-#X connect 31 0 29 0;
+#X connect 27 0 25 0;
+#X connect 29 0 30 0;
+#X connect 30 0 27 1;
+#X connect 31 0 24 0;
+#X connect 32 0 31 0;
+#X connect 33 0 34 0;
+#X connect 34 0 32 1;
