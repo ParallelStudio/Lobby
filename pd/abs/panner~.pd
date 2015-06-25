@@ -62,8 +62,8 @@ the tangent law \, as described in the DAFX book:;
 #X connect 17 0 9 0;
 #X connect 18 0 10 0;
 #X restore 16 391 pd panner-work;
-#X obj 105 294 hsl 75 12 0 1 0 0 empty empty empty -2 -8 0 10 -260818
--1 -1 3700 1;
+#X obj 105 294 hsl 75 12 0 1 0 0 empty empty empty -2 -8 0 10 -232576
+-1 -1 5313 1;
 #X msg 102 258 0.5;
 #X obj 102 237 loadbang;
 #X text 11 53 Argument1: interpolation time (standard: 200ms);

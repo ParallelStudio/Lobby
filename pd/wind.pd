@@ -1,8 +1,8 @@
 #N canvas 176 355 1012 563 10;
 #X obj 629 2 hsl 128 15 0 127 0 0 empty empty empty -2 -8 0 10 -262144
--1 -1 0 1;
+-1 -1 6400 1;
 #X obj 282 1 hsl 128 15 0 127 0 0 empty empty empty -2 -8 0 10 -262144
--1 -1 0 1;
+-1 -1 6400 1;
 #X obj 192 357 outlet~;
 #X obj 528 352 outlet~;
 #X obj 192 67 *~ 0.3;
