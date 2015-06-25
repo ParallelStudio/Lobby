@@ -1,7 +1,7 @@
-#N canvas 345 63 1322 864 10;
+#N canvas 297 64 1322 864 10;
 #X obj 925 -94 clouds --------------------;
 #X obj 768 210 hsl 128 15 0 1 0 0 empty empty empty -2 -8 0 10 -262144
--1 -1 8812 1;
+-1 -1 10550 1;
 #X obj 914 211 hsl 128 15 0 1 0 0 empty empty empty -2 -8 0 10 -262144
 -1 -1 0 1;
 #X obj 175 606 catch~ c2;
@@ -16,7 +16,7 @@
 #X obj 743 349 throw~ c5;
 #X obj 806 349 throw~ c6;
 #X obj 1136 211 hsl 128 15 0 1 0 0 empty empty empty -2 -8 0 10 -262144
--1 -1 8812 1;
+-1 -1 10550 1;
 #X obj 1282 212 hsl 128 15 0 1 0 0 empty empty empty -2 -8 0 10 -262144
 -1 -1 0 1;
 #X obj 1080 300 throw~ c1;
@@ -85,16 +85,16 @@
 #X obj 265 450 throw~ c5;
 #X obj 328 450 throw~ c6;
 #X obj 378 370 hsl 128 15 0 1 0 0 empty empty empty -2 -8 0 10 -262144
--1 -1 0 1;
+-1 -1 12700 1;
 #X obj 522 373 hsl 128 15 0 1 0 0 empty empty empty -2 -8 0 10 -262144
--1 -1 0 1;
+-1 -1 4000 1;
 #X obj 436 296 hsl 128 15 0 1 0 0 empty empty empty -2 -8 0 10 -262144
--1 -1 0 1;
+-1 -1 12700 1;
 #X obj 283 203 *~;
 #X obj 298 169 vline~;
 #X obj 338 292 snapshot~;
 #X obj 402 248 metro 20;
-#X obj 419 229 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+#X obj 419 229 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
 1;
 #X obj 361 224 vline~;
 #X obj 372 110 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
@@ -157,6 +157,7 @@
 #X obj 92 51 wind_ear_panner;
 #X obj 712 258 linear_panner_6ch~;
 #X obj 1080 259 linear_panner_6ch~;
+#X obj 407 482 wind_breeze_panner;
 #X connect 1 0 135 1;
 #X connect 2 0 135 2;
 #X connect 3 0 46 0;

@@ -1,4 +1,4 @@
-#N canvas 0 22 898 651 10;
+#N canvas 619 23 898 651 10;
 #X obj 232 444 linear_panner_6ch~;
 #X obj 295 485 throw~ c2;
 #X obj 245 510 throw~ c3;
@@ -7,7 +7,7 @@
 #X obj 326 535 throw~ c6;
 #X obj 388 380 hsl 128 15 0 1 0 0 empty empty empty -2 -8 0 10 -262144
 -1 -1 0 1;
-#X obj 532 383 hsl 128 15 0 1 0 0 empty empty empty -2 -8 0 10 -262144
+#X obj 607 345 hsl 128 15 0 1 0 0 empty empty empty -2 -8 0 10 -262144
 -1 -1 0 1;
 #X obj 446 306 hsl 128 15 0 1 0 0 empty empty empty -2 -8 0 10 -262144
 -1 -1 0 1;
@@ -23,6 +23,21 @@
 #X msg 311 151 1 8000 \, 0 6000 8000;
 #X msg 371 206 0 0 \, 1 11000 3000;
 #X obj 232 485 throw~ c1;
+#X obj 404 442 linear_panner_5ch~;
+#X obj 573 445 linear_panner_4ch~;
+#X text 606 311 may need to seperate out spread per zone;
+#X obj 404 483 throw~ c7;
+#X obj 467 483 throw~ c8;
+#X obj 417 508 throw~ c9;
+#X obj 480 508 throw~ c10;
+#X obj 435 533 throw~ c11;
+#X obj 573 486 throw~ c12;
+#X obj 650 482 throw~ c13;
+#X obj 586 511 throw~ c14;
+#X obj 663 507 throw~ c15;
+#X obj 505 238 loadbang;
+#X msg 505 264 1;
+#X obj 461 20 inlet trigger;
 #X connect 0 0 18 0;
 #X connect 0 1 1 0;
 #X connect 0 2 2 0;
@@ -30,9 +45,15 @@
 #X connect 0 4 4 0;
 #X connect 0 5 5 0;
 #X connect 6 0 0 1;
+#X connect 6 0 19 1;
+#X connect 6 0 20 1;
 #X connect 7 0 0 2;
+#X connect 7 0 19 2;
+#X connect 7 0 20 2;
 #X connect 8 0 6 0;
 #X connect 9 0 0 0;
+#X connect 9 0 19 0;
+#X connect 9 0 20 0;
 #X connect 10 0 9 1;
 #X connect 11 0 8 0;
 #X connect 12 0 11 0;
@@ -42,3 +63,15 @@
 #X connect 15 0 17 0;
 #X connect 16 0 10 0;
 #X connect 17 0 14 0;
+#X connect 19 0 22 0;
+#X connect 19 1 23 0;
+#X connect 19 2 24 0;
+#X connect 19 3 25 0;
+#X connect 19 4 26 0;
+#X connect 20 0 27 0;
+#X connect 20 1 28 0;
+#X connect 20 2 29 0;
+#X connect 20 3 30 0;
+#X connect 31 0 32 0;
+#X connect 32 0 13 0;
+#X connect 33 0 15 0;
