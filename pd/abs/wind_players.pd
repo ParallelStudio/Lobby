@@ -1,0 +1,29 @@
+#N canvas 176 355 1012 563 10;
+#X obj 629 2 hsl 128 15 0 127 0 0 empty empty empty -2 -8 0 10 -262144
+-1 -1 6400 1;
+#X obj 282 1 hsl 128 15 0 127 0 0 empty empty empty -2 -8 0 10 -262144
+-1 -1 6400 1;
+#X obj 192 357 outlet~;
+#X obj 528 352 outlet~;
+#X obj 192 67 *~ 0.3;
+#X obj 525 68 *~ 0.3;
+#X obj 193 40 player_c~;
+#X obj 524 35 player_c~;
+#X obj 472 -1 inlet;
+#X obj 779 1 inlet;
+#X obj 342 -126 loadbang;
+#X obj 340 -75 64;
+#X obj 62 -20 inlet;
+#X connect 0 0 7 1;
+#X connect 1 0 6 1;
+#X connect 4 0 2 0;
+#X connect 5 0 3 0;
+#X connect 6 0 4 0;
+#X connect 7 0 5 0;
+#X connect 8 0 6 2;
+#X connect 9 0 7 2;
+#X connect 10 0 11 0;
+#X connect 11 0 1 0;
+#X connect 11 0 0 0;
+#X connect 12 0 6 0;
+#X connect 12 0 7 0;

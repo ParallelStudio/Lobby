@@ -1,0 +1,44 @@
+#N canvas 0 22 898 651 10;
+#X obj 232 444 linear_panner_6ch~;
+#X obj 295 485 throw~ c2;
+#X obj 245 510 throw~ c3;
+#X obj 308 510 throw~ c4;
+#X obj 263 535 throw~ c5;
+#X obj 326 535 throw~ c6;
+#X obj 388 380 hsl 128 15 0 1 0 0 empty empty empty -2 -8 0 10 -262144
+-1 -1 0 1;
+#X obj 532 383 hsl 128 15 0 1 0 0 empty empty empty -2 -8 0 10 -262144
+-1 -1 0 1;
+#X obj 446 306 hsl 128 15 0 1 0 0 empty empty empty -2 -8 0 10 -262144
+-1 -1 0 1;
+#X obj 293 213 *~;
+#X obj 308 179 vline~;
+#X obj 348 302 snapshot~;
+#X obj 412 258 metro 20;
+#X obj 429 239 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+1;
+#X obj 371 234 vline~;
+#X obj 382 120 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X msg 311 151 1 8000 \, 0 6000 8000;
+#X msg 371 206 0 0 \, 1 11000 3000;
+#X obj 232 485 throw~ c1;
+#X connect 0 0 18 0;
+#X connect 0 1 1 0;
+#X connect 0 2 2 0;
+#X connect 0 3 3 0;
+#X connect 0 4 4 0;
+#X connect 0 5 5 0;
+#X connect 6 0 0 1;
+#X connect 7 0 0 2;
+#X connect 8 0 6 0;
+#X connect 9 0 0 0;
+#X connect 10 0 9 1;
+#X connect 11 0 8 0;
+#X connect 12 0 11 0;
+#X connect 13 0 12 0;
+#X connect 14 0 11 0;
+#X connect 15 0 16 0;
+#X connect 15 0 17 0;
+#X connect 16 0 10 0;
+#X connect 17 0 14 0;
