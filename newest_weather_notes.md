@@ -54,115 +54,113 @@ _Also, The following Files will need to be locked during playback (as if they we
 
 
 
- ##WIND
+##WIND
 
- Using 3 second for Ear Wind
-
-
-  or 2 minute or 10 minute Rolling Average wind speed?<br/>
-  -all my averages are guesses for now
-
-  ###Wind Breeze sounds
-  * with each uptick in wind speed the length of time it takes the the wind sound to pass across the array increases
-  * sound Pans across all six channels
-  * Fastest wind = 4 seconds to pass array?  10-15 seconds of silence between each pass.
-  * Slowest wind = 12 seconds to pass array?  20-25 seconds of silence between each pass.
-  * dynamically move from slowest to fastest as the wind speed changes
-  * wind Breeze sounds should phase against each other in randomized patterns
-
-  ###Wind Ear Sound
-  * volume goes up and down and pans between two channels simultaneously
+Using 3 second for Ear Wind
 
 
-  **average = 0-1mph**
-  ear wind starts
+or 2 minute or 10 minute Rolling Average wind speed?<br/>
+-all my averages are guesses for now
 
-  **average = 1-2mph**
-  ear wind fades to volume position 1 and breeze 1 starts
+###Wind Breeze sounds
+* with each uptick in wind speed the length of time it takes the the wind sound to pass across the array increases
+* sound Pans across all six channels
+* Fastest wind = 4 seconds to pass array?  10-15 seconds of silence between each pass.
+* Slowest wind = 12 seconds to pass array?  20-25 seconds of silence between each pass.
+* dynamically move from slowest to fastest as the wind speed changes
+* wind Breeze sounds should phase against each other in randomized patterns
 
-  **average = 2-3mph**
-  breeze 2 starts
-
-  **average = 3-4mph**
-  breeze 1 and 2 fade up to Volume position 1 ear wind fades to volume position 2
-
-  **average = 4-5mph**
-  breeze 3 starts at volume position 1 and all clouds/sun sounds begin to fade out EXCEPT clouds 1 and Sun 1
-
-  **average = 5-6mph**
-  breeze 4 starts at top volume and breeze 1,2,3, fade to top volume position  - clouds/sun are completely faded out 
+###Wind Ear Sound
+* volume goes up and down and pans between two channels simultaneously
 
 
+**average = 0-1mph**
+ear wind starts
 
-  ##RAIN
+**average = 1-2mph**
+ear wind fades to volume position 1 and breeze 1 starts
 
-  **0.001**
-  * Notes - start at peak db (-20)  but more spread out in time
-  * Plucks - begins fading in from 0dB
-  * Climber - begins fading in from 0dB
-  * Light Crunch- begins fading in from 0dB
+**average = 2-3mph**
+breeze 2 starts
 
-  **.02**
-  * Notes - happening faster
-  * All Clouds/Sun Sounds - begin fading down in volume
-  * Plucks - land at low volume Setting (-18dB)
-  * Climber - land at low volume Setting (-22dB)
-  * Light Crunch- land at low volume Setting (-18dB)
-  * Strums begin fading in from 0dB 
+**average = 3-4mph**
+breeze 1 and 2 fade up to Volume position 1 ear wind fades to volume position 2
 
-  **.05**
-  * Notes - happening faster
-  * All Clouds/Sun Sounds - have faded down to 0dB
-  * Strums- land at low volume Setting (-6dB)
-  * bigger strum - begins fading in from 0dB
-  * medium strum - begins fading in from 0dB
-  * Low Crunch- begins fading in from 0dB
+**average = 4-5mph**
+breeze 3 starts at volume position 1 and all clouds/sun sounds begin to fade out EXCEPT clouds 1 and Sun 1
 
-  **0.1 **
-  * Notes - at their fastest
-  * bigger strum - land at low volume Setting (-7dB)
-  * Notes - begin to fade down in volume
+**average = 5-6mph**
+breeze 4 starts at top volume and breeze 1,2,3, fade to top volume position  - clouds/sun are completely faded out 
 
-  **0.2**
-  * Notes - have faded down to 0dB
-  * medium strum - land at low volume Setting (-5dB)
-  * Low Crunch- land at low volume Setting (-11dB)
-  * high strum - begins fading in from 0dB
-  * jingle- begins fading in from 0dB
+##RAIN
 
-  **0.26**
-  * high strums - land at low volume Setting (-7dB)
-  * jingle- land at low volume Setting (-11dB)
+**0.001**
+* Notes - start at peak db (-20)  but more spread out in time
+* Plucks - begins fading in from 0dB
+* Climber - begins fading in from 0dB
+* Light Crunch- begins fading in from 0dB
 
-  **0.25**
-  * drone - begins fading in from 0dB
-  * blur - begins fading in from 0dB
-  * Plucks - begin to fade up towards peak volume
-  * Climber - begin to fade up towards peak volume
-  * Light Crunch - begin to fade up towards peak volume
-  * Strums - begin to fade up towards peak volume
-  * bigger strums - begin to fade up towards peak volume
-  * medium strums - begin to fade up towards peak volume
-  * low crunch - begin to fade up towards peak volume
-  * high strums - begin to fade up towards peak volume
-  * Jingle - begin to fade up towards peak volume
+**.02**
+* Notes - happening faster
+* All Clouds/Sun Sounds - begin fading down in volume
+* Plucks - land at low volume Setting (-18dB)
+* Climber - land at low volume Setting (-22dB)
+* Light Crunch- land at low volume Setting (-18dB)
+* Strums begin fading in from 0dB 
+
+**.05**
+* Notes - happening faster
+* All Clouds/Sun Sounds - have faded down to 0dB
+* Strums- land at low volume Setting (-6dB)
+* bigger strum - begins fading in from 0dB
+* medium strum - begins fading in from 0dB
+* Low Crunch- begins fading in from 0dB
+
+**0.1 **
+* Notes - at their fastest
+* bigger strum - land at low volume Setting (-7dB)
+* Notes - begin to fade down in volume
+
+**0.2**
+* Notes - have faded down to 0dB
+* medium strum - land at low volume Setting (-5dB)
+* Low Crunch- land at low volume Setting (-11dB)
+* high strum - begins fading in from 0dB
+* jingle- begins fading in from 0dB
+
+**0.26**
+* high strums - land at low volume Setting (-7dB)
+* jingle- land at low volume Setting (-11dB)
+
+**0.25**
+* drone - begins fading in from 0dB
+* blur - begins fading in from 0dB
+* Plucks - begin to fade up towards peak volume
+* Climber - begin to fade up towards peak volume
+* Light Crunch - begin to fade up towards peak volume
+* Strums - begin to fade up towards peak volume
+* bigger strums - begin to fade up towards peak volume
+* medium strums - begin to fade up towards peak volume
+* low crunch - begin to fade up towards peak volume
+* high strums - begin to fade up towards peak volume
+* Jingle - begin to fade up towards peak volume
 
 
-  **0.3**
-  * drone - lands at peak volume setting (+10dB)
-  * blur -  lands at peak volume setting (-11dB)
-  * Plucks -  lands at peak volume setting (-10dB)
-  * Climber - lands at peak volume setting (-10dB)
-  * Light Crunch -  lands at peak volume setting (-10dB)
-  * Strums -  lands at peak volume setting (2dB)
-  * bigger strums -  lands at peak volume setting (-1dB)
-  * medium strums -  lands at peak volume setting (0dB)
-  * low crunch -  lands at peak volume setting (6dB)
-  * high strums -  lands at peak volume setting (0dB)
-  * Jingle -  lands at peak volume setting (-8dB)
+**0.3**
+* drone - lands at peak volume setting (+10dB)
+* blur -  lands at peak volume setting (-11dB)
+* Plucks -  lands at peak volume setting (-10dB)
+* Climber - lands at peak volume setting (-10dB)
+* Light Crunch -  lands at peak volume setting (-10dB)
+* Strums -  lands at peak volume setting (2dB)
+* bigger strums -  lands at peak volume setting (-1dB)
+* medium strums -  lands at peak volume setting (0dB)
+* low crunch -  lands at peak volume setting (6dB)
+* high strums -  lands at peak volume setting (0dB)
+* Jingle -  lands at peak volume setting (-8dB)
 
-  ##Hail
-  Hail hits Similar to Rain Notes ?
-  Hail loop happens when more hail is falling?  
-  Not sure what kind of averages we will get here.
+##Hail
+* Hail hits Similar to Rain Notes ?
+* Hail loop happens when more hail is falling?  
+* Not sure what kind of averages we will get here.
 
