@@ -1,4 +1,4 @@
-#N canvas 631 92 461 480 10;
+#N canvas 630 91 461 480 10;
 #X obj 65 33 inlet;
 #X obj 66 111 list split 1;
 #X obj 107 137 list;
@@ -17,6 +17,7 @@
 #X obj 113 163 list length;
 #X obj 183 334 sel 0;
 #X text 233 376 bangs when last file is loaded;
+#X obj 278 75 table silence;
 #X connect 0 0 6 0;
 #X connect 1 0 7 0;
 #X connect 1 1 2 0;
