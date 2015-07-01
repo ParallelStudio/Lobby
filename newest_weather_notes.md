@@ -53,7 +53,6 @@ _Also, The following Files will need to be locked during playback (as if they we
  * Sun Shine
 
 
-
 ##WIND
 
 Using 3 second for Ear Wind
@@ -74,22 +73,22 @@ or 2 minute or 10 minute Rolling Average wind speed?<br/>
 * volume goes up and down and pans between two channels simultaneously
 
 
-**average = 0-1mph**
+**average = 0-1mph**<br/>
 ear wind starts
 
-**average = 1-2mph**
+**average = 1-2mph**<br/>
 ear wind fades to volume position 1 and breeze 1 starts
 
-**average = 2-3mph**
+**average = 2-3mph**<br/>
 breeze 2 starts
 
-**average = 3-4mph**
+**average = 3-4mph**<br/>
 breeze 1 and 2 fade up to Volume position 1 ear wind fades to volume position 2
 
-**average = 4-5mph**
+**average = 4-5mph**<br/>
 breeze 3 starts at volume position 1 and all clouds/sun sounds begin to fade out EXCEPT clouds 1 and Sun 1
 
-**average = 5-6mph**
+**average = 5-6mph**<br/>
 breeze 4 starts at top volume and breeze 1,2,3, fade to top volume position  - clouds/sun are completely faded out 
 
 ##RAIN
@@ -100,7 +99,7 @@ breeze 4 starts at top volume and breeze 1,2,3, fade to top volume position  - c
 * Climber - begins fading in from 0dB
 * Light Crunch- begins fading in from 0dB
 
-**.02**
+**0.02**
 * Notes - happening faster
 * All Clouds/Sun Sounds - begin fading down in volume
 * Plucks - land at low volume Setting (-18dB)
@@ -108,7 +107,7 @@ breeze 4 starts at top volume and breeze 1,2,3, fade to top volume position  - c
 * Light Crunch- land at low volume Setting (-18dB)
 * Strums begin fading in from 0dB 
 
-**.05**
+**0.05**
 * Notes - happening faster
 * All Clouds/Sun Sounds - have faded down to 0dB
 * Strums- land at low volume Setting (-6dB)
@@ -116,7 +115,7 @@ breeze 4 starts at top volume and breeze 1,2,3, fade to top volume position  - c
 * medium strum - begins fading in from 0dB
 * Low Crunch- begins fading in from 0dB
 
-**0.1 **
+**0.1**
 * Notes - at their fastest
 * bigger strum - land at low volume Setting (-7dB)
 * Notes - begin to fade down in volume
