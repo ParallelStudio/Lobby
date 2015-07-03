@@ -55,11 +55,12 @@ _Also, The following Files will need to be locked during playback (as if they we
 
 ##WIND
 
-Using 3 second for Ear Wind
+I think a the 3 second (or instant?)data woudld work best for Ear Sound.
 
 
-or 2 minute or 10 minute Rolling Average wind speed?<br/>
--all my averages are guesses for now
+I think a 2 minute Rolling Average wind speed will work best for wind breeze sounds.<br/>
+-but maybe a 10 minute would be better = less radical shifts?
+-or mayber OVERALL Ear Sound volume is 2 minute average and Breeze sound is 10 minute?
 
 ###Wind Breeze sounds
 * with each uptick in wind speed the length of time it takes the the wind sound to pass across the array increases
@@ -73,23 +74,23 @@ or 2 minute or 10 minute Rolling Average wind speed?<br/>
 * volume goes up and down and pans between two channels simultaneously
 
 
-**average = 0-1mph**<br/>
-ear wind starts
+**average = 0.1mph-1mph**<br/>
+ear wind starts at .1mph at -inf dB
 
-**average = 1-2mph**<br/>
-ear wind fades to volume position 1 and breeze 1 starts
+**average = 1mph**<br/>
+ear wind fades to volume position 1 and breeze 1 starts at -inf dB
 
-**average = 2-3mph**<br/>
-breeze 2 starts
+**average = 2mph**<br/>
+breeze 2 starts at -inf dB
 
-**average = 3-4mph**<br/>
+**average = 5mph**<br/>
 breeze 1 and 2 fade up to Volume position 1 ear wind fades to volume position 2
 
-**average = 4-5mph**<br/>
+**average = 8mph**<br/>
 breeze 3 starts at volume position 1 and all clouds/sun sounds begin to fade out EXCEPT clouds 1 and Sun 1
 
-**average = 5-6mph**<br/>
-breeze 4 starts at top volume and breeze 1,2,3, fade to top volume position  - clouds/sun are completely faded out 
+**average = 12mph**<br/>
+breeze 4 starts at top volume and breeze 1,2,3, land at top volume position  - clouds/sun are completely faded out 
 
 ##RAIN
 
