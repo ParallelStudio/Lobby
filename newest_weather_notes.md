@@ -128,7 +128,7 @@ breeze 4 starts at top volume and breeze 1,2,3, land at top volume position  - c
 * high strum - begins fading in from 0dB
 * jingle- begins fading in from 0dB
 
-**0.26**
+**0.24**
 * high strums - land at low volume Setting (-7dB)
 * jingle- land at low volume Setting (-11dB)
 
