@@ -1,4 +1,4 @@
-#N canvas 523 211 824 565 10;
+#N canvas 522 210 824 565 10;
 #X obj 176 482 outlet~;
 #X obj 233 482 outlet~;
 #X obj 290 482 outlet~;
@@ -11,11 +11,11 @@
 #X text 365 499 D;
 #X text 423 500 E;
 #X text 482 500 F;
-#X msg 132 64 44 50 56 62;
-#X obj 227 114 r temperature;
+#X msg 112 55 44 50 56 62;
+#X obj 207 105 r temperature;
 #X obj 252 381 *~ 1;
 #X obj 381 383 *~ 1;
-#X msg 179 90 62 68 74 80 92;
+#X msg 159 81 62 68 74 80 92;
 #N canvas 260 198 788 321 sun-beating 0;
 #X obj 76 26 inlet;
 #X obj 442 36 inlet;
@@ -52,8 +52,8 @@
 #X connect 15 0 18 1;
 #X connect 17 0 11 0;
 #X connect 18 0 12 0;
-#X restore 132 143 pd sun-beating;
-#N canvas 393 330 327 300 sun-shimmer 1;
+#X restore 112 134 pd sun-beating;
+#N canvas 393 330 327 300 sun-shimmer 0;
 #X obj 43 199 outlet~;
 #X obj 184 202 outlet~;
 #X text 44 223 ACE;
@@ -256,8 +256,8 @@
 #X connect 6 0 5 1;
 #X connect 7 0 4 0;
 #X connect 7 0 5 0;
-#X restore 331 154 pd sun-shimmer;
-#N canvas 173 145 578 503 spot 1;
+#X restore 311 145 pd sun-shimmer;
+#N canvas 173 145 578 503 spot 0;
 #X obj 130 433 outlet~;
 #X obj 286 430 outlet~;
 #X text 130 458 ACE;
@@ -328,13 +328,23 @@
 #X connect 29 0 20 0;
 #X connect 30 0 20 1;
 #X connect 31 0 20 2;
-#X restore 521 148 pd spot;
-#X obj 335 106 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
--1 -1;
-#X obj 404 128 r temperature;
-#X obj 567 123 r temperature;
-#X obj 522 103 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
--1 -1;
+#X restore 501 139 pd spot;
+#X obj 315 97 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 384 119 r temperature;
+#X obj 547 114 r temperature;
+#X obj 502 94 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 504 186 *~ 0.177828;
+#X text 524 202 -15dB;
+#X text 386 197 -8dB;
+#X obj 366 181 *~ 0.398107;
+#X text 296 195 -8dB;
+#X obj 276 179 *~ 0.398107;
+#X text 181 190 -6dB;
+#X text 68 196 -6dB;
+#X obj 48 180 *~ 0.501187;
+#X obj 161 174 *~ 0.501187;
 #X connect 12 0 17 0;
 #X connect 13 0 17 2;
 #X connect 14 0 0 0;
@@ -344,13 +354,18 @@
 #X connect 15 0 3 0;
 #X connect 15 0 5 0;
 #X connect 16 0 17 1;
-#X connect 17 0 14 0;
-#X connect 17 1 15 0;
-#X connect 18 0 14 0;
-#X connect 18 1 15 0;
-#X connect 19 0 14 0;
-#X connect 19 0 15 0;
+#X connect 17 0 32 0;
+#X connect 17 1 33 0;
+#X connect 18 0 29 0;
+#X connect 18 1 27 0;
+#X connect 19 0 24 0;
 #X connect 20 0 18 0;
 #X connect 21 0 18 1;
 #X connect 22 0 19 1;
 #X connect 23 0 19 0;
+#X connect 24 0 15 0;
+#X connect 24 0 14 0;
+#X connect 27 0 15 0;
+#X connect 29 0 14 0;
+#X connect 32 0 14 0;
+#X connect 33 0 15 0;
