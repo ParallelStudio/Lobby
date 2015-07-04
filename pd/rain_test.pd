@@ -1,4 +1,4 @@
-#N canvas 202 86 1081 740 10;
+#N canvas 187 86 1081 740 10;
 #X obj 148 397 catch~ c2;
 #X obj 214 397 catch~ c3;
 #X obj 289 397 catch~ c4;
@@ -70,11 +70,11 @@
 #X obj 209 502 output~ 3 4;
 #X obj 314 504 output~ 5 6;
 #X obj 99 501 output~ 1 2;
-#X obj 91 5 rain;
+#X obj 89 5 rain;
 #X obj 83 -52 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
 -1;
 #X obj 120 -58 hsl 500 15 0.001 0.3 0 0 empty empty empty -2 -8 0 10
--204800 -1 -1 0 1;
+-204800 -1 -1 49900 1;
 #X floatatom 134 -35 5 0 0 0 - - -, f 5;
 #X obj 117 -79 line, f 5;
 #X msg 117 -106 0 \, 0.3 120000;
