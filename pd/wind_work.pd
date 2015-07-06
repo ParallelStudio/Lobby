@@ -1,9 +1,9 @@
-#N canvas 164 183 1345 730 10;
+#N canvas 276 153 1345 730 10;
 #X obj 175 606 catch~ c2;
 #X obj 1686 493 vsl 15 128 0 127 0 0 empty empty empty 0 -9 0 10 -262144
--1 -1 12700 1;
+-1 -1 0 1;
 #X obj 1735 493 vsl 15 128 0 127 0 0 empty empty empty 0 -9 0 10 -262144
--1 -1 12700 1;
+-1 -1 0 1;
 #X obj 1777 492 vsl 15 128 0 127 0 0 empty empty empty 0 -9 0 10 -262144
 -1 -1 0 1;
 #X obj 1817 493 vsl 15 128 0 127 0 0 empty empty empty 0 -9 0 10 -262144
@@ -19,7 +19,7 @@
 #X obj 2062 665 jrange 0 127 0 0.5;
 #X obj 1470 670 jrange 0 127 0 0.5;
 #X obj 2010 539 hsl 128 15 0 127 0 0 empty empty empty -2 -8 0 10 -262144
--1 -1 12700 1;
+-1 -1 0 1;
 #X obj 2007 562 jrange 0 127 0 1;
 #X obj 2007 586 t b f;
 #X obj 2007 630 s \$0-rescale;
@@ -53,10 +53,10 @@
 #X obj 1040 558 r cc14;
 #X obj 1110 558 r cc15;
 #X obj 69 88 wind_ear_panner;
-#X obj 583 140 wind_breeze_panner;
+#X obj 592 151 wind_breeze_panner;
 #X obj 124 25 wind_ear_players;
 #X obj 44 -154 hsl 600 15 0 115 0 0 empty empty empty -2 -8 0 10 -204800
--1 -1 16374 1;
+-1 -1 4600 1;
 #X floatatom 66 -129 5 0 0 0 - - -, f 5;
 #X text 110 -131 temp;
 #X obj 49 -98 s temperature;
@@ -101,7 +101,7 @@
 #X obj 905 558 r cc12;
 #X obj 435 730 dac~ 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15;
 #X obj 447 -67 hsl 600 15 0.1 20 0 0 empty empty empty -2 -8 0 10 -204800
--1 -1 17000 1;
+-1 -1 7300 1;
 #X floatatom 493 12 5 0 0 0 - - -, f 5;
 #X obj 588 -1 line;
 #X msg 638 0 stop;
@@ -116,7 +116,14 @@
 #X obj 630 69 r wind_speed;
 #X obj 579 72 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
 -1;
-#X obj 711 103 r wind_speed;
+#X obj 697 125 r wind_speed;
+#X obj 616 178 wind_breeze_panner;
+#X obj 721 152 r wind_speed;
+#X obj 638 205 wind_breeze_panner;
+#X obj 743 179 r wind_speed;
+#X obj 662 232 wind_breeze_panner;
+#X obj 767 206 r wind_speed;
+#X obj 444 -90 loadbang;
 #X connect 0 0 57 0;
 #X connect 1 0 12 0;
 #X connect 1 0 18 0;
@@ -215,6 +222,14 @@
 #X connect 99 0 95 0;
 #X connect 99 0 92 0;
 #X connect 100 0 99 0;
+#X connect 102 0 45 0;
+#X connect 102 1 106 0;
+#X connect 102 2 108 0;
+#X connect 102 3 110 0;
 #X connect 103 0 102 1;
 #X connect 104 0 102 0;
-#X connect 105 0 45 2;
+#X connect 105 0 45 1;
+#X connect 107 0 106 1;
+#X connect 109 0 108 1;
+#X connect 111 0 110 1;
+#X connect 112 0 91 0;
