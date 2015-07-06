@@ -90,7 +90,7 @@ breeze 1 and 2 fade up to Volume position 1 ear wind fades to volume position 2
 breeze 3 starts at volume position 1 and all clouds/sun sounds begin to fade out EXCEPT clouds 1 and Sun 1
 
 **average = 12mph**<br/>
-breeze 4 starts at top volume and breeze 1,2,3, land at top volume position  - clouds/sun are completely faded out 
+breeze 4 starts at top volume and breeze 1,2,3, land at top volume position  - clouds/sun are completely faded out EXCEPT clouds 1 and Sun 1 
 
 ##RAIN
 
