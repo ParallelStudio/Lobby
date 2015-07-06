@@ -1,0 +1,67 @@
+#N canvas 1063 97 602 561 10;
+#X obj 141 183 inlet;
+#X obj 184 183 inlet;
+#X obj 227 183 inlet;
+#X obj 67 185 loadbang;
+#X obj 95 517 outlet~;
+#X text 124 70 inlet 1 - table name;
+#X text 124 83 inlet 2 - lower bounds;
+#X text 124 96 inlet 3 - upper bounds;
+#X text 42 155 and we can abstract that if it needs to be generalized
+;
+#X text 124 108 inlet 4 - xf control inlet;
+#X text 10 69 single table;
+#X obj 270 183 inlet;
+#X obj 187 346 moses;
+#X obj 235 384 moses;
+#X floatatom 235 291 5 0 0 0 - - -, f 5;
+#X floatatom 282 291 5 0 0 0 - - -, f 5;
+#X floatatom 333 291 5 0 0 0 - - -, f 5;
+#X text 302 65 creation arg is elooper loop overlap ms;
+#X obj 110 251 f \$1;
+#X text 26 138 xf in/out is assumed to be 0 unit before lower \, 1
+unit after upper, f 68;
+#X text 235 273 lo;
+#X text 285 273 hi;
+#X text 337 274 ctrl;
+#X text 22 15 similar to [eloopxf~] but instead of crossfading \, just
+won't play the next iteration if out of bounds.;
+#X msg 187 248 1e+15;
+#X text 229 248 init out of range;
+#X msg 134 482 enable;
+#X msg 192 482 disable;
+#X obj 167 375 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 280 418 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 94 319 elooper~ \$1;
+#X msg 63 251 bang;
+#X obj 34 189 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 67 211 t b b b;
+#X symbolatom 330 449 26 0 0 0 - - -, f 26;
+#X connect 0 0 30 2;
+#X connect 0 0 34 0;
+#X connect 1 0 14 0;
+#X connect 2 0 15 0;
+#X connect 3 0 33 0;
+#X connect 11 0 12 0;
+#X connect 11 0 16 0;
+#X connect 12 0 27 0;
+#X connect 12 0 28 0;
+#X connect 12 1 13 0;
+#X connect 13 0 26 0;
+#X connect 13 1 27 0;
+#X connect 13 1 29 0;
+#X connect 14 0 12 1;
+#X connect 15 0 13 1;
+#X connect 18 0 30 1;
+#X connect 24 0 12 0;
+#X connect 26 0 30 0;
+#X connect 27 0 30 0;
+#X connect 30 0 4 0;
+#X connect 31 0 30 0;
+#X connect 32 0 33 0;
+#X connect 33 0 31 0;
+#X connect 33 1 18 0;
+#X connect 33 2 24 0;
