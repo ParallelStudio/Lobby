@@ -9,7 +9,7 @@
 #X obj 88 211 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
 -1;
 #X obj 134 282 hsl 128 15 0 127 0 0 empty empty empty -2 -8 0 10 -262144
--1 -1 12700 1;
+-1 -1 2300 1;
 #X obj 280 383 f;
 #X obj 311 382 + 1;
 #X obj 278 416 % 6;
@@ -17,8 +17,8 @@
 -1;
 #X obj 113 582 spigot~;
 #X obj 278 438 hradio 15 1 0 6 empty empty empty 0 -8 0 10 -262144
--1 -1 3;
-#X obj 153 558 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
+-1 -1 0;
+#X obj 153 558 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
 1;
 #X floatatom 281 462 5 0 0 0 - - -;
 #X obj 152 484 select 0;
@@ -41,7 +41,7 @@
 #X obj 323 514 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
 -1 -1;
 #X obj 311 588 spigot~;
-#X obj 351 564 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+#X obj 351 564 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
 1;
 #X obj 357 515 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
 -1 -1;
@@ -81,7 +81,7 @@
 #X obj 509 540 1;
 #X obj 281 351 metro 500;
 #X obj 386 299 hsl 128 15 0 127 0 0 empty empty empty -2 -8 0 10 -262144
--1 -1 3300 1;
+-1 -1 4700 1;
 #X obj 383 322 jrange 0 127 500 4000;
 #X obj 383 346 t b f;
 #X obj 131 303 / 127;
@@ -90,7 +90,6 @@
 #X obj 116 643 dac~ 7 8 3 4 5 6;
 #X obj 355 100 loadbang;
 #X obj 355 124 t b b;
-#X connect 2 0 42 0;
 #X connect 2 1 60 0;
 #X connect 3 0 0 0;
 #X connect 4 0 2 0;
@@ -168,6 +167,7 @@
 #X connect 58 1 55 1;
 #X connect 59 0 42 1;
 #X connect 60 0 4 0;
+#X connect 61 0 42 0;
 #X connect 63 0 64 0;
 #X connect 64 0 4 0;
 #X connect 64 1 3 0;
