@@ -1,4 +1,4 @@
-#N canvas 48 316 1123 516 10;
+#N canvas -1 71 1012 516 10;
 #X obj 210 -75 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
 -1 -1;
 #X obj 210 -48 t b b;
@@ -29,9 +29,9 @@
 #X obj 627 -111 s \$0-vol;
 #X msg 214 -8 Rain_mediumStrums_ACE;
 #X msg 354 -9 Rain_mediumStrums_BDF;
-#X text 549 18 rule1: 0.05 - 0.02 fades from nothing to -5db;
 #X text 549 34 rule2: 0.25 - 0.3 fades from -5db to -0db;
-#X obj 192 21 rain_two_outs 0.02 0.25 0.001 0.02 0 0.563 0.25 0.3 0.563
+#X text 549 18 rule1: 0.05 - 0.2 fades from nothing to -5db;
+#X obj 192 21 rain_two_outs 0.05 0.25 0.05 0.2 0 0.563 0.25 0.3 0.563
 1;
 #X connect 0 0 1 0;
 #X connect 1 0 31 0;
