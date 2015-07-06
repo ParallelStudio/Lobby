@@ -1,4 +1,4 @@
-#N canvas 568 139 539 586 10;
+#N canvas 567 138 539 586 10;
 #X obj 181 511 outlet~;
 #X obj 84 19 inlet;
 #X obj 71 122 f;
@@ -9,15 +9,15 @@
 #X obj 41 359 unpack s f f;
 #X obj 84 77 t b s;
 #X obj 145 358 unpack s f f;
-#X obj 251 360 unpack s f f;
+#X obj 256 362 unpack s f f;
 #X obj 336 31 inlet;
 #X text 384 32 control (temp);
 #X obj 153 233 route 0 1 2;
 #X obj 70 148 % 3;
 #X text 143 12 creation arg is xf time (ms);
-#X obj 53 388 eloopxf~ \$1;
-#X obj 146 388 eloopxf~ \$1;
-#X obj 244 389 eloopxf~ \$1;
+#X obj 35 391 elooprange~ \$1;
+#X obj 144 390 elooprange~ \$1;
+#X obj 255 390 elooprange~ \$1;
 #X connect 1 0 5 0;
 #X connect 2 0 3 0;
 #X connect 2 0 14 0;
