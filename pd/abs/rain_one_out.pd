@@ -1,4 +1,4 @@
-#N canvas 75 521 1436 745 10;
+#N canvas 168 301 1436 745 10;
 #X obj 308 103 hsl 128 15 0 127 0 0 empty empty empty -2 -8 0 10 -262144
 -1 -1 6400 1;
 #X obj 218 459 outlet~;
@@ -41,6 +41,11 @@
 #X obj 1279 -181 inlet;
 #X obj 1279 -158 route mute;
 #X obj 1279 -134 s \$0-mute;
+#X obj 288 -127 r \$0-vol;
+#X msg 286 -74 stop;
+#X obj 288 -105 sel 0;
+#X msg 325 -74 start;
+#X text 298 -50 TODO!;
 #X connect 0 0 3 1;
 #X connect 2 0 13 0;
 #X connect 3 0 2 0;
@@ -67,3 +72,6 @@
 #X connect 34 0 26 0;
 #X connect 35 0 36 0;
 #X connect 36 0 37 0;
+#X connect 38 0 40 0;
+#X connect 40 0 39 0;
+#X connect 40 1 41 0;
