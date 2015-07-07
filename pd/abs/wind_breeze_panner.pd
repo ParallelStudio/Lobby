@@ -1,15 +1,15 @@
-#N canvas 33 18 821 586 10;
+#N canvas 33 22 821 586 10;
 #X obj 232 444 linear_panner_6ch~;
 #X obj 245 510 throw~ c3;
 #X obj 308 510 throw~ c4;
 #X obj 263 535 throw~ c5;
 #X obj 326 535 throw~ c6;
 #X obj 388 380 hsl 128 15 0 1 0 0 empty empty empty -2 -8 0 10 -262144
--1 -1 0 1;
+-1 -1 12700 1;
 #X obj 607 345 hsl 128 15 0 1 0 0 empty empty empty -2 -8 0 10 -262144
 -1 -1 0 1;
 #X obj 446 306 hsl 128 15 0 1 0 0 empty empty empty -2 -8 0 10 -262144
--1 -1 0 1;
+-1 -1 12700 1;
 #X obj 293 213 *~;
 #X obj 308 179 vline~;
 #X obj 348 302 snapshot~;
@@ -40,7 +40,7 @@
 #X obj 798 178 +;
 #X obj 734 109 t f b;
 #X msg 830 212 set \$1;
-#X msg 830 234 21770.9;
+#X msg 830 234 28328.7;
 #X text 892 234 delay time with 0-5 secs added;
 #X obj 722 162 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
 -1 -1;
@@ -72,15 +72,17 @@
 #X obj 639 102 r sweep_time;
 #X obj 797 109 r sweep_time;
 #X obj 741 -20 random;
-#X msg 722 56 6926.29;
+#X msg 722 56 8438.85;
 #X msg 722 32 set \$1;
 #X obj 722 9 +;
 #X obj 722 -66 t f b f;
 #X obj 774 32 s sweep_time;
-#X msg 656 -25 5573.29;
+#X msg 656 -25 7991.85;
 #X msg 656 -49 set \$1;
 #X obj 761 -44 * 0.5;
+#X obj 98 485 outlet~ monitoring;
 #X connect 0 0 51 0;
+#X connect 0 0 76 0;
 #X connect 0 1 52 0;
 #X connect 0 2 1 0;
 #X connect 0 3 2 0;
