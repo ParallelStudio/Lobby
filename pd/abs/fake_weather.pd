@@ -1,13 +1,13 @@
-#N canvas 214 7 761 656 10;
+#N canvas 4 22 761 656 10;
 #X obj 7 -40 hsl 600 15 0.001 0.3 0 0 empty empty empty -2 -8 0 10
--204800 -1 -1 20700 1;
-#X floatatom 21 -17 5 0 0 0 - - -;
+-204800 -1 -1 0 1;
+#X floatatom 21 -17 5 0 0 0 - - -, f 5;
 #X obj 4 -61 line;
 #X msg 4 -88 0 \, 0.3 120000;
 #X text 96 -88 simulated rain build;
 #X obj 14 164 hsl 600 15 0 115 0 0 empty empty empty -2 -8 0 10 -204800
--1 -1 15700 1;
-#X floatatom 36 190 5 0 0 0 - - -;
+-1 -1 34500 1;
+#X floatatom 36 190 5 0 0 0 - - -, f 5;
 #X obj 11 128 line;
 #X msg 10 104 10 \, 85 120000;
 #X msg 61 129 stop;
@@ -19,24 +19,25 @@
 #X text 173 184 temp;
 #X obj 11 235 s \$0-out;
 #X obj 14 342 hsl 600 15 0.1 20 0 0 empty empty empty -2 -8 0 10 -204800
--1 -1 29400 1;
+-1 -1 20800 1;
 #X obj 141 307 line;
 #X msg 191 308 stop;
 #X msg 140 283 0 \, 12 120000;
-#X msg 251 298 6 \, 12 60000;
+#X msg 250 291 6 \, 12 60000;
 #X text 145 368 wind speed;
 #X obj 11 439 s \$0-out;
 #X msg 11 408 /mt2MinRollAvgWindSpeed \$1;
 #X obj 277 623 r \$0-out;
 #X obj 277 653 outlet;
 #X obj 12 570 hsl 600 15 0 350 0 0 empty empty empty -2 -8 0 10 -204800
--1 -1 0 1;
+-1 -1 14400 1;
 #X obj 139 535 line;
 #X msg 189 536 stop;
 #X obj 9 667 s \$0-out;
 #X text 143 596 solar radiation;
 #X msg 9 636 /mtSolarRadiation \$1;
 #X msg 138 511 0 \, 350 120000;
+#X floatatom 23 375 5 0 0 0 - - -, f 5;
 #X connect 0 0 1 0;
 #X connect 0 0 12 0;
 #X connect 2 0 0 0;
@@ -50,6 +51,7 @@
 #X connect 11 0 16 0;
 #X connect 12 0 13 0;
 #X connect 17 0 24 0;
+#X connect 17 0 34 0;
 #X connect 18 0 17 0;
 #X connect 19 0 18 0;
 #X connect 20 0 18 0;
