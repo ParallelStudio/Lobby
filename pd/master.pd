@@ -1,4 +1,4 @@
-#N canvas 19 32 770 534 10;
+#N canvas 19 32 865 559 10;
 #X declare -lib mrpeach;
 #X obj 158 407 catch~ c2;
 #X obj 224 407 catch~ c3;
@@ -62,7 +62,7 @@
 #X obj 235 1083 r cc13;
 #X obj 310 1083 r cc14;
 #X obj 378 1081 r cc15;
-#N canvas 577 325 450 300 switch 1;
+#N canvas 481 333 450 300 switch 0;
 #X obj 119 -51 spigot;
 #X obj 173 -48 spigot;
 #X obj 104 -101 inlet;
@@ -91,6 +91,7 @@
 #X obj 388 -154 s microserver;
 #X obj 317 -145 hradio 15 1 0 2 empty empty empty 0 -8 0 10 -262144
 -1 -1 0;
+#X obj 250 18 vsun~;
 #X connect 0 0 20 0;
 #X connect 1 0 21 0;
 #X connect 2 0 22 0;
@@ -106,6 +107,7 @@
 #X connect 16 0 15 0;
 #X connect 18 0 17 0;
 #X connect 18 0 25 0;
+#X connect 18 0 64 0;
 #X connect 19 0 14 0;
 #X connect 20 0 14 1;
 #X connect 21 0 12 0;
@@ -143,7 +145,9 @@
 #X connect 59 0 36 1;
 #X connect 60 0 17 1;
 #X connect 60 0 25 1;
+#X connect 60 0 64 1;
 #X connect 60 1 25 1;
 #X connect 60 1 17 1;
+#X connect 60 1 64 1;
 #X connect 61 0 62 0;
 #X connect 63 0 60 2;
