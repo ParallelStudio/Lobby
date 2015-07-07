@@ -40,30 +40,30 @@
 -66577 0;
 #X obj 240 68 inlet;
 #X obj 392 368 hsl 100 12 -30 0 0 0 empty empty empty -2 -8 0 10 -262144
--1 -1 0 1;
+-1 -1 6000 1;
 #X floatatom 497 366 5 0 0 0 - - -, f 5;
 #X text 538 365 b;
 #X msg 558 288 b-db \$1;
 #X obj 568 543 s \$0-db;
 #X obj 430 57 r \$0-db;
 #X obj 392 383 hsl 100 12 -30 0 0 0 empty empty empty -2 -8 0 10 -262144
--1 -1 0 1;
+-1 -1 3600 1;
 #X floatatom 497 381 5 0 0 0 - - -, f 5;
 #X text 538 381 shm;
 #X obj 392 398 hsl 100 12 -30 0 0 0 empty empty empty -2 -8 0 10 -262144
--1 -1 0 1;
+-1 -1 5700 1;
 #X floatatom 497 396 5 0 0 0 - - -, f 5;
 #X text 538 396 sp;
 #X obj 392 413 hsl 100 12 -30 0 0 0 empty empty empty -2 -8 0 10 -262144
--1 -1 0 1;
+-1 -1 4000 1;
 #X floatatom 497 411 5 0 0 0 - - -, f 5;
 #X text 538 411 shn;
 #X obj 392 428 hsl 100 12 -30 0 0 0 empty empty empty -2 -8 0 10 -262144
--1 -1 0 1;
+-1 -1 3800 1;
 #X floatatom 497 426 5 0 0 0 - - -, f 5;
 #X text 538 426 flr;
 #X obj 392 443 hsl 100 12 -30 0 0 0 empty empty empty -2 -8 0 10 -262144
--1 -1 0 1;
+-1 -1 3700 1;
 #X floatatom 497 441 5 0 0 0 - - -, f 5;
 #X text 538 441 wrm;
 #X msg 566 310 shm-db \$1;
@@ -72,19 +72,19 @@
 #X msg 593 374 flr-db \$1;
 #X msg 594 395 wrm-db \$1;
 #X obj 392 458 hsl 100 12 -30 0 0 0 empty empty empty -2 -8 0 10 -262144
--1 -1 0 1;
+-1 -1 3300 1;
 #X floatatom 497 456 5 0 0 0 - - -, f 5;
 #X obj 392 473 hsl 100 12 -30 0 0 0 empty empty empty -2 -8 0 10 -262144
--1 -1 0 1;
+-1 -1 4300 1;
 #X floatatom 497 471 5 0 0 0 - - -, f 5;
 #X obj 392 488 hsl 100 12 -30 0 0 0 empty empty empty -2 -8 0 10 -262144
--1 -1 0 1;
+-1 -1 2600 1;
 #X floatatom 497 486 5 0 0 0 - - -, f 5;
 #X obj 392 503 hsl 100 12 -30 0 0 0 empty empty empty -2 -8 0 10 -262144
--1 -1 0 1;
+-1 -1 3400 1;
 #X floatatom 497 501 5 0 0 0 - - -, f 5;
 #X obj 392 518 hsl 100 12 -30 0 0 0 empty empty empty -2 -8 0 10 -262144
--1 -1 0 1;
+-1 -1 3300 1;
 #X floatatom 497 516 5 0 0 0 - - -, f 5;
 #X text 538 455 wv1;
 #X text 538 471 wv2;
@@ -108,9 +108,9 @@
 #X obj 51 361 cnv 15 48 175 empty empty empty 20 12 0 14 -261234 -66577
 0;
 #X obj 52 375 vsl 20 120 0 2 0 0 empty empty empty 0 -9 0 10 -204800
--1 -1 1785 1;
+-1 -1 1300 1;
 #X obj 51 502 nbx 5 30 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 10
--204800 -1 -1 -10.4576 256;
+-204800 -1 -1 -13.2115 256;
 #X obj 77 375 vu 20 120 empty empty -1 -8 0 10 -66577 -1 1 0;
 #X obj -17 478 rmstodb;
 #X obj -17 500 - 100;
@@ -240,9 +240,11 @@
 #X msg 42 330 0.3;
 #X text 282 69 weather;
 #X obj 246 127 route /mt2MinRollAvgWindSpeed;
+#X obj 270 155 route /mtRainRate;
 #X connect 23 0 78 0;
 #X connect 26 0 79 0;
 #X connect 26 0 102 0;
+#X connect 26 0 103 0;
 #X connect 27 0 28 0;
 #X connect 28 0 30 0;
 #X connect 30 0 31 0;
@@ -325,4 +327,5 @@
 #X connect 99 0 100 0;
 #X connect 100 0 83 0;
 #X connect 102 0 78 3;
+#X connect 103 0 78 4;
 #X coords 0 -1 1 1 517 177 1 50 360;

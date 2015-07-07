@@ -1,4 +1,4 @@
-#N canvas 151 190 1173 650 10;
+#N canvas 125 285 1173 650 10;
 #X obj 158 407 catch~ c2;
 #X obj 224 407 catch~ c3;
 #X obj 299 407 catch~ c4;
@@ -23,7 +23,7 @@
 #X obj 299 435 *~ 0.8;
 #X obj 367 433 *~ 0.8;
 #X obj 437 433 *~ 0.8;
-#X obj 140 15 wind;
+#X obj 120 11 wind;
 #X obj 160 -171 r microserver;
 #X obj 249 -171 fake_weather;
 #X obj 82 785 *~ 0.8;
@@ -60,7 +60,7 @@
 #X obj 190 -101 inlet;
 #X obj 101 17 outlet;
 #X obj 176 24 outlet;
-#X obj 253 -96 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+#X obj 253 -96 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
 1;
 #X obj 236 -68 sel 0 1;
 #X msg 234 -37 1;
@@ -81,8 +81,8 @@
 #X obj 388 -176 microserver;
 #X obj 388 -154 s microserver;
 #X obj 317 -145 hradio 15 1 0 2 empty empty empty 0 -8 0 10 -262144
--1 -1 0;
-#X obj 250 18 vsun~;
+-1 -1 1;
+#X obj 258 22 vsun~;
 #X obj 88 474 output~ 1;
 #X obj 621 436 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
 -1 -1;

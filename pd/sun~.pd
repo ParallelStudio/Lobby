@@ -1,6 +1,6 @@
-#N canvas 281 266 1339 611 10;
-#X obj 36 529 outlet~;
-#X obj 135 528 outlet~;
+#N canvas 40 190 1522 634 10;
+#X obj 36 588 outlet~;
+#X obj 134 587 outlet~;
 #N canvas 390 327 327 300 sun-shimmer 0;
 #X obj 43 199 outlet~;
 #X obj 184 202 outlet~;
@@ -204,7 +204,7 @@
 #X connect 5 0 4 1;
 #X connect 6 0 3 0;
 #X connect 6 0 4 0;
-#X restore 249 191 pd sun-shimmer;
+#X restore 249 214 pd sun-shimmer;
 #N canvas 134 444 581 552 spot 0;
 #X obj 74 10 inlet;
 #X text 119 11 temp;
@@ -273,12 +273,12 @@
 #X connect 26 0 18 0;
 #X connect 27 0 18 0;
 #X connect 28 0 18 0;
-#X restore 438 191 pd spot;
-#X obj 253 143 bng 15 250 50 0 empty sun-startall empty 17 7 0 10 -262144
+#X restore 438 214 pd spot;
+#X obj 253 166 bng 15 250 50 0 empty sun-startall empty 17 7 0 10 -262144
 -1 -1;
-#X obj 438 146 bng 15 250 50 0 empty sun-startall empty 17 7 0 10 -262144
+#X obj 438 169 bng 15 250 50 0 empty sun-startall empty 17 7 0 10 -262144
 -1 -1;
-#X obj 594 148 bng 15 250 50 0 empty sun-startall empty 17 7 0 10 -262144
+#X obj 594 171 bng 15 250 50 0 empty sun-startall empty 17 7 0 10 -262144
 -1 -1;
 #N canvas 71 93 730 707 shine 0;
 #X obj 133 631 outlet~;
@@ -375,8 +375,8 @@
 #X connect 41 0 34 0;
 #X connect 42 0 29 1;
 #X connect 43 0 13 1;
-#X restore 594 193 pd shine;
-#X obj 747 147 bng 15 250 50 0 empty sun-startall empty 17 7 0 10 -262144
+#X restore 594 216 pd shine;
+#X obj 747 170 bng 15 250 50 0 empty sun-startall empty 17 7 0 10 -262144
 -1 -1;
 #N canvas 551 166 646 457 flare 0;
 #X obj 225 361 outlet~;
@@ -429,8 +429,8 @@
 #X connect 21 0 0 0;
 #X connect 22 0 0 0;
 #X connect 23 0 0 0;
-#X restore 747 192 pd flare;
-#X obj 896 148 bng 15 250 50 0 empty sun-startall empty 17 7 0 10 -262144
+#X restore 747 215 pd flare;
+#X obj 896 171 bng 15 250 50 0 empty sun-startall empty 17 7 0 10 -262144
 -1 -1;
 #N canvas 598 244 669 454 warm 0;
 #X obj 284 391 outlet~;
@@ -547,7 +547,7 @@
 #X connect 46 0 41 1;
 #X connect 47 0 38 2;
 #X connect 47 0 41 2;
-#X restore 896 194 pd warm;
+#X restore 896 217 pd warm;
 #N canvas 1066 168 444 432 sun-beating 0;
 #X text 124 319 ACE;
 #X text 227 319 BDF;
@@ -707,30 +707,30 @@
 #X connect 8 0 5 0;
 #X connect 9 0 4 0;
 #X connect 9 1 5 0;
-#X restore 33 179 pd sun-beating;
-#X obj 32 152 bng 15 250 50 0 empty sun-startall empty 17 7 0 10 -262144
+#X restore 33 202 pd sun-beating;
+#X obj 32 175 bng 15 250 50 0 empty sun-startall empty 17 7 0 10 -262144
 -1 -1;
-#X obj 470 345 bng 15 250 50 0 empty sun-startall empty 17 7 0 10 -262144
+#X obj 470 368 bng 15 250 50 0 empty sun-startall empty 17 7 0 10 -262144
 -1 -1;
-#X obj 34 444 catch~ sunACE;
-#X obj 134 444 catch~ sunBDF;
-#X obj 33 241 throw~ sunACE;
-#X obj 129 268 throw~ sunBDF;
-#X obj 249 271 throw~ sunACE;
-#X obj 320 294 throw~ sunBDF;
-#X obj 431 273 throw~ sunACE;
-#X obj 454 293 throw~ sunBDF;
-#X obj 580 276 throw~ sunACE;
-#X obj 651 299 throw~ sunBDF;
-#X obj 760 277 throw~ sunACE;
-#X obj 776 299 throw~ sunBDF;
-#X obj 897 280 throw~ sunACE;
-#X obj 949 301 throw~ sunBDF;
-#X obj 510 344 bng 15 250 50 0 empty sun-startall empty 17 7 0 10 -262144
+#X obj 34 467 catch~ sunACE;
+#X obj 134 467 catch~ sunBDF;
+#X obj 33 264 throw~ sunACE;
+#X obj 129 291 throw~ sunBDF;
+#X obj 249 294 throw~ sunACE;
+#X obj 320 317 throw~ sunBDF;
+#X obj 431 296 throw~ sunACE;
+#X obj 454 316 throw~ sunBDF;
+#X obj 580 299 throw~ sunACE;
+#X obj 651 322 throw~ sunBDF;
+#X obj 760 300 throw~ sunACE;
+#X obj 776 322 throw~ sunBDF;
+#X obj 897 303 throw~ sunACE;
+#X obj 949 324 throw~ sunBDF;
+#X obj 510 367 bng 15 250 50 0 empty sun-startall empty 17 7 0 10 -262144
 -1 -1;
-#X obj 551 346 bng 15 250 50 0 empty sun-startall empty 17 7 0 10 -262144
+#X obj 551 369 bng 15 250 50 0 empty sun-startall empty 17 7 0 10 -262144
 -1 -1;
-#X obj 585 345 bng 15 250 50 0 empty sun-startall empty 17 7 0 10 -262144
+#X obj 585 368 bng 15 250 50 0 empty sun-startall empty 17 7 0 10 -262144
 -1 -1;
 #N canvas 643 492 793 364 wave1 0;
 #X obj 70 25 inlet;
@@ -1271,24 +1271,24 @@
 #X connect 48 0 45 1;
 #X connect 49 0 47 1;
 #X connect 49 0 46 1;
-#X restore 453 396 pd wave1 wave2 wave3 wave4 waver;
-#X obj 624 345 bng 15 250 50 0 empty sun-startall empty 17 7 0 10 -262144
+#X restore 453 419 pd wave1 wave2 wave3 wave4 waver;
+#X obj 624 368 bng 15 250 50 0 empty sun-startall empty 17 7 0 10 -262144
 -1 -1;
-#X obj 57 94 inlet;
-#X obj 57 116 s sun-startall;
-#X obj 240 524 outlet~;
-#X text 54 549 ACE;
-#X text 156 546 BDF;
-#X obj 298 525 outlet~;
-#X obj 356 525 outlet~;
-#X obj 414 526 outlet~;
-#X obj 470 525 outlet~;
-#X obj 528 526 outlet~;
-#X obj 586 526 outlet~;
-#X obj 644 527 outlet~;
-#X obj 704 526 outlet~;
-#X obj 760 525 outlet~;
-#X obj 818 526 outlet~;
+#X obj 57 117 inlet;
+#X obj 57 139 s sun-startall;
+#X obj 240 547 outlet~;
+#X text 54 608 ACE;
+#X text 155 605 BDF;
+#X obj 298 548 outlet~;
+#X obj 356 548 outlet~;
+#X obj 414 549 outlet~;
+#X obj 470 548 outlet~;
+#X obj 528 549 outlet~;
+#X obj 586 549 outlet~;
+#X obj 644 550 outlet~;
+#X obj 704 549 outlet~;
+#X obj 760 548 outlet~;
+#X obj 818 549 outlet~;
 #N canvas 766 352 581 484 db 0;
 #X obj 22 33 loadbang;
 #X obj 24 219 s \$0-b-db;
@@ -1379,33 +1379,33 @@
 #X connect 41 0 42 0;
 #X connect 41 0 44 0;
 #X connect 43 0 41 0;
-#X restore 866 447 pd db defaults;
-#X obj 32 208 *~;
-#X obj 127 207 *~;
-#X floatatom 63 207 5 0 0 0 - #0-b-db -, f 5;
-#X obj 246 220 *~;
-#X obj 339 221 *~;
-#X floatatom 286 221 5 0 0 0 - #0-shm-db -, f 5;
-#X obj 440 222 *~;
-#X floatatom 477 214 5 0 0 0 - #0-sp-db -, f 5;
-#X obj 593 221 *~;
-#X obj 646 244 *~;
-#X floatatom 656 219 5 0 0 0 - #0-shn-db -, f 5;
-#X obj 751 237 *~;
-#X floatatom 777 218 5 0 0 0 - #0-flr-db -, f 5;
-#X obj 896 233 *~;
-#X obj 943 256 *~;
-#X floatatom 951 222 5 0 0 0 - #0-wrm-db -, f 5;
-#X obj 331 92 inlet;
-#X obj 332 116 s \$0-temperature;
-#X obj 128 154 r \$0-temperature;
-#X obj 322 165 r \$0-temperature;
-#X obj 484 166 r \$0-temperature;
-#X obj 640 168 r \$0-temperature;
-#X obj 793 167 r \$0-temperature;
-#X obj 942 169 r \$0-temperature;
-#X obj 661 347 r \$0-temperature;
-#X obj 788 86 inlet;
+#X restore 866 470 pd db defaults;
+#X obj 32 231 *~;
+#X obj 127 230 *~;
+#X floatatom 63 230 5 0 0 0 - #0-b-db -, f 5;
+#X obj 246 243 *~;
+#X obj 339 244 *~;
+#X floatatom 286 244 5 0 0 0 - #0-shm-db -, f 5;
+#X obj 440 245 *~;
+#X floatatom 477 237 5 0 0 0 - #0-sp-db -, f 5;
+#X obj 593 244 *~;
+#X obj 646 267 *~;
+#X floatatom 656 242 5 0 0 0 - #0-shn-db -, f 5;
+#X obj 751 260 *~;
+#X floatatom 777 241 5 0 0 0 - #0-flr-db -, f 5;
+#X obj 896 256 *~;
+#X obj 943 279 *~;
+#X floatatom 951 245 5 0 0 0 - #0-wrm-db -, f 5;
+#X obj 331 115 inlet;
+#X obj 332 139 s \$0-temperature;
+#X obj 128 177 r \$0-temperature;
+#X obj 322 188 r \$0-temperature;
+#X obj 484 189 r \$0-temperature;
+#X obj 640 191 r \$0-temperature;
+#X obj 793 190 r \$0-temperature;
+#X obj 942 192 r \$0-temperature;
+#X obj 661 370 r \$0-temperature;
+#X obj 788 109 inlet;
 #N canvas 469 81 594 296 levels 0;
 #X obj 83 25 inlet;
 #X obj 83 62 route b-db shm-db sp-db shn-db flr-db wrm-db;
@@ -1434,23 +1434,34 @@
 #X connect 2 2 11 0;
 #X connect 2 3 12 0;
 #X connect 2 4 13 0;
-#X restore 788 109 pd levels;
-#X obj 36 482 *~ 1;
-#X obj 134 480 *~ 1;
-#X obj 959 80 inlet;
-#X obj 959 131 s \$0-wind_ducking;
-#X obj 959 105 jrange 8 12 1 0;
-#X obj 98 416 r \$0-wind_ducking;
-#X obj 1078 130 s \$0-wind_ducking_sun_1;
-#X obj 131 176 r \$0-wind_ducking;
-#X obj 229 406 *~ 1;
-#X obj 345 404 *~ 1;
-#X obj 227 368 catch~ \$0-wave1ACE;
-#X obj 345 368 catch~ \$0-wave1BDF;
-#X obj 293 341 r \$0-wind_ducking_sun_1;
-#X obj 1078 104 jrange 8 12 1 0.5;
-#X floatatom 1063 165 5 0 0 0 - - -, f 5;
-#X floatatom 1106 165 5 0 0 0 - - -, f 5;
+#X restore 788 132 pd levels;
+#X obj 36 505 *~ 1;
+#X obj 134 503 *~ 1;
+#X obj 959 103 inlet;
+#X obj 959 154 s \$0-wind_ducking;
+#X obj 959 128 jrange 8 12 1 0;
+#X obj 98 439 r \$0-wind_ducking;
+#X obj 1078 153 s \$0-wind_ducking_sun_1;
+#X obj 131 199 r \$0-wind_ducking;
+#X obj 229 429 *~ 1;
+#X obj 345 427 *~ 1;
+#X obj 227 391 catch~ \$0-wave1ACE;
+#X obj 345 391 catch~ \$0-wave1BDF;
+#X obj 293 364 r \$0-wind_ducking_sun_1;
+#X obj 1078 127 jrange 8 12 1 0.5;
+#X floatatom 1063 188 5 0 0 0 - - -, f 5;
+#X floatatom 1106 188 5 0 0 0 - - -, f 5;
+#X obj 1235 108 inlet;
+#X floatatom 1339 193 5 0 0 0 - - -, f 5;
+#X obj 1235 159 s \$0-rain_ducking;
+#X obj 1354 158 s \$0-rain_ducking_sun_1;
+#X obj 1235 133 jrange 0.02 0.05 1 0;
+#X obj 77 413 r \$0-rain_ducking;
+#X obj 36 540 *~ 1;
+#X obj 134 539 *~ 1;
+#X obj 229 457 *~ 1;
+#X obj 345 455 *~ 1;
+#X obj 147 364 r \$0-rain_ducking_sun_1;
 #X connect 2 0 53 0;
 #X connect 2 1 54 0;
 #X connect 3 0 56 0;
@@ -1517,20 +1528,32 @@
 #X connect 73 0 11 1;
 #X connect 74 0 32 5;
 #X connect 75 0 76 0;
-#X connect 77 0 0 0;
-#X connect 78 0 1 0;
+#X connect 77 0 99 0;
+#X connect 78 0 100 0;
 #X connect 79 0 81 0;
 #X connect 79 0 90 0;
 #X connect 81 0 80 0;
 #X connect 81 0 91 0;
 #X connect 82 0 78 1;
 #X connect 82 0 77 1;
-#X connect 85 0 0 0;
-#X connect 86 0 1 0;
+#X connect 85 0 101 0;
+#X connect 86 0 102 0;
 #X connect 87 0 85 0;
 #X connect 88 0 86 0;
 #X connect 89 0 86 1;
 #X connect 89 0 85 1;
 #X connect 90 0 83 0;
 #X connect 90 0 92 0;
-#X coords 0 611 1 610 277 159 0;
+#X connect 93 0 97 0;
+#X connect 97 0 94 0;
+#X connect 97 0 95 0;
+#X connect 97 0 96 0;
+#X connect 98 0 100 1;
+#X connect 98 0 99 1;
+#X connect 99 0 0 0;
+#X connect 100 0 1 0;
+#X connect 101 0 0 0;
+#X connect 102 0 1 0;
+#X connect 103 0 101 1;
+#X connect 103 0 102 1;
+#X coords 0 634 1 633 277 159 0;
