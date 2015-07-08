@@ -1,5 +1,5 @@
-#N canvas 88 70 793 678 10;
-#X obj 111 119 vu 15 120 empty empty -1 -8 0 10 -66577 -1 1 0;
+#N canvas 85 67 793 678 10;
+#X obj 109 118 vu 15 120 empty empty -1 -8 0 10 -66577 -1 1 0;
 #X obj 99 55 env~;
 #X obj 99 77 - 100;
 #X obj 197 469 t b;
@@ -19,7 +19,7 @@
 #X text -18 443 test if less than 1 -->;
 #X text -52 470 if true convert to bang -->;
 #X text 135 -122 <-- convert from dB to linear units;
-#X obj 141 276 bng 15 250 50 0 empty empty mute -38 7 0 12 -258113
+#X obj 140 268 bng 15 250 50 0 empty empty mute -38 7 0 10 -258113
 -1 -1;
 #X text 153 -92 <-- make a ramp to avoid clicks or zipper noise;
 #X text 217 357 MUTE logic:;
@@ -33,7 +33,7 @@
 #X text -18 418 value of master-lvl -->;
 #X text -69 350 automatically start DSP -->;
 #X obj 114 -19 hip~ 3;
-#X obj 116 253 nbx 3 14 -99 0 0 0 empty empty DB -15 8 0 12 -257985
+#X obj 119 252 nbx 3 14 -99 0 0 0 empty empty dB -15 8 0 10 -257985
 -1 -1 0 256;
 #X obj 388 131 inlet;
 #X obj 13 147 outlet~;
@@ -77,4 +77,4 @@
 #X connect 40 0 33 0;
 #X connect 42 0 43 0;
 #X connect 43 0 33 0;
-#X coords 0 -1 1 1 60 195 1 100 100;
+#X coords 0 -1 1 1 58 185 1 100 100;
