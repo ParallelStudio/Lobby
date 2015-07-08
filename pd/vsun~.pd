@@ -1,4 +1,4 @@
-#N canvas 205 123 823 693 10;
+#N canvas 204 122 823 660 10;
 #X obj 192 332 cnv 15 271 173 empty empty empty 20 12 0 14 -233017
 -66577 0;
 #X obj 199 351 vu 15 120 empty empty -1 -8 0 10 -66577 -262144 1 0
@@ -103,8 +103,8 @@
 #X obj 477 151 print slap;
 #X obj 145 178 sun~ -----------------------;
 #X obj 257 58 route /mtTemp1;
-#X obj 134 574 *~ 1;
-#X obj 77 574 *~ 1;
+#X obj 146 555 *~ 1;
+#X obj 89 555 *~ 1;
 #X obj 121 331 cnv 15 69 175 empty empty empty 20 12 0 14 -261234 -66577
 0;
 #X obj 124 345 vsl 15 120 0 2 0 0 empty empty empty 0 -9 0 10 -204800
@@ -114,7 +114,7 @@
 #X obj 144 345 vu 15 120 empty empty -1 -8 0 10 -66577 -1 1 0;
 #X obj 53 448 rmstodb;
 #X obj 53 470 - 100;
-#X floatatom 57 511 5 0 0 0 - - -, f 5;
+#X floatatom 56 493 5 0 0 0 - - -, f 5;
 #N canvas 0 50 1149 529 vu_scaling 0;
 #X obj 82 93 inlet~;
 #X obj 126 93 inlet~;
@@ -196,24 +196,24 @@
 #X restore 163 243 pd vu_scaling;
 #X obj 47 218 throw~ \$0-ACE;
 #X obj 46 242 throw~ \$0-BDF;
-#N canvas 0 50 448 506 outputs 0;
-#X obj 24 -89 throw~ c1;
-#X obj 3 -67 throw~ c3;
-#X obj -18 -44 throw~ c5;
-#X obj 111 -91 throw~ c2;
-#X obj 130 -69 throw~ c4;
-#X obj 147 -47 throw~ c6;
-#X obj 24 -200 inlet~;
-#X obj 95 -201 inlet~;
-#X obj 21 12 throw~ c7;
-#X obj 5 35 throw~ c9;
-#X obj 112 13 throw~ c8;
-#X obj 123 37 throw~ c10;
-#X obj 21 74 throw~ c11;
-#X obj -3 96 throw~ c13;
-#X obj -26 120 throw~ c15;
-#X obj 112 75 throw~ c12;
-#X obj 129 100 throw~ c14;
+#N canvas 2 52 380 438 outputs 0;
+#X obj 84 141 throw~ c1;
+#X obj 63 163 throw~ c3;
+#X obj 42 186 throw~ c5;
+#X obj 171 139 throw~ c2;
+#X obj 190 161 throw~ c4;
+#X obj 207 183 throw~ c6;
+#X obj 84 30 inlet~;
+#X obj 155 29 inlet~;
+#X obj 81 242 throw~ c7;
+#X obj 65 265 throw~ c9;
+#X obj 172 243 throw~ c8;
+#X obj 183 267 throw~ c10;
+#X obj 81 304 throw~ c11;
+#X obj 57 326 throw~ c13;
+#X obj 34 350 throw~ c15;
+#X obj 172 305 throw~ c12;
+#X obj 189 330 throw~ c14;
 #X connect 6 0 0 0;
 #X connect 6 0 1 0;
 #X connect 6 0 2 0;
@@ -229,15 +229,15 @@
 #X connect 7 0 11 0;
 #X connect 7 0 15 0;
 #X connect 7 0 16 0;
-#X restore 84 632 pd outputs;
-#X obj 46 544 catch~ \$0-ACE;
-#X obj 136 543 catch~ \$0-BDF;
-#X obj 27 611 env~;
-#X obj 27 633 - 100;
-#X obj 26 656 s \$0-vu;
-#X obj 149 301 r \$0-vu;
-#X obj 114 271 loadbang;
-#X msg 112 300 0.3;
+#X restore 89 584 pd outputs;
+#X obj 58 525 catch~ \$0-ACE;
+#X obj 162 525 catch~ \$0-BDF;
+#X obj 39 578 env~;
+#X obj 39 600 - 100;
+#X obj 38 623 s \$0-vu;
+#X obj 126 302 r \$0-vu;
+#X obj 89 277 loadbang;
+#X msg 89 301 0.3;
 #X text 299 30 weather;
 #X obj 263 88 route /mt2MinRollAvgWindSpeed;
 #X obj 278 113 route /mtRainRate;

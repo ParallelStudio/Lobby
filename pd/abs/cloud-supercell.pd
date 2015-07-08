@@ -4,7 +4,7 @@
 #X obj 71 122 f;
 #X obj 103 122 + 1;
 #X obj 70 148 % 10;
-#X floatatom 80 173 5 0 0 0 - - -;
+#X floatatom 80 173 5 0 0 0 - - -, f 5;
 #X obj 85 53 unpack s f f;
 #X obj 153 204 pack f s f f;
 #X obj 152 233 route 0 1 2 3 4 5 6 7 8 9;
@@ -31,6 +31,7 @@
 #X obj 444 481 eloopxf~ 1000;
 #X obj 543 486 eloopxf~ 1000;
 #X obj 648 487 eloopxf~ 1000;
+#X floatatom 384 74 5 0 0 0 - - -, f 5;
 #X connect 1 0 6 0;
 #X connect 2 0 3 0;
 #X connect 2 0 4 0;
@@ -93,6 +94,7 @@
 #X connect 20 0 29 3;
 #X connect 20 0 30 3;
 #X connect 20 0 31 3;
+#X connect 20 0 32 0;
 #X connect 22 0 0 0;
 #X connect 23 0 0 0;
 #X connect 24 0 0 0;
