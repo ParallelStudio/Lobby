@@ -1,4 +1,4 @@
-#N canvas 3 52 767 682 10;
+#N canvas 2 52 767 682 10;
 #X obj 24 54 hsl 600 15 0.001 0.3 0 0 empty empty empty -2 -8 0 10
 -204800 -1 -1 0 1;
 #X floatatom 38 77 5 0 0 0 - - -, f 5;
@@ -6,7 +6,7 @@
 #X msg 21 6 0 \, 0.3 120000;
 #X text 113 6 simulated rain build;
 #X obj 31 219 hsl 600 15 0 115 0 0 empty empty empty -2 -8 0 10 -204800
--1 -1 0 1;
+-1 -1 47900 1;
 #X floatatom 53 245 5 0 0 0 - - -, f 5;
 #X obj 28 183 line;
 #X msg 27 159 10 \, 85 120000;

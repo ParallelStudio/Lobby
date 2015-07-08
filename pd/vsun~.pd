@@ -1,4 +1,4 @@
-#N canvas 204 122 823 660 10;
+#N canvas 203 121 823 660 10;
 #X obj 192 332 cnv 15 271 173 empty empty empty 20 12 0 14 -233017
 -66577 0;
 #X obj 199 351 vu 15 120 empty empty -1 -8 0 10 -66577 -262144 1 0
@@ -103,8 +103,8 @@
 #X obj 477 151 print slap;
 #X obj 145 178 sun~ -----------------------;
 #X obj 257 58 route /mtTemp1;
-#X obj 146 555 *~ 1;
-#X obj 89 555 *~ 1;
+#X obj 157 553 *~ 1;
+#X obj 100 553 *~ 1;
 #X obj 121 331 cnv 15 69 175 empty empty empty 20 12 0 14 -261234 -66577
 0;
 #X obj 124 345 vsl 15 120 0 2 0 0 empty empty empty 0 -9 0 10 -204800
@@ -229,22 +229,22 @@
 #X connect 7 0 11 0;
 #X connect 7 0 15 0;
 #X connect 7 0 16 0;
-#X restore 89 584 pd outputs;
+#X restore 100 582 pd outputs;
 #X obj 58 525 catch~ \$0-ACE;
 #X obj 162 525 catch~ \$0-BDF;
-#X obj 39 578 env~;
-#X obj 39 600 - 100;
-#X obj 38 623 s \$0-vu;
+#X obj 19 600 - 100;
+#X obj 19 621 s \$0-vu;
 #X obj 126 302 r \$0-vu;
 #X obj 89 277 loadbang;
 #X msg 89 301 0.3;
 #X text 299 30 weather;
 #X obj 263 88 route /mt2MinRollAvgWindSpeed;
 #X obj 278 113 route /mtRainRate;
+#X obj 18 576 env~ 16384;
 #X connect 23 0 78 0;
 #X connect 26 0 79 0;
+#X connect 26 0 101 0;
 #X connect 26 0 102 0;
-#X connect 26 0 103 0;
 #X connect 27 0 28 0;
 #X connect 28 0 30 0;
 #X connect 30 0 31 0;
@@ -301,7 +301,7 @@
 #X connect 79 0 78 1;
 #X connect 80 0 92 1;
 #X connect 81 0 92 0;
-#X connect 81 0 95 0;
+#X connect 81 0 103 0;
 #X connect 83 0 86 0;
 #X connect 83 0 81 1;
 #X connect 83 0 80 1;
@@ -322,10 +322,10 @@
 #X connect 93 0 81 0;
 #X connect 94 0 80 0;
 #X connect 95 0 96 0;
-#X connect 96 0 97 0;
-#X connect 98 0 85 0;
-#X connect 99 0 100 0;
-#X connect 100 0 83 0;
-#X connect 102 0 78 3;
-#X connect 103 0 78 4;
+#X connect 97 0 85 0;
+#X connect 98 0 99 0;
+#X connect 99 0 83 0;
+#X connect 101 0 78 3;
+#X connect 102 0 78 4;
+#X connect 103 0 95 0;
 #X coords 0 -1 1 1 534 177 1 120 330;
