@@ -1,4 +1,4 @@
-#N canvas 16 69 1003 532 10;
+#N canvas 986 95 1003 532 10;
 #X obj 263 298 outlet~;
 #X obj 54 65 inlet;
 #X obj 54 208 cloud-supercell;
@@ -39,6 +39,7 @@
 #X obj 102 230 r \$0-rain_ducking;
 #X obj 444 266 *~ 1;
 #X obj 547 197 r \$0-rain_ducking;
+#X floatatom 884 112 5 0 0 0 - - -;
 #X connect 1 0 11 0;
 #X connect 2 0 25 0;
 #X connect 5 0 38 0;
@@ -63,6 +64,7 @@
 #X connect 28 0 27 0;
 #X connect 29 0 31 0;
 #X connect 31 0 30 0;
+#X connect 31 0 40 0;
 #X connect 34 0 24 1;
 #X connect 35 0 24 1;
 #X connect 36 0 25 1;
