@@ -1,4 +1,4 @@
-#N canvas 40 190 1522 634 10;
+#N canvas 52 23 1012 634 10;
 #X obj 36 588 outlet~;
 #X obj 134 587 outlet~;
 #N canvas 390 327 327 300 sun-shimmer 0;
@@ -216,7 +216,7 @@
 #X obj 222 233 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
 -1 -1;
 #X obj 25 180 f;
-#X floatatom 54 181 5 0 0 0 - - -, f 5;
+#X floatatom 54 181 5 0 0 0 - - -;
 #X obj 25 9 inlet;
 #X text 30 27 play;
 #X obj 123 128 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
@@ -568,7 +568,7 @@
 #X obj 222 234 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
 -1 -1;
 #X obj 25 181 f;
-#X floatatom 54 182 5 0 0 0 - - -, f 5;
+#X floatatom 54 182 5 0 0 0 - - -;
 #X obj 25 10 inlet;
 #X text 30 28 play;
 #X obj 123 129 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
@@ -641,7 +641,7 @@
 #X obj 222 234 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
 -1 -1;
 #X obj 25 181 f;
-#X floatatom 54 182 5 0 0 0 - - -, f 5;
+#X floatatom 54 182 5 0 0 0 - - -;
 #X obj 157 400 print lefty;
 #X msg 93 267 symbol 44-50;
 #X msg 158 292 symbol 50-56;
@@ -757,7 +757,7 @@
 #X obj 222 234 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
 -1 -1;
 #X obj 25 181 f;
-#X floatatom 54 182 5 0 0 0 - - -, f 5;
+#X floatatom 54 182 5 0 0 0 - - -;
 #X obj 25 10 inlet;
 #X text 30 28 play;
 #X obj 123 129 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
@@ -862,7 +862,7 @@
 #X obj 342 232 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
 -1 -1;
 #X obj 25 181 f;
-#X floatatom 54 182 5 0 0 0 - - -, f 5;
+#X floatatom 54 182 5 0 0 0 - - -;
 #X obj 25 10 inlet;
 #X text 30 28 play;
 #X obj 123 129 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
@@ -966,7 +966,7 @@
 #X obj 222 234 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
 -1 -1;
 #X obj 25 181 f;
-#X floatatom 54 182 5 0 0 0 - - -, f 5;
+#X floatatom 54 182 5 0 0 0 - - -;
 #X obj 25 10 inlet;
 #X text 30 28 play;
 #X obj 123 129 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
@@ -1079,7 +1079,7 @@
 #X obj 222 234 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
 -1 -1;
 #X obj 25 181 f;
-#X floatatom 54 182 5 0 0 0 - - -, f 5;
+#X floatatom 54 182 5 0 0 0 - - -;
 #X obj 25 10 inlet;
 #X text 30 28 play;
 #X obj 123 129 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
@@ -1156,7 +1156,7 @@
 #X obj 93 232 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
 -1;
 #X obj 25 181 f;
-#X floatatom 54 182 5 0 0 0 - - -, f 5;
+#X floatatom 54 182 5 0 0 0 - - -;
 #X obj 25 10 inlet;
 #X text 30 28 play;
 #X obj 123 129 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
@@ -1204,21 +1204,21 @@
 #X connect 25 0 19 0;
 #X connect 25 0 21 0;
 #X restore 608 137 pd waver;
-#X floatatom 110 152 5 0 0 0 - #0-wv1-db -, f 5;
+#X floatatom 110 152 5 0 0 0 - #0-wv1-db -;
 #X obj 71 177 *~;
 #X obj 35 178 *~;
 #X obj 171 173 *~;
 #X obj 207 172 *~;
 #X obj 369 174 *~;
 #X obj 310 173 *~;
-#X floatatom 240 146 5 0 0 0 - #0-wv2-db -, f 5;
-#X floatatom 392 145 5 0 0 0 - #0-wv3-db -, f 5;
+#X floatatom 240 146 5 0 0 0 - #0-wv2-db -;
+#X floatatom 392 145 5 0 0 0 - #0-wv3-db -;
 #X obj 529 181 *~;
 #X obj 469 179 *~;
 #X obj 665 179 *~;
 #X obj 606 173 *~;
-#X floatatom 538 157 5 0 0 0 - #0-wv4-db -, f 5;
-#X floatatom 639 157 5 0 0 0 - #0-wvr-db -, f 5;
+#X floatatom 538 157 5 0 0 0 - #0-wv4-db -;
+#X floatatom 639 157 5 0 0 0 - #0-wvr-db -;
 #X obj 36 213 throw~ \$0-wave1ACE;
 #X obj 76 237 throw~ \$0-wave1BDF;
 #X connect 0 0 14 0;
@@ -1294,33 +1294,33 @@
 #X obj 24 219 s \$0-b-db;
 #X obj 24 172 db_calc;
 #X msg 24 147 -6;
-#X floatatom 42 197 5 0 0 0 - - -, f 5;
+#X floatatom 42 197 5 0 0 0 - - -;
 #X obj 96 172 db_calc;
-#X floatatom 114 197 5 0 0 0 - - -, f 5;
+#X floatatom 114 197 5 0 0 0 - - -;
 #X msg 96 147 -8;
 #X obj 175 172 db_calc;
-#X floatatom 193 197 5 0 0 0 - - -, f 5;
+#X floatatom 193 197 5 0 0 0 - - -;
 #X obj 252 172 db_calc;
-#X floatatom 270 197 5 0 0 0 - - -, f 5;
+#X floatatom 270 197 5 0 0 0 - - -;
 #X msg 175 147 -15;
 #X obj 175 219 s \$0-sp-db;
 #X obj 96 219 s \$0-shm-db;
 #X obj 252 219 s \$0-shn-db;
 #X msg 252 147 -9;
 #X obj 337 171 db_calc;
-#X floatatom 355 196 5 0 0 0 - - -, f 5;
+#X floatatom 355 196 5 0 0 0 - - -;
 #X msg 337 146 -8;
 #X obj 337 218 s \$0-flr-db;
 #X obj 421 170 db_calc;
-#X floatatom 439 195 5 0 0 0 - - -, f 5;
+#X floatatom 439 195 5 0 0 0 - - -;
 #X obj 421 217 s \$0-wrm-db;
 #X msg 421 145 -2;
 #X obj 37 296 db_calc;
-#X floatatom 55 321 5 0 0 0 - - -, f 5;
+#X floatatom 55 321 5 0 0 0 - - -;
 #X obj 123 296 db_calc;
-#X floatatom 141 321 5 0 0 0 - - -, f 5;
+#X floatatom 141 321 5 0 0 0 - - -;
 #X obj 209 296 db_calc;
-#X floatatom 227 321 5 0 0 0 - - -, f 5;
+#X floatatom 227 321 5 0 0 0 - - -;
 #X obj 37 343 s \$0-wv1-db;
 #X obj 123 343 s \$0-wv2-db;
 #X obj 209 342 s \$0-wv3-db;
@@ -1328,11 +1328,11 @@
 #X msg 123 270 0;
 #X msg 209 271 -8;
 #X obj 297 295 db_calc;
-#X floatatom 315 320 5 0 0 0 - - -, f 5;
+#X floatatom 315 320 5 0 0 0 - - -;
 #X obj 297 341 s \$0-wv4-db;
 #X msg 297 270 0;
 #X obj 382 294 db_calc;
-#X floatatom 400 319 5 0 0 0 - - -, f 5;
+#X floatatom 400 319 5 0 0 0 - - -;
 #X msg 382 269 -3;
 #X obj 382 340 s \$0-wvr-db;
 #X connect 0 0 3 0;
@@ -1382,20 +1382,20 @@
 #X restore 866 470 pd db defaults;
 #X obj 32 231 *~;
 #X obj 127 230 *~;
-#X floatatom 63 230 5 0 0 0 - #0-b-db -, f 5;
+#X floatatom 63 230 5 0 0 0 - #0-b-db -;
 #X obj 246 243 *~;
 #X obj 339 244 *~;
-#X floatatom 286 244 5 0 0 0 - #0-shm-db -, f 5;
+#X floatatom 286 244 5 0 0 0 - #0-shm-db -;
 #X obj 440 245 *~;
-#X floatatom 477 237 5 0 0 0 - #0-sp-db -, f 5;
+#X floatatom 477 237 5 0 0 0 - #0-sp-db -;
 #X obj 593 244 *~;
 #X obj 646 267 *~;
-#X floatatom 656 242 5 0 0 0 - #0-shn-db -, f 5;
+#X floatatom 656 242 5 0 0 0 - #0-shn-db -;
 #X obj 751 260 *~;
-#X floatatom 777 241 5 0 0 0 - #0-flr-db -, f 5;
+#X floatatom 777 241 5 0 0 0 - #0-flr-db -;
 #X obj 896 256 *~;
 #X obj 943 279 *~;
-#X floatatom 951 245 5 0 0 0 - #0-wrm-db -, f 5;
+#X floatatom 951 245 5 0 0 0 - #0-wrm-db -;
 #X obj 331 115 inlet;
 #X obj 332 139 s \$0-temperature;
 #X obj 128 177 r \$0-temperature;
@@ -1441,18 +1441,15 @@
 #X obj 959 154 s \$0-wind_ducking;
 #X obj 959 128 jrange 8 12 1 0;
 #X obj 98 439 r \$0-wind_ducking;
-#X obj 1078 153 s \$0-wind_ducking_sun_1;
 #X obj 131 199 r \$0-wind_ducking;
 #X obj 229 429 *~ 1;
 #X obj 345 427 *~ 1;
 #X obj 227 391 catch~ \$0-wave1ACE;
 #X obj 345 391 catch~ \$0-wave1BDF;
 #X obj 293 364 r \$0-wind_ducking_sun_1;
-#X obj 1078 127 jrange 8 12 1 0.5;
-#X floatatom 1063 188 5 0 0 0 - - -, f 5;
-#X floatatom 1106 188 5 0 0 0 - - -, f 5;
+#X floatatom 1063 188 5 0 0 0 - - -;
 #X obj 1235 108 inlet;
-#X floatatom 1339 193 5 0 0 0 - - -, f 5;
+#X floatatom 1339 193 5 0 0 0 - - -;
 #X obj 1235 159 s \$0-rain_ducking;
 #X obj 1354 158 s \$0-rain_ducking_sun_1;
 #X obj 1235 133 jrange 0.02 0.05 1 0;
@@ -1528,32 +1525,29 @@
 #X connect 73 0 11 1;
 #X connect 74 0 32 5;
 #X connect 75 0 76 0;
-#X connect 77 0 99 0;
-#X connect 78 0 100 0;
+#X connect 77 0 96 0;
+#X connect 78 0 97 0;
 #X connect 79 0 81 0;
-#X connect 79 0 90 0;
 #X connect 81 0 80 0;
-#X connect 81 0 91 0;
+#X connect 81 0 89 0;
 #X connect 82 0 78 1;
 #X connect 82 0 77 1;
-#X connect 85 0 101 0;
-#X connect 86 0 102 0;
+#X connect 84 0 98 0;
+#X connect 85 0 99 0;
+#X connect 86 0 84 0;
 #X connect 87 0 85 0;
-#X connect 88 0 86 0;
-#X connect 89 0 86 1;
-#X connect 89 0 85 1;
-#X connect 90 0 83 0;
-#X connect 90 0 92 0;
-#X connect 93 0 97 0;
-#X connect 97 0 94 0;
-#X connect 97 0 95 0;
-#X connect 97 0 96 0;
-#X connect 98 0 100 1;
-#X connect 98 0 99 1;
-#X connect 99 0 0 0;
-#X connect 100 0 1 0;
-#X connect 101 0 0 0;
-#X connect 102 0 1 0;
-#X connect 103 0 101 1;
-#X connect 103 0 102 1;
+#X connect 88 0 85 1;
+#X connect 88 0 84 1;
+#X connect 90 0 94 0;
+#X connect 94 0 91 0;
+#X connect 94 0 92 0;
+#X connect 94 0 93 0;
+#X connect 95 0 97 1;
+#X connect 95 0 96 1;
+#X connect 96 0 0 0;
+#X connect 97 0 1 0;
+#X connect 98 0 0 0;
+#X connect 99 0 1 0;
+#X connect 100 0 98 1;
+#X connect 100 0 99 1;
 #X coords 0 634 1 633 277 159 0;

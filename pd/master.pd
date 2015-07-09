@@ -82,9 +82,9 @@
 #X obj 426 70 hradio 15 1 0 2 empty empty empty 0 -8 0 10 -262144 -1
 -1 0;
 #X obj 277 222 vsun~;
-#X obj 511 41 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+#X obj 216 33 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
 -1;
-#X obj 511 66 s audio_on;
+#X obj 216 58 s audio_on;
 #X text 298 202 sun;
 #X obj 820 221 vclouds~;
 #X obj 820 176 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
@@ -120,12 +120,12 @@
 #X obj 201 103 cnv 15 200 87 empty empty empty 20 12 0 14 -240766 -66577
 0;
 #X obj 234 115 hsl 120 15 0 0.3 0 0 empty empty empty -2 -8 0 10 -204800
--1 -1 0 1;
+-1 -1 3332 1;
 #X obj 235 133 hsl 120 15 0 115 0 0 empty empty empty -2 -8 0 10 -204800
--1 -1 7740 1;
+-1 -1 7719 1;
 #X text 202 132 temp;
 #X obj 234 152 hsl 120 15 0 1500 0 0 empty empty empty -2 -8 0 10 -204800
--1 -1 4340 1;
+-1 -1 4363 1;
 #X obj 534 73 route /mt2MinRollAvgWindSpeed;
 #X obj 234 171 hsl 120 15 0 20 0 0 empty empty empty -2 -8 0 10 -204800
 -1 -1 655 1;
