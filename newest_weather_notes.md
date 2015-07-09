@@ -104,7 +104,7 @@ breeze 4 starts at -inf dB
 
 **average = 12mph**<br/>
 breeze 1,2,3,4 land at top volume position  
- - clouds/sun are completely faded out EXCEPT clouds 1 and Sun 1 
+ - clouds/sun are completely faded out EXCEPT clouds Hi and Sun 1 
 
 ##RAIN
 
