@@ -1,4 +1,4 @@
-#N canvas 360 94 945 628 10;
+#N canvas 358 92 945 628 10;
 #X obj 109 461 catch~ c2;
 #X obj 178 461 catch~ c3;
 #X obj 247 461 catch~ c4;
@@ -11,8 +11,8 @@
 #X obj 286 439 r cc4;
 #X obj 354 440 r cc5;
 #X obj 423 439 r cc6;
-#X obj 84 60 audio_tables_loader;
-#X obj 84 34 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+#X obj 48 58 audio_tables_loader;
+#X obj 48 32 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
 -1;
 #X obj 72 209 rain;
 #X obj 72 134 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
@@ -52,19 +52,19 @@
 #X obj 942 437 r cc13;
 #X obj 1018 437 r cc14;
 #X obj 1093 435 r cc15;
-#N canvas 481 333 450 300 switch 0;
-#X obj 119 -51 spigot;
-#X obj 173 -48 spigot;
-#X obj 104 -101 inlet;
-#X obj 190 -101 inlet;
-#X obj 101 17 outlet;
-#X obj 176 24 outlet;
-#X obj 253 -96 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
+#N canvas 480 332 319 300 switch 0;
+#X obj 51 183 spigot;
+#X obj 123 186 spigot;
+#X obj 48 40 inlet;
+#X obj 112 40 inlet;
+#X obj 51 207 outlet;
+#X obj 123 208 outlet;
+#X obj 178 76 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
 1;
-#X obj 236 -68 sel 0 1;
-#X msg 234 -37 1;
-#X msg 265 -37 0;
-#X obj 249 -120 inlet;
+#X obj 178 100 sel 0 1;
+#X msg 178 131 1;
+#X msg 211 132 0;
+#X obj 178 40 inlet;
 #X connect 0 0 4 0;
 #X connect 1 0 5 0;
 #X connect 2 0 1 0;
@@ -151,6 +151,8 @@
 #X restore 602 42 pd weather_monitor;
 #X obj 466 64 loadbang;
 #X obj 465 84 0;
+#X obj 49 82 t b b;
+#X obj 70 28 loadbang;
 #X connect 0 0 17 0;
 #X connect 1 0 18 0;
 #X connect 2 0 19 0;
@@ -163,6 +165,7 @@
 #X connect 9 0 19 1;
 #X connect 10 0 20 1;
 #X connect 11 0 21 1;
+#X connect 12 0 83 0;
 #X connect 13 0 12 0;
 #X connect 15 0 14 0;
 #X connect 15 0 22 0;
@@ -220,3 +223,6 @@
 #X connect 79 0 22 0;
 #X connect 81 0 82 0;
 #X connect 82 0 53 0;
+#X connect 83 0 55 0;
+#X connect 83 1 15 0;
+#X connect 84 0 12 0;
