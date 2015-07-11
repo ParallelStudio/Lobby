@@ -51,6 +51,7 @@ _Also, The following Files will need to be locked during playback (as if they we
  * Sun Shimmer
  * Sun Warm
  * Sun Shine
+ * Sun Waver
 
 
 ##WIND
