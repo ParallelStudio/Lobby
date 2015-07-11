@@ -1,4 +1,4 @@
-#N canvas 77 248 792 660 10;
+#N canvas 137 98 792 660 10;
 #X obj 192 332 cnv 15 271 173 empty empty empty 20 12 0 14 -233017
 -66577 0;
 #X obj 199 351 vu 15 120 empty empty -1 -8 0 10 -66577 -262144 1 0
@@ -41,30 +41,30 @@
 #X obj 257 29 inlet;
 #X obj 474 338 hsl 100 12 -90 0 0 0 empty empty empty -2 -8 0 10 -262144
 -1 -1 0 1;
-#X floatatom 579 336 5 0 0 0 - - -, f 5;
+#X floatatom 579 336 5 0 0 0 - - -;
 #X text 620 335 b;
 #X msg 649 258 b-db \$1;
 #X obj 659 513 s \$0-db;
 #X obj 477 21 r \$0-db;
 #X obj 474 353 hsl 100 12 -90 0 0 0 empty empty empty -2 -8 0 10 -262144
 -1 -1 0 1;
-#X floatatom 579 351 5 0 0 0 - - -, f 5;
+#X floatatom 579 351 5 0 0 0 - - -;
 #X text 620 351 shm;
 #X obj 474 368 hsl 100 12 -90 0 0 0 empty empty empty -2 -8 0 10 -262144
 -1 -1 0 1;
-#X floatatom 579 366 5 0 0 0 - - -, f 5;
+#X floatatom 579 366 5 0 0 0 - - -;
 #X text 620 366 sp;
 #X obj 474 383 hsl 100 12 -90 0 0 0 empty empty empty -2 -8 0 10 -262144
 -1 -1 0 1;
-#X floatatom 579 381 5 0 0 0 - - -, f 5;
+#X floatatom 579 381 5 0 0 0 - - -;
 #X text 620 381 shn;
 #X obj 474 398 hsl 100 12 -90 0 0 0 empty empty empty -2 -8 0 10 -262144
 -1 -1 0 1;
-#X floatatom 579 396 5 0 0 0 - - -, f 5;
+#X floatatom 579 396 5 0 0 0 - - -;
 #X text 620 396 flr;
 #X obj 474 413 hsl 100 12 -90 0 0 0 empty empty empty -2 -8 0 10 -262144
 -1 -1 0 1;
-#X floatatom 579 411 5 0 0 0 - - -, f 5;
+#X floatatom 579 411 5 0 0 0 - - -;
 #X text 620 411 wrm;
 #X msg 657 280 shm-db \$1;
 #X msg 667 301 sp-db \$1;
@@ -72,20 +72,20 @@
 #X msg 684 344 flr-db \$1;
 #X msg 685 365 wrm-db \$1;
 #X obj 474 428 hsl 100 12 -90 0 0 0 empty empty empty -2 -8 0 10 -262144
--1 -1 9900 1;
-#X floatatom 579 426 5 0 0 0 - - -, f 5;
+-1 -1 0 1;
+#X floatatom 579 426 5 0 0 0 - - -;
 #X obj 474 443 hsl 100 12 -90 0 0 0 empty empty empty -2 -8 0 10 -262144
 -1 -1 0 1;
-#X floatatom 579 441 5 0 0 0 - - -, f 5;
+#X floatatom 579 441 5 0 0 0 - - -;
 #X obj 474 458 hsl 100 12 -90 0 0 0 empty empty empty -2 -8 0 10 -262144
 -1 -1 0 1;
-#X floatatom 579 456 5 0 0 0 - - -, f 5;
+#X floatatom 579 456 5 0 0 0 - - -;
 #X obj 474 473 hsl 100 12 -90 0 0 0 empty empty empty -2 -8 0 10 -262144
 -1 -1 0 1;
-#X floatatom 579 471 5 0 0 0 - - -, f 5;
+#X floatatom 579 471 5 0 0 0 - - -;
 #X obj 474 488 hsl 100 12 -90 0 0 0 empty empty empty -2 -8 0 10 -262144
 -1 -1 0 1;
-#X floatatom 579 486 5 0 0 0 - - -, f 5;
+#X floatatom 579 486 5 0 0 0 - - -;
 #X text 620 425 wv1;
 #X text 620 441 wv2;
 #X text 620 456 wv3;
@@ -108,13 +108,13 @@
 #X obj 121 331 cnv 15 69 175 empty empty empty 20 12 0 14 -261234 -66577
 0;
 #X obj 124 345 vsl 15 120 0 2 0 0 empty empty empty 0 -9 0 10 -204800
--1 -1 8185 1;
-#X obj 121 472 nbx 5 30 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 10
--204800 -1 -1 2.77003 256;
+-1 -1 4185 1;
+#X obj 121 472 nbx 5 30 -1e+037 1e+037 0 0 empty empty empty 0 -8 0
+10 -204800 -1 -1 -3.05643 256;
 #X obj 144 345 vu 15 120 empty empty -1 -8 0 10 -66577 -1 1 0;
 #X obj 53 448 rmstodb;
 #X obj 53 470 - 100;
-#X floatatom 56 493 5 0 0 0 - - -, f 5;
+#X floatatom 56 493 5 0 0 0 - - -;
 #N canvas 0 50 1149 529 vu_scaling 0;
 #X obj 82 93 inlet~;
 #X obj 126 93 inlet~;
@@ -235,8 +235,8 @@
 #X obj 19 600 - 100;
 #X obj 19 621 s \$0-vu;
 #X obj 126 302 r \$0-vu;
-#X obj 89 277 loadbang;
-#X msg 89 301 0.3;
+#X obj 49 277 loadbang;
+#X msg 49 301 0.3;
 #X text 299 30 weather;
 #X obj 263 88 route /mt2MinRollAvgWindSpeed;
 #X obj 278 113 route /mtRainRate;
@@ -247,7 +247,9 @@
 #X obj 355 175 jrange 150 300 0 1;
 #X obj 355 199 s \$0-solar;
 #X obj 198 560 r \$0-solar;
-#X floatatom 438 198 5 0 0 0 - - -, f 5;
+#X floatatom 438 198 5 0 0 0 - - -;
+#X floatatom 41 395 5 0 0 0 - - -;
+#X text -25 376 for setting new preset;
 #X connect 23 0 78 0;
 #X connect 26 0 79 0;
 #X connect 26 0 101 0;
@@ -313,6 +315,7 @@
 #X connect 83 0 81 1;
 #X connect 83 0 80 1;
 #X connect 83 0 88 0;
+#X connect 83 0 111 0;
 #X connect 86 0 87 0;
 #X connect 87 0 84 0;
 #X connect 89 0 1 0;

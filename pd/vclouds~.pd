@@ -8,9 +8,9 @@
 #X obj 73 72 cnv 15 72 175 empty empty empty 20 12 0 14 -261234 -66577
 0;
 #X obj 76 86 vsl 15 120 0 2 0 0 empty empty empty 0 -9 0 10 -204800
--1 -1 1985 1;
+-1 -1 2985 1;
 #X obj 73 213 nbx 5 30 -1e+037 1e+037 0 0 empty empty empty 0 -8 0
-10 -204800 -1 -1 -9.53513 256;
+10 -204800 -1 -1 -5.99146 256;
 #X obj 96 86 vu 15 120 empty empty -1 -8 0 10 -66577 -1 1 0;
 #X obj 10 194 rmstodb;
 #X obj 10 216 - 100;
@@ -103,6 +103,8 @@
 #X obj 367 308 r \$0-solar;
 #X floatatom 435 249 5 0 0 0 - - -;
 #X obj 375 193 jrange 150 300 1 0;
+#X floatatom 71 303 5 0 0 0 - - -;
+#X text 5 284 for setting new preset;
 #X connect 0 0 16 0;
 #X connect 0 1 17 0;
 #X connect 0 2 18 0;
@@ -124,6 +126,7 @@
 #X connect 7 0 19 1;
 #X connect 7 0 20 1;
 #X connect 7 0 21 1;
+#X connect 7 0 38 0;
 #X connect 10 0 11 0;
 #X connect 11 0 8 0;
 #X connect 13 0 14 0;
