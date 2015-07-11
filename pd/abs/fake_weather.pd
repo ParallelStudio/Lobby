@@ -1,12 +1,12 @@
-#N canvas 30 93 1012 685 10;
+#N canvas 1011 11 1012 685 10;
 #X obj 24 54 hsl 600 15 0.001 0.3 0 0 empty empty empty -2 -8 0 10
 -204800 -1 -1 0 1;
 #X floatatom 38 77 5 0 0 0 - - -;
 #X obj 21 33 line;
 #X msg 21 6 0 \, 0.3 120000;
 #X text 113 6 simulated rain build;
-#X obj 31 219 hsl 600 15 0 115 0 0 empty empty empty -2 -8 0 10 -204800
--1 -1 28000 1;
+#X obj 31 219 hsl 600 15 -15 115 0 0 empty empty empty -2 -8 0 10 -204800
+-1 -1 13900 1;
 #X floatatom 53 245 5 0 0 0 - - -;
 #X obj 28 183 line;
 #X msg 27 159 10 \, 85 120000;
@@ -19,7 +19,7 @@
 #X text 190 239 temp;
 #X obj 28 290 s \$0-out;
 #X obj 33 365 hsl 600 15 0.1 20 0 0 empty empty empty -2 -8 0 10 -204800
--1 -1 42600 1;
+-1 -1 0 1;
 #X obj 160 330 line;
 #X msg 210 331 stop;
 #X msg 159 306 0 \, 12 120000;
@@ -30,7 +30,7 @@
 #X obj 298 581 r \$0-out;
 #X obj 298 611 outlet;
 #X obj 33 528 hsl 600 15 0 1200 0 0 empty empty empty -2 -8 0 10 -204800
--1 -1 42600 1;
+-1 -1 0 1;
 #X obj 160 493 line;
 #X msg 210 494 stop;
 #X obj 30 625 s \$0-out;
