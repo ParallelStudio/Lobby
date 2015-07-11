@@ -1,0 +1,16 @@
+{
+  "name": "wunderground_server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "lodash": "^3.10.0",
+    "node-osc": "^1.1.0",
+    "request": "^2.58.0"
+  }
+}
