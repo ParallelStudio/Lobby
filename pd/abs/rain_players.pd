@@ -1,4 +1,4 @@
-#N canvas 18 261 1012 312 10;
+#N canvas 307 461 1012 312 10;
 #X obj 70 494 outlet~;
 #X obj 135 494 outlet~;
 #X obj 196 494 outlet~;
@@ -65,9 +65,6 @@
 #X msg 474 180 1;
 #X obj 277 223 rain_blur_wrapper;
 #X obj -173 -214 inlet load;
-#X obj 26 -228 inlet microserver;
-#X obj 26 -200 route /mtRainRate \$1;
-#X obj 26 -172 s rainfall;
 #X connect 6 0 13 0;
 #X connect 7 0 14 0;
 #X connect 8 0 15 0;
@@ -124,5 +121,3 @@
 #X connect 61 0 63 2;
 #X connect 62 0 63 2;
 #X connect 64 0 12 0;
-#X connect 65 0 66 0;
-#X connect 66 0 67 0;
