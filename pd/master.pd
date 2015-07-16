@@ -1,4 +1,4 @@
-#N canvas 56 13 946 628 10;
+#N canvas 25 47 920 568 10;
 #X declare -lib mrpeach;
 #X obj 109 461 catch~ c2;
 #X obj 178 461 catch~ c3;
@@ -110,22 +110,22 @@
 -1;
 #X obj 180 172 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
 -1 -1;
-#N canvas 12 24 450 270 weather_monitor 1;
+#N canvas 4 4 522 317 weather_monitor 0;
 #X obj 359 15 inlet;
 #X obj 287 72 route /mtTemp1;
 #X obj 386 71 route /mtSolarRadiation;
 #X obj 201 103 cnv 15 200 87 empty empty empty 20 12 0 14 -240766 -66577
 0;
 #X obj 236 113 hsl 120 15 0 10 0 0 empty empty empty -2 -8 0 10 -204800
--1 -1 1428 1;
+-1 -1 0 1;
 #X obj 235 133 hsl 120 15 0 115 0 0 empty empty empty -2 -8 0 10 -204800
--1 -1 7782 1;
+-1 -1 8133 1;
 #X text 202 132 temp;
 #X obj 234 152 hsl 120 15 0 1500 0 0 empty empty empty -2 -8 0 10 -204800
--1 -1 0 1;
+-1 -1 5839 1;
 #X obj 534 73 route /mt2MinRollAvgWindSpeed;
 #X obj 234 171 hsl 120 15 0 20 0 0 empty empty empty -2 -8 0 10 -204800
--1 -1 238 1;
+-1 -1 595 1;
 #X text 201 114 rain;
 #X text 201 171 wind;
 #X text 201 151 solr;
@@ -134,7 +134,7 @@
 #X floatatom 363 152 5 0 0 0 - - -;
 #X floatatom 363 171 5 0 0 0 - - -;
 #X obj 152 33 route /mtRainToday;
-#X floatatom 91 61 5 0 0 0 - - -;
+#X floatatom 73 102 5 0 0 0 - - -;
 #X obj 152 59 rain_averager;
 #X floatatom 20 49 5 0 0 0 - - -;
 #X obj 20 16 route /mtRainRate;

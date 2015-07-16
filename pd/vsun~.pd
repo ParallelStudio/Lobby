@@ -1,4 +1,4 @@
-#N canvas 139 321 792 660 10;
+#N canvas -7 98 1012 685 10;
 #X obj 192 332 cnv 15 271 173 empty empty empty 20 12 0 14 -233017
 -66577 0;
 #X obj 199 351 vu 15 120 empty empty -1 -8 0 10 -66577 -262144 1 0
@@ -244,7 +244,7 @@
 #X obj 153 589 *~ 1;
 #X obj 305 136 route /mtSolarRadiation;
 #X obj 355 175 jrange 150 300 0 1;
-#X obj 355 199 s \$0-solar;
+#X obj 355 251 s \$0-solar;
 #X obj 198 560 r \$0-solar;
 #X floatatom 438 198 5 0 0 0 - - -;
 #X floatatom 41 395 5 0 0 0 - - -;
@@ -253,6 +253,8 @@
 #X obj 19 135 line;
 #X msg 19 112 \$1 10000;
 #X floatatom 85 132 5 0 0 0 - - -;
+#X obj 355 226 line;
+#X msg 355 203 \$1 5000;
 #X connect 23 0 78 0;
 #X connect 26 0 79 0;
 #X connect 26 0 101 0;
@@ -344,12 +346,14 @@
 #X connect 103 0 102 0;
 #X connect 104 0 92 1;
 #X connect 105 0 106 0;
-#X connect 106 0 107 0;
 #X connect 106 0 109 0;
+#X connect 106 0 117 0;
 #X connect 108 0 104 1;
 #X connect 108 0 103 1;
 #X connect 112 0 114 0;
 #X connect 113 0 78 4;
 #X connect 113 0 115 0;
 #X connect 114 0 113 0;
+#X connect 116 0 107 0;
+#X connect 117 0 116 0;
 #X coords 0 -1 1 1 534 177 1 120 330;

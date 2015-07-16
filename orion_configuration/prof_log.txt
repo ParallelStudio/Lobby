@@ -1,0 +1,185 @@
+15:42:25:837  | OnInitDialog started.
+15:42:25:837  | InitDirectory started.
+15:42:25:837  | InitDirectory ended.
+15:42:25:837  | ReadXML started.
+15:42:25:837  | 000 Device 
+15:42:25:837  | 001 Baud 
+15:42:25:837  | 002 Data 
+15:42:25:837  | 003 Parity 
+15:42:25:837  | 004 Stopbits 
+15:42:25:837  | 005 RS-485 line delay 
+15:42:25:837  | 006 Address 
+15:42:25:837  | 007 Type 
+15:42:25:837  | 008 Communication protocol 
+15:42:25:837  | 009 Info 
+15:42:25:837  | 010  
+15:42:25:837  | 011 Wind 
+15:42:25:837  | 012 Update interval 
+15:42:25:837  | 013 Speed unit 
+15:42:25:837  | 014 Direction alignment 
+15:42:25:837  | 015 Averaging time 
+15:42:25:837  | 016 Use XDR in NMEA wind 
+15:42:25:837  | 017 Sampling frequency 
+15:42:25:837  | 018 Gust averaging 
+15:42:25:837  | 019  
+15:42:25:837  | 020 Wind message 
+15:42:25:837  | 021 Direction minimum 
+15:42:25:837  | 022 Direction average 
+15:42:25:837  | 023 Direction maximum 
+15:42:25:837  | 024 Speed minimum 
+15:42:25:837  | 025 Speed average 
+15:42:25:837  | 026 Speed maximum 
+15:42:25:837  | 027  
+15:42:25:837  | 028 PTU 
+15:42:25:837  | 029 Update interval 
+15:42:25:837  | 030 Pressure unit 
+15:42:25:837  | 031 Temperature unit 
+15:42:25:837  | 032  
+15:42:25:837  | 033 PTU message 
+15:42:25:837  | 034 Air temperature 
+15:42:25:837  | 035 Pressure temperature 
+15:42:25:837  | 036 Relative humidity 
+15:42:25:837  | 037 Barometric pressure 
+15:42:25:837  | 038  
+15:42:25:837  | 039 Precipitation 
+15:42:25:837  | 040 Auto report interval 
+15:42:25:837  | 041 Rain unit 
+15:42:25:837  | 042 Hail unit 
+15:42:25:837  | 043 Auto mode 
+15:42:25:837  | 044 Counter reset 
+15:42:25:837  | 045 Rain accumulation limit 
+15:42:25:837  | 046 Hail accumulation limit 
+15:42:25:837  | 047  
+15:42:25:837  | 048 Precipitation message 
+15:42:25:837  | 049 Rain amount 
+15:42:25:837  | 050 Rain duration 
+15:42:25:837  | 051 Rain intensity 
+15:42:25:837  | 052 Hail amount 
+15:42:25:837  | 053 Hail duration 
+15:42:25:837  | 054 Hail intensity 
+15:42:25:837  | 055 Rain peak 
+15:42:25:837  | 056 Hail peak 
+15:42:25:837  | 057  
+15:42:25:837  | 058 Self diagnostic 
+15:42:25:837  | 059 Update interval 
+15:42:25:837  | 060 Enable heating 
+15:42:25:837  | 061 Error messaging 
+15:42:25:837  | 062  
+15:42:25:837  | 063 Self diagn. message 
+15:42:25:837  | 064 Heating temperature 
+15:42:25:837  | 065 Heat voltage 
+15:42:25:837  | 066 Supply voltage 
+15:42:25:837  | 067  3.5V reference voltage 
+15:42:25:837  | 068 Info 
+15:42:25:837  | 069  
+15:42:25:837  | 070 Composite message 
+15:42:25:837  | 071 Auto Report Interval 
+15:42:25:837  | 072 Direction minimum 
+15:42:25:837  | 073 Direction average 
+15:42:25:837  | 074 Direction maximum 
+15:42:25:837  | 075 Speed minimum 
+15:42:25:837  | 076 Speed average 
+15:42:25:837  | 077 Speed maximum 
+15:42:25:837  | 078 Air temperature 
+15:42:25:837  | 079 Pressure temperature 
+15:42:25:837  | 080 Relative humidity 
+15:42:25:837  | 081 Barometric pressure 
+15:42:25:837  | 082 Rain amount 
+15:42:25:837  | 083 Rain duration 
+15:42:25:837  | 084 Rain intensity 
+15:42:25:837  | 085 Hail amount 
+15:42:25:837  | 086 Hail duration 
+15:42:25:837  | 087 Hail intensity 
+15:42:25:837  | 088 Rain peak 
+15:42:25:837  | 089 Hail peak 
+15:42:25:837  | 090 Heating temperature 
+15:42:25:837  | 091 Heat voltage 
+15:42:25:837  | 092 Supply voltage 
+15:42:25:837  | 093  3.5V reference voltage 
+15:42:25:837  | 094 Info 
+15:42:25:837  | ReadXML ended.
+15:42:25:837  | InitDirectory started.
+15:42:25:837  | InitDirectory ended.
+15:42:25:837  | OnInitDialog ended.
+15:42:41:439  | InitDirectory started.
+15:42:41:439  | InitDirectory ended.
+15:42:43:062  | OnSelchangeLstProfile started.
+15:42:43:062  | EmptyFlexgridRight started.
+15:42:43:062  | EmptyFlexgridRight ended.
+15:42:43:062  | ReadSettings started.
+15:42:43:062  | ReadSettings ended.
+15:42:43:062  | OnSelchangeLstProfile ended.
+15:42:46:419  | OnScrollFlexgridProf started.
+15:42:46:419  | OnScrollFlexgridProf ended.
+15:42:48:496  | OnScrollFlexgridProf started.
+15:42:48:496  | OnScrollFlexgridProf ended.
+15:42:52:569  | OnDestroy started.
+15:42:52:569  | UpdateDefaultProfile started.
+15:42:52:569  | UpdateDefaultProfile 1
+15:42:52:569  | UpdateDefaultProfile 2
+15:42:52:569  | UpdateDefaultProfile 3
+15:42:52:569  | UpdateDefaultProfile 4
+15:42:52:569  | UpdateDefaultProfile 2
+15:42:52:569  | UpdateDefaultProfile 3
+15:42:52:569  | UpdateDefaultProfile 4
+15:42:52:569  | UpdateDefaultProfile 2
+15:42:52:569  | UpdateDefaultProfile 3
+15:42:52:569  | UpdateDefaultProfile 4
+15:42:52:569  | UpdateDefaultProfile 2
+15:42:52:569  | UpdateDefaultProfile 3
+15:42:52:569  | UpdateDefaultProfile 4
+15:42:52:569  | UpdateDefaultProfile 2
+15:42:52:569  | UpdateDefaultProfile 3
+15:42:52:569  | UpdateDefaultProfile 4
+15:42:52:569  | UpdateDefaultProfile 2
+15:42:52:569  | UpdateDefaultProfile 3
+15:42:52:569  | UpdateDefaultProfile 4
+15:42:52:569  | 021    WU Direction minimum    Enabled
+15:42:52:569  | 022    WU Direction average    Enabled
+15:42:52:569  | 023    WU Direction maximum    Enabled
+15:42:52:569  | 024    WU Speed minimum    Enabled
+15:42:52:569  | 025    WU Speed average    Enabled
+15:42:52:569  | 026    WU Speed maximum    Enabled
+15:42:52:569  | 034    TU Air temperature    Enabled
+15:42:52:569  | 035    TU Pressure temperature   Disabled
+15:42:52:569  | 036    TU Relative humidity    Enabled
+15:42:52:569  | 037    TU Barometric pressure    Enabled
+15:42:52:569  | 049    RU Rain amount    Enabled
+15:42:52:569  | 050    RU Rain duration    Enabled
+15:42:52:569  | 051    RU Rain intensity    Enabled
+15:42:52:569  | 052    RU Hail amount    Enabled
+15:42:52:569  | 053    RU Hail duration    Enabled
+15:42:52:569  | 054    RU Hail intensity    Enabled
+15:42:52:569  | 055    RU  Rain peak   Disabled
+15:42:52:569  | 056    RU  Hail peak   Disabled
+15:42:52:569  | 064    SU Heating temperature    Enabled
+15:42:52:569  | 065    SU Heat voltage    Enabled
+15:42:52:569  | 066    SU Supply voltage    Enabled
+15:42:52:569  | 067    SU  3.5V reference voltage    Enabled
+15:42:52:569  | 068    SU       Info   Disabled
+15:42:52:569  | 072    WU Direction minimum   Disabled
+15:42:52:569  | 073    WU Direction average    Enabled
+15:42:52:569  | 074    WU Direction maximum   Disabled
+15:42:52:569  | 075    WU Speed minimum   Disabled
+15:42:52:569  | 076    WU Speed average    Enabled
+15:42:52:569  | 077    WU Speed maximum    Enabled
+15:42:52:569  | 078    TU Air temperature    Enabled
+15:42:52:569  | 079    TU Pressure temperature   Disabled
+15:42:52:569  | 080    TU Relative humidity    Enabled
+15:42:52:569  | 081    TU Barometric pressure    Enabled
+15:42:52:569  | 082    RU Rain amount    Enabled
+15:42:52:569  | 083    RU Rain duration   Disabled
+15:42:52:569  | 084    RU Rain intensity    Enabled
+15:42:52:569  | 085    RU Hail amount   Disabled
+15:42:52:569  | 086    RU Hail duration   Disabled
+15:42:52:569  | 087    RU Hail intensity   Disabled
+15:42:52:569  | 088    RU  Rain peak   Disabled
+15:42:52:569  | 089    RU  Hail peak   Disabled
+15:42:52:569  | 090    SU Heating temperature   Disabled
+15:42:52:569  | 091    SU Heat voltage   Disabled
+15:42:52:569  | 092    SU Supply voltage   Disabled
+15:42:52:569  | 093    SU  3.5V reference voltage   Disabled
+15:42:52:569  | 094    SU       Info   Disabled
+15:42:52:569  | UpdateDefaultProfile 5
+15:42:52:569  | UpdateDefaultProfile ended.
+15:42:52:569  | OnDestroy ended.

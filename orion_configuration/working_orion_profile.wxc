@@ -1,0 +1,92 @@
+[File source]
+Model=WXT520
+Version=2.21
+Calibration date=L182
+Info=HEL/___
+Order code=AAB1AA30A0
+Device s/n=L1820031
+PTU s/n=L1540046
+[Device]
+Baud=9600
+Data=8
+Parity=None
+Stopbits=1
+RS-485 line delay=25
+Address=0
+Type=RS-485
+Communication protocol=ASCII polling + CRC
+[Wind]
+Update interval=1
+Speed unit=mph
+Direction alignment=0
+Averaging time=3
+Use XDR in NMEA wind=MWV
+Sampling frequency=4 Hz
+Gust averaging=1
+[Wind message]
+Direction minimum=Enabled
+Direction average=Enabled
+Direction maximum=Enabled
+Speed minimum=Enabled
+Speed average=Enabled
+Speed maximum=Enabled
+[PTU]
+Update interval=15
+Pressure unit=inHg
+Temperature unit=Fahrenheit
+[PTU message]
+Air temperature=Enabled
+Pressure temperature=Disabled
+Relative humidity=Enabled
+Barometric pressure=Enabled
+[Precipitation]
+Auto report interval=60
+Rain unit=Imperial
+Hail unit=Imperial
+Auto mode=Rain start/end
+Counter reset=Overflow
+Rain accumulation limit=10000
+Hail accumulation limit=100
+[Precipitation message]
+Rain amount=Enabled
+Rain duration=Enabled
+Rain intensity=Enabled
+Hail amount=Enabled
+Hail duration=Enabled
+Hail intensity=Enabled
+Rain peak=Disabled
+Hail peak=Disabled
+[Self diagnostic]
+Update interval=60
+Enable heating=Enabled
+Error messaging=Disabled
+[Self diagn. message]
+Heating temperature=Enabled
+Heat voltage=Enabled
+Supply voltage=Enabled
+3.5V reference voltage=Enabled
+Info=Disabled
+[Composite message]
+Supply voltage=Disabled
+3.5V reference voltage=Disabled
+Info=Disabled
+Direction minimum=Disabled
+Direction average=Enabled
+Direction maximum=Disabled
+Speed minimum=Disabled
+Speed average=Enabled
+Speed maximum=Enabled
+Air temperature=Enabled
+Pressure temperature=Disabled
+Relative humidity=Enabled
+Barometric pressure=Enabled
+Rain amount=Enabled
+Rain duration=Disabled
+Rain intensity=Enabled
+Hail amount=Disabled
+Hail duration=Disabled
+Hail intensity=Disabled
+Rain peak=Disabled
+Hail peak=Disabled
+Heating temperature=Disabled
+Heat voltage=Disabled
