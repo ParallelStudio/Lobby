@@ -109,7 +109,7 @@ breeze 1,2,3,4 land at top volume position
 
 ##RAIN
 
-**0.001**
+**0.012** **Changed from 0.001 due to sensor resolution and averaging issues**
 * Notes - start at peak db (-20)  but more spread out in time
 * Plucks - begins fading in from 0dB
 * Climber - begins fading in from 0dB
