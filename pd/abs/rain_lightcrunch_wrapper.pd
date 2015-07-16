@@ -1,4 +1,4 @@
-#N canvas 90 56 1082 588 10;
+#N canvas 0 56 1012 588 10;
 #X obj -208 395 throw~ rain1;
 #X obj -124 395 throw~ rain2;
 #X obj -41 395 throw~ rain3;
@@ -35,7 +35,7 @@
 #X msg 117 90 Rain_lightcrunch_D;
 #X msg 243 90 Rain_lightcrunch_E;
 #X msg 367 90 Rain_lightcrunch_F;
-#X obj -158 172 rain_six_outs 0.02 0.02 0.001 0.02 0 0.125 0.25 0.3
+#X obj -158 172 rain_six_outs 0.02 0.02 0.012 0.02 0 0.125 0.25 0.3
 0.125 0.316;
 #X connect 6 0 7 0;
 #X connect 7 0 35 0;

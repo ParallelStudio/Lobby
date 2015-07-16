@@ -249,8 +249,10 @@
 #X floatatom 438 198 5 0 0 0 - - -;
 #X floatatom 41 395 5 0 0 0 - - -;
 #X text -25 376 for setting new preset;
-#X obj 19 77 route /mtRainToday;
-#X obj 19 101 rain_averager;
+#X obj 19 77 route /mtRainRate;
+#X obj 19 135 line;
+#X msg 19 112 \$1 10000;
+#X floatatom 85 132 5 0 0 0 - - -;
 #X connect 23 0 78 0;
 #X connect 26 0 79 0;
 #X connect 26 0 101 0;
@@ -346,6 +348,8 @@
 #X connect 106 0 109 0;
 #X connect 108 0 104 1;
 #X connect 108 0 103 1;
-#X connect 112 0 113 0;
+#X connect 112 0 114 0;
 #X connect 113 0 78 4;
+#X connect 113 0 115 0;
+#X connect 114 0 113 0;
 #X coords 0 -1 1 1 534 177 1 120 330;

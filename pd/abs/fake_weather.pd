@@ -1,6 +1,6 @@
-#N canvas 5 217 804 607 10;
+#N canvas -4 208 804 559 10;
 #X obj 24 54 hsl 600 15 0 0.3 0 0 empty empty empty -2 -8 0 10 -204800
--1 -1 22700 1;
+-1 -1 0 1;
 #X floatatom 38 77 5 0 0 0 - - -;
 #X obj 21 33 line;
 #X msg 21 6 0 \, 0.3 120000;
@@ -41,10 +41,15 @@
 #X obj 246 107 line;
 #X msg 246 87 \$1 3.6e+006;
 #X msg 246 127 set \$1;
-#X msg 246 148 0.00562805;
-#X msg 21 99 /mtRainToday \$1;
+#X msg 246 148 1.33697e-005;
+#X msg 21 99 /mtRainRate \$1;
+#X text 286 107 logic for faking accumulation if needed;
+#X obj 122 105 line;
+#X msg 122 82 \$1 10000;
+#X floatatom 122 134 5 0 0 0 - - -;
 #X connect 0 0 1 0;
-#X connect 0 0 36 0;
+#X connect 0 0 39 0;
+#X connect 0 0 42 0;
 #X connect 2 0 0 0;
 #X connect 3 0 2 0;
 #X connect 5 0 6 0;
@@ -69,7 +74,8 @@
 #X connect 30 0 26 0;
 #X connect 32 0 28 0;
 #X connect 35 0 37 0;
-#X connect 35 0 39 0;
 #X connect 36 0 35 0;
 #X connect 37 0 38 0;
 #X connect 39 0 12 0;
+#X connect 41 0 43 0;
+#X connect 42 0 41 0;

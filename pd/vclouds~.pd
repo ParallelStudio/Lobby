@@ -1,4 +1,4 @@
-#N canvas 390 27 535 634 10;
+#N canvas 423 0 587 638 10;
 #X obj 188 205 clouds~ --------------;
 #X obj 183 14 inlet;
 #X text 230 13 activate;
@@ -104,8 +104,11 @@
 #X obj 375 193 jrange 150 300 1 0;
 #X floatatom 71 303 5 0 0 0 - - -;
 #X text 5 284 for setting new preset;
-#X obj 400 69 route /mtRainToday;
-#X obj 400 90 rain_averager;
+#X obj 436 41 route /mtRainRate;
+#X floatatom 490 218 5 0 0 0 - - -;
+#X floatatom 378 140 5 0 0 0 - - -;
+#X obj 463 88 line;
+#X msg 463 65 \$1 10000;
 #X connect 0 0 16 0;
 #X connect 0 1 17 0;
 #X connect 0 2 18 0;
@@ -117,8 +120,8 @@
 #X connect 3 0 32 0;
 #X connect 3 0 25 0;
 #X connect 3 0 39 0;
-#X connect 4 0 0 1;
 #X connect 4 0 23 0;
+#X connect 4 0 0 1;
 #X connect 7 0 10 0;
 #X connect 7 0 12 0;
 #X connect 7 0 16 1;
@@ -140,6 +143,7 @@
 #X connect 21 0 31 0;
 #X connect 22 0 9 0;
 #X connect 24 0 22 0;
+#X connect 25 0 41 0;
 #X connect 25 0 0 2;
 #X connect 26 0 15 0;
 #X connect 26 0 24 0;
@@ -156,7 +160,9 @@
 #X connect 34 0 27 1;
 #X connect 34 0 26 1;
 #X connect 36 0 33 0;
-#X connect 36 0 35 0;
-#X connect 39 0 40 0;
-#X connect 40 0 0 3;
+#X connect 36 0 40 0;
+#X connect 39 0 43 0;
+#X connect 42 0 0 3;
+#X connect 42 0 35 0;
+#X connect 43 0 42 0;
 #X coords 0 -1 1 1 74 178 1 72 70;

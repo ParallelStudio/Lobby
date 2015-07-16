@@ -37,9 +37,11 @@
 #X msg 113 52 0.361;
 #X obj 427 0 inlet microserver;
 #X obj 427 108 s rainfall;
-#X obj 427 32 route /mtRainToday;
-#X floatatom 378 48 5 0 0 0 - - -;
-#X obj 427 62 rain_averager;
+#X floatatom 378 63 5 0 0 0 - - -;
+#X obj 427 32 route /mtRainRate;
+#X obj 427 78 line;
+#X msg 427 55 \$1 10000;
+#X floatatom 487 90 5 0 0 0 - - -;
 #X connect 0 0 6 0;
 #X connect 0 0 17 0;
 #X connect 0 0 23 0;
@@ -68,8 +70,10 @@
 #X connect 16 0 0 0;
 #X connect 16 1 32 0;
 #X connect 32 0 2 0;
-#X connect 33 0 35 0;
-#X connect 35 0 36 0;
-#X connect 35 0 37 0;
+#X connect 33 0 36 0;
+#X connect 36 0 35 0;
+#X connect 36 0 38 0;
 #X connect 37 0 34 0;
+#X connect 37 0 39 0;
+#X connect 38 0 37 0;
 #X coords 0 -1 1 1 94 190 1 100 100;

@@ -1,4 +1,4 @@
-#N canvas 57 13 945 628 10;
+#N canvas 56 13 946 628 10;
 #X declare -lib mrpeach;
 #X obj 109 461 catch~ c2;
 #X obj 178 461 catch~ c3;
@@ -60,7 +60,7 @@
 #X obj 112 40 inlet;
 #X obj 51 207 outlet;
 #X obj 123 208 outlet;
-#X obj 178 76 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
+#X obj 178 76 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
 1;
 #X obj 178 100 sel 0 1;
 #X msg 178 131 1;
@@ -80,7 +80,7 @@
 #X restore 351 75 pd switch;
 #X obj 351 -2 microserver;
 #X obj 424 70 hradio 15 1 0 2 empty empty empty 0 -8 0 10 -262144 -1
--1 1;
+-1 0;
 #X obj 277 222 vsun~;
 #X obj 216 33 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
 -1;
@@ -110,22 +110,22 @@
 -1;
 #X obj 180 172 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
 -1 -1;
-#N canvas 12 24 450 270 weather_monitor 0;
+#N canvas 12 24 450 270 weather_monitor 1;
 #X obj 359 15 inlet;
 #X obj 287 72 route /mtTemp1;
 #X obj 386 71 route /mtSolarRadiation;
 #X obj 201 103 cnv 15 200 87 empty empty empty 20 12 0 14 -240766 -66577
 0;
-#X obj 234 115 hsl 120 15 0 0.3 0 0 empty empty empty -2 -8 0 10 -204800
--1 -1 0 1;
+#X obj 236 113 hsl 120 15 0 10 0 0 empty empty empty -2 -8 0 10 -204800
+-1 -1 1428 1;
 #X obj 235 133 hsl 120 15 0 115 0 0 empty empty empty -2 -8 0 10 -204800
--1 -1 7668 1;
+-1 -1 7782 1;
 #X text 202 132 temp;
 #X obj 234 152 hsl 120 15 0 1500 0 0 empty empty empty -2 -8 0 10 -204800
 -1 -1 0 1;
 #X obj 534 73 route /mt2MinRollAvgWindSpeed;
 #X obj 234 171 hsl 120 15 0 20 0 0 empty empty empty -2 -8 0 10 -204800
--1 -1 178 1;
+-1 -1 238 1;
 #X text 201 114 rain;
 #X text 201 171 wind;
 #X text 201 151 solr;
@@ -137,7 +137,7 @@
 #X floatatom 91 61 5 0 0 0 - - -;
 #X obj 152 59 rain_averager;
 #X floatatom 20 49 5 0 0 0 - - -;
-#X obj 20 20 route /mtRainRate;
+#X obj 20 16 route /mtRainRate;
 #X floatatom 130 102 5 0 0 0 - - -;
 #X connect 0 0 1 0;
 #X connect 0 0 2 0;
@@ -153,9 +153,9 @@
 #X connect 9 0 16 0;
 #X connect 17 0 18 0;
 #X connect 17 0 19 0;
-#X connect 19 0 4 0;
 #X connect 19 0 22 0;
 #X connect 21 0 20 0;
+#X connect 21 0 4 0;
 #X coords 0 -1 1 1 202 92 1 200 100;
 #X restore 602 42 pd weather_monitor;
 #X obj 466 64 loadbang;
