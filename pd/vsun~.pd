@@ -1,4 +1,4 @@
-#N canvas 137 98 792 660 10;
+#N canvas 139 321 792 660 10;
 #X obj 192 332 cnv 15 271 173 empty empty empty 20 12 0 14 -233017
 -66577 0;
 #X obj 199 351 vu 15 120 empty empty -1 -8 0 10 -66577 -262144 1 0
@@ -98,7 +98,7 @@
 #X msg 730 473 wvr-db \$1;
 #X obj 477 42 unpack s f;
 #X obj 544 66 db_calc;
-#X msg 476 127 \$1 \$2;
+#X msg 477 127 \$1 \$2;
 #X obj 477 90 pack s f;
 #X obj 477 151 print slap;
 #X obj 145 178 sun~ -----------------------;
@@ -108,9 +108,9 @@
 #X obj 121 331 cnv 15 69 175 empty empty empty 20 12 0 14 -261234 -66577
 0;
 #X obj 124 345 vsl 15 120 0 2 0 0 empty empty empty 0 -9 0 10 -204800
--1 -1 4185 1;
+-1 -1 1785 1;
 #X obj 121 472 nbx 5 30 -1e+037 1e+037 0 0 empty empty empty 0 -8 0
-10 -204800 -1 -1 -3.05643 256;
+10 -204800 -1 -1 -10.4576 256;
 #X obj 144 345 vu 15 120 empty empty -1 -8 0 10 -66577 -1 1 0;
 #X obj 53 448 rmstodb;
 #X obj 53 470 - 100;
@@ -239,7 +239,6 @@
 #X msg 49 301 0.3;
 #X text 299 30 weather;
 #X obj 263 88 route /mt2MinRollAvgWindSpeed;
-#X obj 278 113 route /mtRainRate;
 #X obj 18 576 env~ 16384;
 #X obj 101 589 *~ 1;
 #X obj 153 589 *~ 1;
@@ -250,11 +249,13 @@
 #X floatatom 438 198 5 0 0 0 - - -;
 #X floatatom 41 395 5 0 0 0 - - -;
 #X text -25 376 for setting new preset;
+#X obj 19 77 route /mtRainToday;
+#X obj 19 101 rain_averager;
 #X connect 23 0 78 0;
 #X connect 26 0 79 0;
 #X connect 26 0 101 0;
-#X connect 26 0 102 0;
-#X connect 26 0 106 0;
+#X connect 26 0 105 0;
+#X connect 26 0 112 0;
 #X connect 27 0 28 0;
 #X connect 28 0 30 0;
 #X connect 30 0 31 0;
@@ -309,13 +310,13 @@
 #X connect 78 11 89 9;
 #X connect 78 12 89 10;
 #X connect 79 0 78 1;
-#X connect 80 0 105 0;
-#X connect 81 0 104 0;
+#X connect 80 0 104 0;
+#X connect 81 0 103 0;
 #X connect 83 0 86 0;
 #X connect 83 0 81 1;
 #X connect 83 0 80 1;
 #X connect 83 0 88 0;
-#X connect 83 0 111 0;
+#X connect 83 0 110 0;
 #X connect 86 0 87 0;
 #X connect 87 0 84 0;
 #X connect 89 0 1 0;
@@ -336,14 +337,15 @@
 #X connect 98 0 99 0;
 #X connect 99 0 83 0;
 #X connect 101 0 78 3;
-#X connect 102 0 78 4;
-#X connect 103 0 95 0;
-#X connect 104 0 92 0;
-#X connect 104 0 103 0;
-#X connect 105 0 92 1;
+#X connect 102 0 95 0;
+#X connect 103 0 92 0;
+#X connect 103 0 102 0;
+#X connect 104 0 92 1;
+#X connect 105 0 106 0;
 #X connect 106 0 107 0;
-#X connect 107 0 108 0;
-#X connect 107 0 110 0;
-#X connect 109 0 105 1;
-#X connect 109 0 104 1;
+#X connect 106 0 109 0;
+#X connect 108 0 104 1;
+#X connect 108 0 103 1;
+#X connect 112 0 113 0;
+#X connect 113 0 78 4;
 #X coords 0 -1 1 1 534 177 1 120 330;

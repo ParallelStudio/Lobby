@@ -9,12 +9,12 @@
 0;
 #X obj 76 86 vsl 15 120 0 2 0 0 empty empty empty 0 -9 0 10 -204800
 -1 -1 1785 1;
-#X obj 73 213 nbx 5 30 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 10
--204800 -1 -1 -10.4576 256;
+#X obj 73 213 nbx 5 30 -1e+037 1e+037 0 0 empty empty empty 0 -8 0
+10 -204800 -1 -1 -10.4576 256;
 #X obj 96 86 vu 15 120 empty empty -1 -8 0 10 -66577 -1 1 0;
 #X obj 10 194 rmstodb;
 #X obj 10 216 - 100;
-#X floatatom 13 239 5 0 0 0 - - -, f 5;
+#X floatatom 13 239 5 0 0 0 - - -;
 #X obj 41 18 loadbang;
 #X msg 41 42 0.3;
 #N canvas 1095 715 573 376 output-stage 0;
@@ -88,7 +88,7 @@
 #X obj 310 282 *~ 1;
 #X obj 344 282 *~ 1;
 #X obj 104 419 - 100;
-#X floatatom 359 73 5 0 0 0 - - -, f 5;
+#X floatatom 359 73 5 0 0 0 - - -;
 #X obj 105 399 env~ 16384;
 #X obj 346 116 route /mt2MinRollAvgWindSpeed;
 #X obj 186 346 *~ 1;
@@ -100,11 +100,12 @@
 #X obj 374 168 route /mtSolarRadiation;
 #X obj 375 217 s \$0-solar;
 #X obj 367 308 r \$0-solar;
-#X floatatom 435 249 5 0 0 0 - - -, f 5;
+#X floatatom 435 249 5 0 0 0 - - -;
 #X obj 375 193 jrange 150 300 1 0;
-#X floatatom 71 303 5 0 0 0 - - -, f 5;
+#X floatatom 71 303 5 0 0 0 - - -;
 #X text 5 284 for setting new preset;
-#X obj 361 141 route /OurRainRate;
+#X obj 400 69 route /mtRainToday;
+#X obj 400 90 rain_averager;
 #X connect 0 0 16 0;
 #X connect 0 1 17 0;
 #X connect 0 2 18 0;
@@ -156,5 +157,6 @@
 #X connect 34 0 26 1;
 #X connect 36 0 33 0;
 #X connect 36 0 35 0;
-#X connect 39 0 0 3;
+#X connect 39 0 40 0;
+#X connect 40 0 0 3;
 #X coords 0 -1 1 1 74 178 1 72 70;
