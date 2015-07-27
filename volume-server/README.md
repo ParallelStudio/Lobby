@@ -20,7 +20,7 @@ Yes, it's pretty insecure.  Also, if the file is changed, the server must be res
 
 # How it works
 
-Each time a slider is dragged, there is some client-side debouncing, and then an ajax request is sent to the express server on one of 3 routes:
+Each time a slider is dragged, there is some client-side debouncing, and then an ajax POST request is sent to the express server on one of 3 routes:
 
 * /vol/zone1
 * /vol/zone2
@@ -39,3 +39,10 @@ It is expected that the Pd side of things will ultimately use something like:
 `[routeOSC /zone1 /zone2 /zone3]`
 
 to control the 3 zone volumes. 
+
+# Persistence
+
+A single `state.json` file will keep track of the volume levels in case of server or browser restart. 
+Each time a slider value is changed (after debouncing), the `state.json` is overwritten with all 3 zone values.
+
+The behavior of the persistence mechanism with multiple users is expected to be nondeterministic.
