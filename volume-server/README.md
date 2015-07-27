@@ -45,4 +45,4 @@ to control the 3 zone volumes.
 A single `state.json` file will keep track of the volume levels in case of server or browser restart. 
 Each time a slider value is changed (after debouncing), the `state.json` is overwritten with all 3 zone values.
 
-The behavior of the persistence mechanism with multiple users is expected to be nondeterministic.
+The behavior of the persistence mechanism with simultaneous/concurrent users is likely nondeterministic.
