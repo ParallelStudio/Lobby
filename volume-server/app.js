@@ -3,24 +3,30 @@ var express = require('express');
 var app = express();
 
 var SAVESTATE = 'state.json';
+var CREDS = 'creds.json';
+
 var state = loadPersistedValues();
+var creds = JSON.parse(fs.readFileSync(CREDS));
+
+var auth = require('./auth').auth(creds);
 
 var bodyParser = require('body-parser')
 app.use(bodyParser.text())
 
-app.use('/static', express.static(__dirname + '/static', {
+
+app.use('/static', auth, express.static(__dirname + '/static', {
 	index: false
 }));
 
 app.engine('jade', require('jade').__express);
 app.set('view engine', 'jade');
 
-app.get('/', function(req, res){
+app.get('/', auth, function(req, res){
 	var values = loadPersistedValues();
 	res.render('index', values);
 });
 
-app.post('/vol/:zone', function(req, res){
+app.post('/vol/:zone', auth, function(req, res){
 	console.log("Changing zone: " + req.params.zone + " to " + req.body);
 	state[req.params.zone] = req.body;
 	saveState(state);
