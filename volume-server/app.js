@@ -6,11 +6,10 @@ var app = express();
 var SAVESTATE = 'state.json';
 var CREDS = 'creds.json';
 
-if(process.argv.length <= 1){
+var args = process.argv.slice(2);
+if(!args[0]){
 	return usage();
 }
-
-var args = process.argv.slice(2);
 var hostport = args[0].split(/:/);
 console.log("Opening OSC client to " + hostport[0] + " on port " + hostport[1]);
 var client = new osc.Client(hostport[0], hostport[1]);

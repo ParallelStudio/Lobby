@@ -7,23 +7,23 @@ html
 	body
 		div.vcenter
 			h1
-				|Building 83
+				|BUILDING 83
 			h2
-				|Lobby volume control
+				|LOBBY VOLUME CONTROL
 			div(class='label')
-				|zone 1:
+				|ZONE 1:
 			input(id="zone1", type="range", min='0', max='100', onchange="changeVol('zone1')", oninput="changeVol('zone1')", value=zone1)
 			div(class='zoneval', id='zone1val')
 				=zone1
 			br
 			div(class='label')
-				|zone 2:
+				|ZONE 2:
 			input(id="zone2", type="range", min='0', max='100', onchange="changeVol('zone2')", oninput="changeVol('zone2')", value=zone2)
 			div(class='zoneval', id='zone2val')
 				=zone2
 			br
 			div(class='label')
-				|zone 3:
+				|ZONE 3:
 			input(id="zone3", type="range", min='0', max='100', onchange="changeVol('zone3')", oninput="changeVol('zone3')", value=zone3)
 			div(class='zoneval', id='zone3val')
 				=zone3
