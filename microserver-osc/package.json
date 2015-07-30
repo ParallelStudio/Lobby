@@ -9,6 +9,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "forever": "^0.15.0",
     "lodash": "^3.9.3",
     "node-osc": "^1.1.0",
     "request": "^2.57.0",

@@ -17,7 +17,7 @@ if exist npm.cmd (
   echo Your environment has been set up for using Node.js !version!.
 )
 
-node app.js localhost:9009 1
+forever app.js localhost:9009 1
 
 popd
 endlocal
