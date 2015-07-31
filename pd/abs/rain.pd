@@ -1,13 +1,13 @@
-#N canvas 18 257 1012 543 10;
+#N canvas 154 124 1012 543 10;
 #X obj 188 364 rain_players;
 #X obj -39 258 cnv 15 100 60 empty empty empty 20 12 0 14 -233017 -66577
 0;
 #X obj 109 118 vsl 20 120 0 2 0 0 empty empty empty 0 -9 0 10 -204800
--1 -1 2148 1;
+-1 -1 2654 1;
 #X obj 114 20 loadbang;
 #X obj -44 -23 inlet load;
 #X obj 109 252 nbx 5 30 -1e+037 1e+037 0 0 empty empty empty 0 -8 0
-10 -204800 -1 -1 -8.84966 256;
+10 -204800 -1 -1 -7.01232 256;
 #X obj 320 274 env~;
 #X text 166 -62 audio in;
 #X obj 140 118 vu 20 120 empty empty -1 -8 0 10 -66577 -1 1 0;
@@ -34,7 +34,6 @@
 #X obj 721 446 throw~ c13;
 #X obj 601 482 throw~ c14;
 #X obj 684 484 throw~ c15;
-#X msg 113 52 0.361;
 #X obj 427 0 inlet microserver;
 #X obj 427 108 s rainfall;
 #X floatatom 378 63 5 0 0 0 - - -;
@@ -42,6 +41,7 @@
 #X obj 427 78 line;
 #X msg 427 55 \$1 10000;
 #X floatatom 487 90 5 0 0 0 - - -;
+#X msg 113 52 0.446;
 #X connect 0 0 6 0;
 #X connect 0 0 17 0;
 #X connect 0 0 23 0;
@@ -61,19 +61,19 @@
 #X connect 2 0 0 1;
 #X connect 2 0 9 0;
 #X connect 2 0 12 0;
-#X connect 3 0 32 0;
+#X connect 3 0 39 0;
 #X connect 4 0 16 0;
 #X connect 6 0 15 0;
 #X connect 12 0 13 0;
 #X connect 13 0 5 0;
 #X connect 15 0 8 0;
 #X connect 16 0 0 0;
-#X connect 16 1 32 0;
-#X connect 32 0 2 0;
-#X connect 33 0 36 0;
-#X connect 36 0 35 0;
+#X connect 16 1 39 0;
+#X connect 32 0 35 0;
+#X connect 35 0 34 0;
+#X connect 35 0 37 0;
+#X connect 36 0 33 0;
 #X connect 36 0 38 0;
-#X connect 37 0 34 0;
-#X connect 37 0 39 0;
-#X connect 38 0 37 0;
+#X connect 37 0 36 0;
+#X connect 39 0 2 0;
 #X coords 0 -1 1 1 94 190 1 100 100;

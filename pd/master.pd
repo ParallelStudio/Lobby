@@ -1,4 +1,4 @@
-#N canvas 25 47 920 568 10;
+#N canvas 21 51 920 568 10;
 #X declare -lib mrpeach;
 #X obj 109 461 catch~ c2;
 #X obj 178 461 catch~ c3;
@@ -119,13 +119,13 @@
 #X obj 236 113 hsl 120 15 0 10 0 0 empty empty empty -2 -8 0 10 -204800
 -1 -1 0 1;
 #X obj 235 133 hsl 120 15 0 115 0 0 empty empty empty -2 -8 0 10 -204800
--1 -1 8133 1;
+-1 -1 9582 1;
 #X text 202 132 temp;
 #X obj 234 152 hsl 120 15 0 1500 0 0 empty empty empty -2 -8 0 10 -204800
--1 -1 5839 1;
+-1 -1 3824 1;
 #X obj 534 73 route /mt2MinRollAvgWindSpeed;
 #X obj 234 171 hsl 120 15 0 20 0 0 empty empty empty -2 -8 0 10 -204800
--1 -1 595 1;
+-1 -1 1428 1;
 #X text 201 114 rain;
 #X text 201 171 wind;
 #X text 201 151 solr;

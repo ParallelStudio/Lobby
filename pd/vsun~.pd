@@ -1,4 +1,4 @@
-#N canvas -7 98 1012 685 10;
+#N canvas 59 66 1012 685 10;
 #X obj 192 332 cnv 15 271 173 empty empty empty 20 12 0 14 -233017
 -66577 0;
 #X obj 199 351 vu 15 120 empty empty -1 -8 0 10 -66577 -262144 1 0
@@ -40,7 +40,7 @@
 -66577 0;
 #X obj 257 29 inlet;
 #X obj 474 338 hsl 100 12 -90 0 0 0 empty empty empty -2 -8 0 10 -262144
--1 -1 0 1;
+-1 -1 4200 1;
 #X floatatom 579 336 5 0 0 0 - - -;
 #X text 620 335 b;
 #X msg 649 258 b-db \$1;
@@ -108,9 +108,9 @@
 #X obj 121 331 cnv 15 69 175 empty empty empty 20 12 0 14 -261234 -66577
 0;
 #X obj 124 345 vsl 15 120 0 2 0 0 empty empty empty 0 -9 0 10 -204800
--1 -1 1785 1;
+-1 -1 1047 1;
 #X obj 121 472 nbx 5 30 -1e+037 1e+037 0 0 empty empty empty 0 -8 0
-10 -204800 -1 -1 -10.4576 256;
+10 -204800 -1 -1 -15.0914 256;
 #X obj 144 345 vu 15 120 empty empty -1 -8 0 10 -66577 -1 1 0;
 #X obj 53 448 rmstodb;
 #X obj 53 470 - 100;
@@ -236,7 +236,6 @@
 #X obj 19 621 s \$0-vu;
 #X obj 126 302 r \$0-vu;
 #X obj 49 277 loadbang;
-#X msg 49 301 0.3;
 #X text 299 30 weather;
 #X obj 263 88 route /mt2MinRollAvgWindSpeed;
 #X obj 18 576 env~ 16384;
@@ -255,11 +254,27 @@
 #X floatatom 85 132 5 0 0 0 - - -;
 #X obj 355 226 line;
 #X msg 355 203 \$1 5000;
+#X msg 49 301 0.176;
+#X obj 812 463 s \$0-db;
+#X msg 830 233 b-db -14;
+#X msg 838 255 shm-db -23;
+#X msg 848 276 sp-db -15;
+#X msg 858 298 shn-db -17;
+#X msg 865 319 flr-db -5;
+#X msg 870 340 wrm-db -5;
+#X msg 876 362 wv1-db -5;
+#X msg 884 384 wv2-db -5;
+#X msg 894 405 wv3-db -8;
+#X msg 904 427 wv4-db 0;
+#X msg 911 448 wvr-db 0;
+#X obj 964 230 loadbang;
+#X obj 964 194 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
 #X connect 23 0 78 0;
 #X connect 26 0 79 0;
-#X connect 26 0 101 0;
-#X connect 26 0 105 0;
-#X connect 26 0 112 0;
+#X connect 26 0 100 0;
+#X connect 26 0 104 0;
+#X connect 26 0 111 0;
 #X connect 27 0 28 0;
 #X connect 28 0 30 0;
 #X connect 30 0 31 0;
@@ -314,13 +329,13 @@
 #X connect 78 11 89 9;
 #X connect 78 12 89 10;
 #X connect 79 0 78 1;
-#X connect 80 0 104 0;
-#X connect 81 0 103 0;
+#X connect 80 0 103 0;
+#X connect 81 0 102 0;
 #X connect 83 0 86 0;
 #X connect 83 0 81 1;
 #X connect 83 0 80 1;
 #X connect 83 0 88 0;
-#X connect 83 0 110 0;
+#X connect 83 0 109 0;
 #X connect 86 0 87 0;
 #X connect 87 0 84 0;
 #X connect 89 0 1 0;
@@ -338,22 +353,45 @@
 #X connect 94 0 80 0;
 #X connect 95 0 96 0;
 #X connect 97 0 85 0;
-#X connect 98 0 99 0;
-#X connect 99 0 83 0;
-#X connect 101 0 78 3;
-#X connect 102 0 95 0;
-#X connect 103 0 92 0;
-#X connect 103 0 102 0;
-#X connect 104 0 92 1;
-#X connect 105 0 106 0;
-#X connect 106 0 109 0;
-#X connect 106 0 117 0;
-#X connect 108 0 104 1;
-#X connect 108 0 103 1;
+#X connect 98 0 117 0;
+#X connect 100 0 78 3;
+#X connect 101 0 95 0;
+#X connect 102 0 92 0;
+#X connect 102 0 101 0;
+#X connect 103 0 92 1;
+#X connect 104 0 105 0;
+#X connect 105 0 108 0;
+#X connect 105 0 116 0;
+#X connect 107 0 103 1;
+#X connect 107 0 102 1;
+#X connect 111 0 113 0;
+#X connect 112 0 78 4;
 #X connect 112 0 114 0;
-#X connect 113 0 78 4;
-#X connect 113 0 115 0;
-#X connect 114 0 113 0;
-#X connect 116 0 107 0;
-#X connect 117 0 116 0;
+#X connect 113 0 112 0;
+#X connect 115 0 106 0;
+#X connect 116 0 115 0;
+#X connect 117 0 83 0;
+#X connect 119 0 118 0;
+#X connect 120 0 118 0;
+#X connect 121 0 118 0;
+#X connect 122 0 118 0;
+#X connect 123 0 118 0;
+#X connect 124 0 118 0;
+#X connect 125 0 118 0;
+#X connect 126 0 118 0;
+#X connect 127 0 118 0;
+#X connect 128 0 118 0;
+#X connect 129 0 118 0;
+#X connect 130 0 119 0;
+#X connect 130 0 120 0;
+#X connect 130 0 121 0;
+#X connect 130 0 122 0;
+#X connect 130 0 123 0;
+#X connect 130 0 124 0;
+#X connect 130 0 125 0;
+#X connect 130 0 126 0;
+#X connect 130 0 127 0;
+#X connect 130 0 128 0;
+#X connect 130 0 129 0;
+#X connect 131 0 130 0;
 #X coords 0 -1 1 1 534 177 1 120 330;
