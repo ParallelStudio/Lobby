@@ -77,34 +77,35 @@ I think a 2 minute Rolling Average wind speed will work best for wind breeze sou
 
 **average = 0.1mph-1mph**<br/>
 
-**average = 1mph**<br/>
+**average = 2mph**<br/>
  and breeze 1 starts at -inf dB
 
-**average = 2mph**<br/>
-breeze 2 starts at -inf dB
-ear wind starts at .1mph at -inf dB
-
 **average = 3mph**<br/>
-ear wind fades to volume position 1
+breeze 2 starts at -inf dB
+ear wind starts at 0%
 
-**average = 5mph**<br/>
-breeze 1 and 2 fade up to Volume position 1 
+**average = 4mph**<br/>
+ear wind arrives at 30%
 
 **average = 7mph**<br/>
-breeze 3 starts at -inf dB
+breeze 1 and 2 fade up to Volume position 1 
 
 **average = 8mph**<br/>
-breeze 3 arrives at volume position 1 and all clouds/sun sounds begin to fade out EXCEPT clouds hi and Sun 1,
-ear wind fades to volume position 2
+breeze 3 starts at -inf dB
 
 **average = 9mph**<br/>
-breeze 3 at volume position 1
+breeze 3 arrives at volume position 1 and all clouds/sun sounds begin to fade out EXCEPT clouds hi and Sun 1,
+ear wind arrives at 80%
 
 **average = 10mph**<br/>
+breeze 3 at volume position 1
+
+**average = 11mph**<br/>
 breeze 4 starts at -inf dB
 
-**average = 12mph**<br/>
+**average = 13mph**<br/>
 breeze 1,2,3,4 land at top volume position  
+ear wind arrives at 100%
  - clouds/sun are completely faded out EXCEPT clouds Hi and Sun 1 
 
 ##RAIN
