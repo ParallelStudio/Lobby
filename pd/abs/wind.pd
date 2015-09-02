@@ -1,10 +1,10 @@
 #N canvas 103 103 669 508 10;
 #X obj 108 118 vsl 20 120 0 2 0 0 empty empty empty 0 -9 0 10 -204800
--1 -1 745 1;
+-1 -1 1664 1;
 #X obj 124 30 loadbang;
 #X obj -34 -13 inlet load;
 #X obj 108 252 nbx 5 30 -1e+037 1e+037 0 0 empty empty empty 0 -8 0
-10 -204800 -1 -1 -18.0472 256;
+10 -204800 -1 -1 -11.0673 256;
 #X obj 330 284 env~;
 #X obj 139 118 vu 20 120 empty empty -1 -8 0 10 -66577 -1 1 0;
 #X floatatom 12 253 5 0 0 0 - - -;
@@ -19,7 +19,7 @@
 #X obj -30 304 cnv 15 100 60 empty empty empty 20 12 0 14 -233017 -66577
 0;
 #X obj 303 25 inlet microserver;
-#X msg 123 62 0.125;
+#X msg 123 62 0.279;
 #X connect 0 0 6 0;
 #X connect 0 0 9 0;
 #X connect 0 0 14 1;
