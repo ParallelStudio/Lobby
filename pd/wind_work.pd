@@ -1,15 +1,15 @@
-#N canvas 526 176 1039 685 10;
+#N canvas 167 0 1039 673 10;
 #X obj 70 -26 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
 -1;
 #X obj 69 88 wind_ear_panner;
 #X obj 70 39 wind_ear_players;
-#X floatatom 64 -121 5 0 0 0 - - -, f 5;
+#X floatatom 64 -121 5 0 0 0 - - -;
 #X text 282 -166 temp;
 #X obj 39 -93 s temperature;
 #X obj 143 -8 r temperature;
 #X obj 447 -67 hsl 600 15 0.1 20 0 0 empty empty empty -2 -8 0 10 -204800
--1 -1 0 1;
-#X floatatom 493 12 5 0 0 0 - - -, f 5;
+-1 -1 59900 1;
+#X floatatom 493 12 5 0 0 0 - - -;
 #X obj 588 -1 line;
 #X msg 638 0 stop;
 #X obj 444 31 s wind_speed;
@@ -29,8 +29,8 @@
 #X obj 518 309 r wind_speed;
 #X obj 438 -105 loadbang;
 #X obj 343 254 wind_breeze_panner;
-#X obj 707 -119 nbx 5 14 -1e+37 1e+37 0 0 empty empty empty 0 -8 0
-10 -204800 -1 -1 0 256;
+#X obj 707 -119 nbx 5 14 -1e+037 1e+037 0 0 empty empty empty 0 -8
+0 10 -204800 -1 -1 20 256;
 #X obj 650 -91 line;
 #X msg 650 -114 \$1 1000;
 #X obj 688 -146 route /mt2MinRollAvgWindSpeed;
@@ -54,14 +54,15 @@
 #X obj 422 187 *~ 1;
 #X obj 505 123 r \$0-gain;
 #X obj 68 -144 hsl 600 15 0 115 0 0 empty empty empty -2 -8 0 10 -204800
--1 -1 0 1;
+-1 -1 25309 1;
 #X obj 141 316 outlet~ monitoring;
 #X obj 389 308 wind_breeze_panner;
 #X obj 367 281 wind_breeze_panner;
 #X obj 413 335 wind_breeze_panner;
+#X obj 69 62 *~ 1.5;
 #X connect 0 0 2 0;
 #X connect 1 0 51 0;
-#X connect 2 0 1 0;
+#X connect 2 0 55 0;
 #X connect 6 0 2 1;
 #X connect 9 0 7 0;
 #X connect 10 0 9 0;
@@ -109,3 +110,4 @@
 #X connect 49 0 47 1;
 #X connect 49 0 46 1;
 #X connect 49 0 45 1;
+#X connect 55 0 1 0;

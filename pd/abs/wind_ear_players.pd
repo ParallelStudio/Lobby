@@ -1,4 +1,4 @@
-#N canvas 36 36 793 603 10;
+#N canvas 296 66 1005 603 10;
 #X obj 61 -18 eloopxf~ 1000;
 #X obj 143 -42 r \$0-shimtemp;
 #X obj 59 -108 r \$0_windbang;
@@ -150,9 +150,9 @@
 #X floatatom 821 989 5 0 0 0 - - -;
 #X obj 858 866 jrange 3 4 0 0.3;
 #X obj 897 912 jrange 4 9 0.3 0.8;
-#X obj 936 941 jrange 9 13 0.8 1;
 #X obj 897 890 moses 9;
 #X obj 858 834 moses 4;
+#X obj 936 941 jrange 9 18 0.8 1;
 #X connect 0 0 39 0;
 #X connect 1 0 0 3;
 #X connect 2 0 108 0;
@@ -310,14 +310,14 @@
 #X connect 140 0 79 2;
 #X connect 141 0 142 0;
 #X connect 143 0 52 0;
-#X connect 144 0 153 0;
+#X connect 144 0 152 0;
 #X connect 149 0 143 1;
 #X connect 149 0 148 0;
 #X connect 150 0 143 1;
 #X connect 150 0 148 0;
-#X connect 151 0 143 1;
-#X connect 151 0 148 0;
-#X connect 152 0 150 0;
+#X connect 151 0 150 0;
+#X connect 151 1 153 0;
+#X connect 152 0 149 0;
 #X connect 152 1 151 0;
-#X connect 153 0 149 0;
-#X connect 153 1 152 0;
+#X connect 153 0 143 1;
+#X connect 153 0 148 0;
