@@ -41,7 +41,7 @@
 #X obj 427 78 line;
 #X msg 427 55 \$1 10000;
 #X floatatom 487 90 5 0 0 0 - - -;
-#X msg 113 52 0.446;
+#X msg 113 52 1;
 #X connect 0 0 6 0;
 #X connect 0 0 17 0;
 #X connect 0 0 23 0;
