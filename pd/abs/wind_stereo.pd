@@ -19,7 +19,7 @@
 0;
 #X obj 303 25 inlet microserver;
 #X msg 123 62 0.111;
-#X obj 113 353 wind_work;
+#X obj 113 353 wind_work_stereo;
 #X connect 0 0 6 0;
 #X connect 0 0 9 0;
 #X connect 0 0 17 1;

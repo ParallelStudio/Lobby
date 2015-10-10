@@ -56,10 +56,10 @@
 -1 -1 27004 1;
 #X obj 141 316 outlet~ monitoring;
 #X obj 69 62 *~ 1.5;
-#X obj 346 255 wind_breeze_panner;
-#X obj 367 281 wind_breeze_panner;
-#X obj 389 308 wind_breeze_panner;
-#X obj 413 335 wind_breeze_panner;
+#X obj 346 255 wind_breeze_stereo_panner;
+#X obj 367 281 wind_breeze_stereo_panner;
+#X obj 389 308 wind_breeze_stereo_panner;
+#X obj 413 335 wind_breeze_stereo_panner;
 #X connect 0 0 2 0;
 #X connect 1 0 50 0;
 #X connect 2 0 51 0;

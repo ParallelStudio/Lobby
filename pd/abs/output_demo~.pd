@@ -44,7 +44,7 @@
 #X obj 287 129 r audio_on;
 #X msg 287 154 0;
 #X obj 99 55 env~ 8192;
-#X obj 114 -19 hip~ 200;
+#X obj 114 -20 hip~ 20;
 #X connect 1 0 0 0;
 #X connect 2 0 4 0;
 #X connect 3 0 6 0;
